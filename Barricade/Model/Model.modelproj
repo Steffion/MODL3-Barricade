@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0d289d02-68a1-4db5-b253-66740858da16}</ProjectGuid>
+    <ProjectGuid>{4df1ae52-e3b6-4ee2-8a36-3b02f61bb4c3}</ProjectGuid>
     <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
     <Name>Model</Name>
     <RootNamespace>Model</RootNamespace>
