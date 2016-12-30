@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="19b80c53-bcb8-4ed5-b792-fff0eab35596" name="ClassDiagram" linkedPackageId="5f2e7997-d262-4a5f-bed2-ceecf2528a6e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="90f50bd2-ad43-4c73-9067-38117d790535">
+      <elementDefinition Id="c33c051b-2d40-4d98-b263-870891905843" />
+      <body>Version 1.0
+Barricade 2016
+Jonathan &amp; Stef</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="77480e85-b625-456b-b782-709abf4b4a63" name="Pion" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bfb2eac9-f1d7-42a9-ae33-0109c2182243" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="93c50f68-a7ff-4896-967c-bfa20b61cf8a" name="Board" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d02b652c-3d04-4fe8-88ac-6fbb60c51b37" />
+        <targetEnds>
+          <association Id="60d36721-beb9-4d77-a8db-ef3b23a7bc23" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="Field" isLeaf="false" isAbstract="false">
+            <classMoniker Id="112acd37-b125-47da-b67d-1d1248dd8116" LastKnownName="Field" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="56abab6b-56be-4e1d-acab-006d06b273a2" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e4a23ca0-00fe-48b5-a0d9-e7e7e51f95f8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fdcb4784-4f0f-4862-8125-88c85b7dba0c" name="Field" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="1bc1025e-7fe3-4a0a-8208-2ae5e56a44fc" name="Lower" value="*">
+                      <elementDefinition Id="287fa0b9-6ed3-492e-ac1e-840a41252443" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="29e88659-8d17-4fba-90ea-4801c2e7becb" name="Upper" value="*">
+                      <elementDefinition Id="e3147161-e90a-44db-bff6-778b8ffa469b" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="fa7ed6ea-224d-42cc-8443-7e05f7481ead" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="674dfb72-a33a-4993-ba57-f7fbb7f7a094" />
+          </association>
+          <association Id="9b75f4a0-6fbd-4c4a-bb25-1406c6009536" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="Dorp" isLeaf="false" isAbstract="false">
+            <classMoniker Id="18915349-bb22-408f-a677-acd44103ef0d" LastKnownName="Dorp" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cddbd52e-6ec5-454c-a990-2da2a8e4e260" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="20c9d7e8-c673-4879-bee1-c361cf20bb74" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0c673c03-54b4-41e7-b419-6a27099468bd" name="Dorp" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="22a8c137-5760-4132-b1c3-8a334a34997f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="630470b9-8163-49d6-8991-e1aefea67851" />
+          </association>
+          <association Id="125fca8f-0103-47ed-9a27-de86d36ef38e" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="ForestField" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d2402981-e9b9-4113-98af-19ea0ca285ec" LastKnownName="ForestField" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a7af16a2-e0e1-45a0-a4d7-014aaa42426e" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4b459628-183b-4779-b318-189a81364c7c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6367c0eb-26a6-4378-8b80-e628db4ba2f9" name="ForestField" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d96793e8-7f6e-44a9-a497-d51503802087" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dce2d27a-ad8e-4297-8722-0c320f737c8d" />
+          </association>
+          <association Id="f5985c9a-10ad-4851-bf94-594e520293e9" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="Barricade" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6bc515bf-f39b-42a7-ba72-eeb205b5f504" LastKnownName="Barricade" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f5cd6b2c-b87d-4702-968f-f78f1e1b0dc6" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3d90db3e-eff5-469a-8218-551f83974a95" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a61b7779-7912-4e45-9343-2702083e00df" name="Barricade" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="3dc09f53-09e9-4999-bed9-067d21562054" name="Lower" value="6">
+                      <elementDefinition Id="db495419-d70c-4b87-bff8-fb90d314c871" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e331b491-5903-4121-bf45-792150d1abbf" name="Upper" value="6">
+                      <elementDefinition Id="d731f26a-10db-46dd-9a82-2990f7a95102" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="8032be5b-ee03-48dd-8e57-91f427050ba6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="25055af7-dc5c-4919-bfc5-f685e9d2c47c" />
+          </association>
+          <association Id="24c412d3-d0a7-4ccf-a3d0-185af5b6d96e" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="RedPion" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a2a83a59-403c-461b-8313-884d9c3477b1" LastKnownName="RedPion" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="82e66503-2870-4fdc-b852-7901a967eded" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ba0f4d14-3999-47f4-94f0-9c0692e45432" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ee309651-d6cb-453c-8912-e2268d342425" name="RedPion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="6183ae3c-9010-4c1f-9df3-683122048be5" name="Lower" value="4">
+                      <elementDefinition Id="a17f9b56-4dc9-48e1-9b4e-386e8d41d567" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="fc4af42b-3144-401f-a825-92cadbac37d1" name="Upper" value="4">
+                      <elementDefinition Id="15cfb73c-6f61-4f14-b9d9-619ac1223c93" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="97131595-2c7a-4dce-84de-4f7ed6bc2889" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="336ec358-a227-472d-9adc-175772f0eb9c" />
+          </association>
+          <association Id="9755625c-9c5f-4074-b132-6c7201b75c7c" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="GreenPion" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b818cae3-93b3-467c-88af-a8f5052f3bec" LastKnownName="GreenPion" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c8af2de2-b99e-4047-b7a3-ac394a420550" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="21089555-8885-47ec-9d3a-5ef79169a52d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe65f801-1e18-4018-bfba-215c0c2a9f48" name="GreenPion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="46d9a15b-fd1d-4058-9967-572771959ae3" name="Lower" value="4">
+                      <elementDefinition Id="8cdcaa7a-c776-488f-99c4-3cdfe1842c98" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="043a6195-9d3e-45d2-a254-6b5a7dc8ca89" name="Upper" value="4">
+                      <elementDefinition Id="75946015-991c-4a45-a572-29b97d824af6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="bad9aa85-74cb-4366-bccd-04ef6c1a2818" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8253a91c-ce2f-49da-b82a-1536f7f85034" />
+          </association>
+          <association Id="7168a584-f5d9-433d-81ed-1dd95e17c88b" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="YellowPion" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4b438316-7912-46bb-8167-ac47e59af272" LastKnownName="YellowPion" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="48905d31-af4f-4989-8f52-c2ec4532180f" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1ed91fdd-543b-448c-81de-6d0778e4258e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c06c30da-2591-4eef-873a-790b434c9c5f" name="YellowPion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ef0a8397-573c-4bd1-8ca4-83caa43a5d5d" name="Lower" value="4">
+                      <elementDefinition Id="dc975105-9036-4c22-b3ac-32d2db3ff6d2" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="feb556d8-9f58-4d5d-ba2e-abb86320133a" name="Upper" value="4">
+                      <elementDefinition Id="e29a270e-b354-491f-874e-810dc8d8addb" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ddd74c74-4752-4599-9e12-986861653bec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2ce21a41-45e0-4d4c-9e83-829945888c20" />
+          </association>
+          <association Id="905c1650-15fc-4884-859b-4179a30da411" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="BluePion" isLeaf="false" isAbstract="false">
+            <classMoniker Id="df4ed16b-b8e4-412f-8e93-e22746933125" LastKnownName="BluePion" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="247ced17-3d1f-4ab2-b24a-eefa3a6aa8f6" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="33e7e6c2-1c6a-46e3-978c-5ec7f15f2d50" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7a3afa7b-6202-4fab-acc7-ee46fe91a6d2" name="BluePion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="9fc79db9-6175-440c-8ac1-1bc97b7f4a5a" name="Lower" value="4">
+                      <elementDefinition Id="7350fb7b-6a11-44d1-bb93-bcf5b6ebd3bf" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="9fb1cf51-1c6f-4fe7-a1d9-71fc44455c8d" name="Upper" value="4">
+                      <elementDefinition Id="833e74ec-77a0-4dbe-9848-f8b6f091fb5f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="81662ba6-e5c8-4e3e-a138-70588df1945c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="33b16ecc-482b-426c-940b-a7a558287aa4" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="112acd37-b125-47da-b67d-1d1248dd8116" name="Field" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a06b497d-d712-44c8-9c4c-ed8f49ce771e" />
+        <targetEnds>
+          <association Id="a1458515-6f5d-43a3-8ec9-7b2ecd11889a" isDerived="false" sourceEndRoleName="Field" targetEndRoleName="Pion" isLeaf="false" isAbstract="false">
+            <classMoniker Id="77480e85-b625-456b-b782-709abf4b4a63" LastKnownName="Pion" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9278b49b-70b3-4be2-8cdc-ebc051b9af0a" name="Field" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="836b3024-9668-4411-9e32-8039ab74d4f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="67a14c5b-880d-40b6-9fd3-e3e997070370" name="Pion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="13a56ee0-9e18-45b8-8517-a66e0e6c20ba" name="Lower" value="0">
+                      <elementDefinition Id="c4fb369f-2845-4102-b741-8eefb3e9608a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e3f44036-424b-4415-8ec8-8fac382001dc" name="Upper" value="1">
+                      <elementDefinition Id="00ff5e8c-0354-4136-89ad-45567e77927a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5e72bcf7-e0d8-412d-91ff-c13482c1d5c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bb4dc828-8065-463f-aa8a-6d7164311f4b" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ae97cec3-c00a-4da5-9d68-ee150b6e7287" name="StartField" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="40bbf435-02f1-4de6-8cbc-3ed23cde8121" />
+        <generalsInternal>
+          <generalization Id="5e8be903-c6e0-4ef8-920a-33197787ca03" isSubstitutable="false">
+            <classMoniker Id="112acd37-b125-47da-b67d-1d1248dd8116" LastKnownName="Field" />
+            <elementDefinition Id="bc42c088-3bb9-4dbf-aa02-582adaa3c64d" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6bc515bf-f39b-42a7-ba72-eeb205b5f504" name="Barricade" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="089cadc3-41cb-4251-9ff4-11a76d7611e2" />
+        <generalsInternal>
+          <generalization Id="cb4df2ae-1620-457f-b3ee-1f694c9bf2f1" isSubstitutable="false">
+            <classMoniker Id="77480e85-b625-456b-b782-709abf4b4a63" LastKnownName="Pion" />
+            <elementDefinition Id="23c2a1e6-0f31-4748-8b14-dafc62a93c7a" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a2a9df73-665d-4658-89a8-03bae5407ea0" name="RegularField" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d85b33cb-0460-4836-82a0-fc4df184456c" />
+        <generalsInternal>
+          <generalization Id="3700e442-c7f9-4ebc-96c1-91b1c1d411fe" isSubstitutable="false">
+            <classMoniker Id="112acd37-b125-47da-b67d-1d1248dd8116" LastKnownName="Field" />
+            <elementDefinition Id="01a8aacd-1dcb-40d9-8321-1a5aaee34c6f" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="34d1bc72-d21f-44d5-97c0-03ba4d977380" name="RestField" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f13be0f5-d8a9-4c6b-b8d7-01692d01f86d" />
+        <generalsInternal>
+          <generalization Id="3a141f47-ab68-4b4b-986c-eb9ba4d391d4" isSubstitutable="false">
+            <classMoniker Id="112acd37-b125-47da-b67d-1d1248dd8116" LastKnownName="Field" />
+            <elementDefinition Id="8126ef37-70f1-440b-ad64-977657453f24" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="18915349-bb22-408f-a677-acd44103ef0d" name="Dorp" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f4802702-9abb-4db9-8881-e2808d4ac086" />
+        <targetEnds>
+          <association Id="b752fc85-464d-46b9-a325-d5fdc437a3a0" isDerived="false" sourceEndRoleName="Dorp" targetEndRoleName="Field" isLeaf="false" isAbstract="false">
+            <classMoniker Id="112acd37-b125-47da-b67d-1d1248dd8116" LastKnownName="Field" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f3161941-186e-4fec-9850-07dfb87ee47a" name="Dorp" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="2c6ff367-a152-4692-8a59-6f1c538a0e78" name="Lower" value="0">
+                      <elementDefinition Id="d761facb-8e54-4e91-af19-e1f4cde3b6b1" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="938eab8d-4145-4f15-b154-616b25488c8d" name="Upper" value="1">
+                      <elementDefinition Id="84dcb591-32ce-4cda-8630-e291873c15ed" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="ccef6f2f-1741-440b-a903-0c3522e0d6b9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="caad762d-9af3-40ab-95a9-b4845b6d37a0" name="Field" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ade672ae-269a-4eae-9e88-22daa990fade" name="Lower" value="*">
+                      <elementDefinition Id="468f255d-12b8-4402-b078-071a30355c8e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ddbedf94-1628-4583-b989-756b69c9bbe4" name="Upper" value="*">
+                      <elementDefinition Id="46bedbea-d077-4303-99c8-cc45895a7da5" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5c15b586-be62-4568-b0dc-65255e03aec5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="15736529-ca63-4e88-950a-c13e89340bf0" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d2402981-e9b9-4113-98af-19ea0ca285ec" name="ForestField" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="976b8437-a5ac-4b37-909b-9d0fc3c98137" />
+        <generalsInternal>
+          <generalization Id="8f0476a2-a8d6-4233-82b8-cd1e74a63a4e" isSubstitutable="false">
+            <classMoniker Id="112acd37-b125-47da-b67d-1d1248dd8116" LastKnownName="Field" />
+            <elementDefinition Id="3dc96a12-c253-41c5-827e-e70eac129edb" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a2a83a59-403c-461b-8313-884d9c3477b1" name="RedPion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4c9f13d8-6b00-4cce-80a5-8ac943af4c51" />
+        <generalsInternal>
+          <generalization Id="380fa725-527f-4f6e-8e65-3939477396c0" isSubstitutable="false">
+            <classMoniker Id="77480e85-b625-456b-b782-709abf4b4a63" LastKnownName="Pion" />
+            <elementDefinition Id="aa79b394-e7ef-4a5d-867a-5747a76743d2" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b818cae3-93b3-467c-88af-a8f5052f3bec" name="GreenPion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="44f0dfd3-a1c4-482a-809d-abaad0495a5e" />
+        <generalsInternal>
+          <generalization Id="535150be-fd25-4b92-8570-f73c0c65f39e" isSubstitutable="false">
+            <classMoniker Id="77480e85-b625-456b-b782-709abf4b4a63" LastKnownName="Pion" />
+            <elementDefinition Id="71b5e732-d602-4af2-ab57-5f4c2d776a3c" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4b438316-7912-46bb-8167-ac47e59af272" name="YellowPion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c60d5ca3-ee0c-40ec-863f-a4eb0789926d" />
+        <generalsInternal>
+          <generalization Id="fbc667ce-cde0-4d59-8598-bf73baa4d6e7" isSubstitutable="false">
+            <classMoniker Id="77480e85-b625-456b-b782-709abf4b4a63" LastKnownName="Pion" />
+            <elementDefinition Id="7f32baeb-695f-48ad-9a7d-044538011c14" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="df4ed16b-b8e4-412f-8e93-e22746933125" name="BluePion" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="acd0c621-ba8a-4c92-bba0-810980369050" />
+        <generalsInternal>
+          <generalization Id="a803562f-2174-4cd1-84ac-bdddafd10f7b" isSubstitutable="false">
+            <classMoniker Id="77480e85-b625-456b-b782-709abf4b4a63" LastKnownName="Pion" />
+            <elementDefinition Id="5a603c70-ee3d-4175-890e-a47050afbb18" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="5f2e7997-d262-4a5f-bed2-ceecf2528a6e" name="Model">
+    <elementDefinition Id="6209f626-1feb-4951-9ecd-ad5fda35f288" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3fbef834-7330-4559-a910-a871a997193a">
+        <profileInstance Id="9a447627-17a7-4068-b6b7-0f2bffa3357d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="41ddbc73-4481-43de-bc68-563eb70c9fd6">
+        <profileInstance Id="1cf88db3-b1ee-4b48-8afb-112e83afd375" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
