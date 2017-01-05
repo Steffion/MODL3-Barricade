@@ -286,6 +286,7 @@ public class Board
         r6c2.Right = r6c3;
         // Column 3
         r6c3.Right = r6c4;
+        r6c3.Down = r7c3;
         // column 4
         r6c4.Right = r6c5;
         // column 5
@@ -298,6 +299,7 @@ public class Board
         r6c8.Right = r6c9;
         // Column 9
         r6c9.Right = r6c10;
+        r6c9.Down = r7c9;
         // Column 10
         r6c10.Right = r6c11;
         // Column 11
@@ -378,6 +380,13 @@ public class Board
         Fields.Add(r1c7);
         Fields.Add(r1c8);
         Fields.Add(r1c9);
+        Fields.Add(new VoidField());
+        Fields.Add(new PathField());
+        for (int i = 0; i < 8; i++)
+        {
+            Fields.Add(new HorizontalField());
+        }
+        Fields.Add(new PathField());
         Fields.Add(new VoidField());
         Fields.Add(r2c1);
         Fields.Add(r2c2);
