@@ -67,6 +67,7 @@ public class Board
 
     public Board()
     {
+        
         #region Blue
         BluePion = new List<BluePion>();
         BluePion.Add(new BluePion());
@@ -333,6 +334,34 @@ public class Board
         sf14.Down = sf15;
         sf15.Down = sf16;
         // Column 11
+        #endregion
+        #region Town
+        Town = new Town();
+        Town.Field.Add(r1c1);
+        Town.Field.Add(r1c2);
+        Town.Field.Add(r1c3);
+        Town.Field.Add(r1c4);
+        Town.Field.Add(r1c5);
+        Town.Field.Add(r1c6);
+        Town.Field.Add(r1c7);
+        Town.Field.Add(r1c8);
+        Town.Field.Add(r1c9);
+        Town.Field.Add(r2c1);
+        Town.Field.Add(r2c2);
+        Town.Field.Add(r2c3);
+        Town.Field.Add(r2c4);
+        Town.Field.Add(r2c5);
+        Town.Field.Add(r2c6);
+        Town.Field.Add(r2c7);
+        Town.Field.Add(r2c8);
+        Town.Field.Add(r2c9);
+        Town.Field.Add(r3c1);
+        Town.Field.Add(r3c2);
+        Town.Field.Add(r3c3);
+        Town.Field.Add(r3c4);
+        Town.Field.Add(r3c5);
+        Town.Field.Add(r3c6);
+        Town.Field.Add(r3c7);
         #endregion
     }
 }
