@@ -126,6 +126,11 @@ namespace Console.View
                         if (_gameController.Board.GreenPion[1].Equals(pion))
                         {
                             System.Console.Write("I");
+                            if (i == 45)
+                            {
+                                System.Console.Write("\n");
+
+                            }
                             continue;
                         }
 
@@ -212,7 +217,19 @@ namespace Console.View
                 {
                     System.Console.Write("|   F   | \n");
                 }
-                
+                if (temp[i] is StartField && temp[i].Pion == null)
+                {
+                    System.Console.Write("S");
+                }
+                if (temp[i] is StartField && temp[i].Pion != null)
+                {
+                    
+                }
+                if (i == 70)
+                {
+
+                }
+
             }
             //Field origin = _gameController.Board.Origin;
 

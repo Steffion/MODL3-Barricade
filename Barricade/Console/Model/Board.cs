@@ -446,7 +446,18 @@ public class Board
         Fields.Add(r7c11);
         Fields.Add(new VoidField());
         Fields.Add(sf1);
-
+        Fields.Add(sf2);
+        Fields.Add(new VoidField());
+        Fields.Add(sf5);
+        Fields.Add(sf6);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(sf9);
+        Fields.Add(sf10);
+        Fields.Add(new VoidField());
+        Fields.Add(sf13);
+        Fields.Add(sf14);
 
 
         #endregion
