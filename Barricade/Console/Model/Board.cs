@@ -29,31 +29,31 @@ public class Board
 		set;
 	}
 
-	public virtual IEnumerable<Barricade> Barricade
+	public virtual List<Barricade> Barricade
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<RedPion> RedPion
+	public virtual List<RedPion> RedPion
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<GreenPion> GreenPion
+	public virtual List<GreenPion> GreenPion
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<YellowPion> YellowPion
+	public virtual List<YellowPion> YellowPion
 	{
 		get;
 		set;
 	}
 
-	public virtual IEnumerable<BluePion> BluePion
+	public virtual List<BluePion> BluePion
 	{
 		get;
 		set;
@@ -67,6 +67,30 @@ public class Board
 
     public Board()
     {
+        BluePion = new List<BluePion>();
+        BluePion.Add(new BluePion());
+        BluePion.Add(new BluePion());
+        BluePion.Add(new BluePion());
+        BluePion.Add(new BluePion());
+
+        YellowPion = new List<YellowPion>();
+        YellowPion.Add(new YellowPion());
+        YellowPion.Add(new YellowPion());
+        YellowPion.Add(new YellowPion());
+        YellowPion.Add(new YellowPion());
+
+        RedPion = new List<RedPion>();
+        RedPion.Add(new RedPion());
+        RedPion.Add(new RedPion());
+        RedPion.Add(new RedPion());
+        RedPion.Add(new RedPion());
+
+        GreenPion = new List<GreenPion>();
+        GreenPion.Add(new GreenPion());
+        GreenPion.Add(new GreenPion());
+        GreenPion.Add(new GreenPion());
+        GreenPion.Add(new GreenPion());
+
         Origin = new EndField();
 
         Field r1c1 = new RegularField();

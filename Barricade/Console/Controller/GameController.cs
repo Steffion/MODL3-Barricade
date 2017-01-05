@@ -11,9 +11,12 @@ namespace Console.Controller
     {
         internal void Start()
         {
-            while (System.Console.ReadKey() != null)
+            while (true)
             {
                 BoardView.Print();
+                Pion CurrentPion = InputController.GetPion();
+
+                Turn++;
             }
         }
 
@@ -21,6 +24,7 @@ namespace Console.Controller
         {
             Board = new Board();
             BoardView = new BoardView(this);
+            InputController = new InputController(this);
         }
 
         public BoardView BoardView
@@ -29,7 +33,19 @@ namespace Console.Controller
             set;
         }
 
+        public InputController InputController
+        {
+            get;
+            set;
+        }
+
         public Board Board
+        {
+            get;
+            set;
+        }
+
+        public int Turn
         {
             get;
             set;

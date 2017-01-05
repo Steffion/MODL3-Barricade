@@ -20,6 +20,10 @@ namespace Console.View
         {
             Field origin = _gameController.Board.Origin;
 
+            System.Console.ForegroundColor = ConsoleColor.White;
+            System.Console.WriteLine();
+            System.Console.WriteLine();
+            System.Console.WriteLine();
             System.Console.WriteLine("-------------------------");
             System.Console.WriteLine("|           F           |");
             System.Console.WriteLine("| 	    |	        |");
