@@ -65,7 +65,7 @@
       <generalizationMoniker Id="cb4df2ae-1620-457f-b3ee-1f694c9bf2f1" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
-        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="6.84564779694707, 7.9590102428197866, 0.125, 0.1341145783662796" shapeFieldName="Stereotype" />
+        <moveableDecoratorHostShape manuallyPlaced="true" absoluteBounds="6.852592240977593, 7.9590102428197866, 0.125, 0.1341145783662796" shapeFieldName="Stereotype" />
       </moveableDecoratorHostShapes>
       <nodes>
         <classShapeMoniker Id="e3b50399-0b21-47fc-81af-59bfb1378613" />
@@ -171,7 +171,7 @@
         <classShapeMoniker Id="fd04a074-e186-4d7b-b5dd-bd42918231ef" />
       </nodes>
     </generalizationConnector>
-    <associationConnector edgePoints="[(6.125 : 5.5620574496709); (2.43347518506871 : 5.5620574496709); (2.43347518506871 : 7.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="4">
+    <associationConnector edgePoints="[(6.125 : 5.5620574496709); (2.43347518506871 : 5.5620574496709); (2.43347518506871 : 7.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="0..4">
       <associationMoniker Id="24c412d3-d0a7-4ccf-a3d0-185af5b6d96e" />
       <relativeChildShapes />
       <nodes>
@@ -194,7 +194,7 @@
         <classShapeMoniker Id="fd04a074-e186-4d7b-b5dd-bd42918231ef" />
       </nodes>
     </generalizationConnector>
-    <associationConnector edgePoints="[(6.125 : 6.17780693777298); (4.10814894391843 : 6.17780693777298); (4.10814894391843 : 7.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="4">
+    <associationConnector edgePoints="[(6.125 : 6.17780693777298); (4.10814894391843 : 6.17780693777298); (4.10814894391843 : 7.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="0..4">
       <associationMoniker Id="9755625c-9c5f-4074-b132-6c7201b75c7c" />
       <relativeChildShapes />
       <nodes>
@@ -217,7 +217,7 @@
         <classShapeMoniker Id="fd04a074-e186-4d7b-b5dd-bd42918231ef" />
       </nodes>
     </generalizationConnector>
-    <associationConnector edgePoints="[(6.27399195597409 : 6.27734373509884); (6.27399195597409 : 6.65234373509884); (5.76348621073028 : 6.65234373509884); (5.76348621073028 : 7.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="4">
+    <associationConnector edgePoints="[(6.27399195597409 : 6.27734373509884); (6.27399195597409 : 6.65234373509884); (5.76348621073028 : 6.65234373509884); (5.76348621073028 : 7.25)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="0..4">
       <associationMoniker Id="7168a584-f5d9-433d-81ed-1dd95e17c88b" />
       <relativeChildShapes />
       <nodes>
@@ -240,7 +240,7 @@
         <classShapeMoniker Id="fd04a074-e186-4d7b-b5dd-bd42918231ef" />
       </nodes>
     </generalizationConnector>
-    <associationConnector edgePoints="[(6.81136753407108 : 6.27734373509884); (6.81136753407108 : 6.77734373509884); (7.30672739766267 : 6.77734373509884); (7.30672739766267 : 7.25)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="4">
+    <associationConnector edgePoints="[(6.81136753407108 : 6.27734373509884); (6.81136753407108 : 6.77734373509884); (7.30672739766267 : 6.77734373509884); (7.30672739766267 : 7.25)]" manuallyRouted="true" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="0..4">
       <associationMoniker Id="905c1650-15fc-4884-859b-4179a30da411" />
       <relativeChildShapes />
       <nodes>
@@ -248,7 +248,7 @@
         <classShapeMoniker Id="69a2d1f9-d9ab-4408-bea9-d62ce7b6f1e5" />
       </nodes>
     </associationConnector>
-    <commentShape Id="5e90bac3-c783-47df-8aae-c07ab7ba8671" absoluteBounds="7.75, 0.75, 1.375, 0.75" customColor="251, 247, 200">
+    <commentShape Id="5e90bac3-c783-47df-8aae-c07ab7ba8671" absoluteBounds="7.875, 0.625, 1.375, 0.75" customColor="251, 247, 200">
       <commentMoniker Id="90f50bd2-ad43-4c73-9067-38117d790535" />
       <relativeChildShapes />
     </commentShape>

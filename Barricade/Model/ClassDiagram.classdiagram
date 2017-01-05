@@ -3,7 +3,7 @@
   <ownedCommentsInternal>
     <comment Id="90f50bd2-ad43-4c73-9067-38117d790535">
       <elementDefinition Id="c33c051b-2d40-4d98-b263-870891905843" />
-      <body>Version 1.1
+      <body>Version 1.2
 Barricade 2016
 Jonathan &amp; Stef</body>
     </comment>
@@ -113,7 +113,7 @@ Jonathan &amp; Stef</body>
               <associationHasOwnedEnds>
                 <memberEnd Id="ee309651-d6cb-453c-8912-e2268d342425" name="RedPion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
-                    <literalString Id="6183ae3c-9010-4c1f-9df3-683122048be5" name="Lower" value="4">
+                    <literalString Id="6183ae3c-9010-4c1f-9df3-683122048be5" name="Lower" value="0">
                       <elementDefinition Id="a17f9b56-4dc9-48e1-9b4e-386e8d41d567" />
                     </literalString>
                   </lowerValueInternal>
@@ -139,7 +139,7 @@ Jonathan &amp; Stef</body>
               <associationHasOwnedEnds>
                 <memberEnd Id="fe65f801-1e18-4018-bfba-215c0c2a9f48" name="GreenPion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
-                    <literalString Id="46d9a15b-fd1d-4058-9967-572771959ae3" name="Lower" value="4">
+                    <literalString Id="46d9a15b-fd1d-4058-9967-572771959ae3" name="Lower" value="0">
                       <elementDefinition Id="8cdcaa7a-c776-488f-99c4-3cdfe1842c98" />
                     </literalString>
                   </lowerValueInternal>
@@ -165,7 +165,7 @@ Jonathan &amp; Stef</body>
               <associationHasOwnedEnds>
                 <memberEnd Id="c06c30da-2591-4eef-873a-790b434c9c5f" name="YellowPion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
-                    <literalString Id="ef0a8397-573c-4bd1-8ca4-83caa43a5d5d" name="Lower" value="4">
+                    <literalString Id="ef0a8397-573c-4bd1-8ca4-83caa43a5d5d" name="Lower" value="0">
                       <elementDefinition Id="dc975105-9036-4c22-b3ac-32d2db3ff6d2" />
                     </literalString>
                   </lowerValueInternal>
@@ -191,7 +191,7 @@ Jonathan &amp; Stef</body>
               <associationHasOwnedEnds>
                 <memberEnd Id="7a3afa7b-6202-4fab-acc7-ee46fe91a6d2" name="BluePion" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <lowerValueInternal>
-                    <literalString Id="9fc79db9-6175-440c-8ac1-1bc97b7f4a5a" name="Lower" value="4">
+                    <literalString Id="9fc79db9-6175-440c-8ac1-1bc97b7f4a5a" name="Lower" value="0">
                       <elementDefinition Id="7350fb7b-6a11-44d1-bb93-bcf5b6ebd3bf" />
                     </literalString>
                   </lowerValueInternal>

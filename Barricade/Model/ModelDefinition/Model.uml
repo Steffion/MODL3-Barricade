@@ -6,7 +6,7 @@
   <ownedCommentsInternal>
     <comment
       Id="c33c051b-2d40-4d98-b263-870891905843">
-      <body>Version 1.1
+      <body>Version 1.2
 Barricade 2016
 Jonathan &amp; Stef</body>
     </comment>
@@ -264,7 +264,7 @@ Jonathan &amp; Stef</body>
                     <literalString
                       Id="a17f9b56-4dc9-48e1-9b4e-386e8d41d567"
                       name="Lower"
-                      value="4" />
+                      value="0" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
@@ -316,7 +316,7 @@ Jonathan &amp; Stef</body>
                     <literalString
                       Id="8cdcaa7a-c776-488f-99c4-3cdfe1842c98"
                       name="Lower"
-                      value="4" />
+                      value="0" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
@@ -368,7 +368,7 @@ Jonathan &amp; Stef</body>
                     <literalString
                       Id="dc975105-9036-4c22-b3ac-32d2db3ff6d2"
                       name="Lower"
-                      value="4" />
+                      value="0" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
@@ -420,7 +420,7 @@ Jonathan &amp; Stef</body>
                     <literalString
                       Id="7350fb7b-6a11-44d1-bb93-bcf5b6ebd3bf"
                       name="Lower"
-                      value="4" />
+                      value="0" />
                   </lowerValueInternal>
                   <upperValueInternal>
                     <literalString
