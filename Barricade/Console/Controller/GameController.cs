@@ -14,7 +14,9 @@ namespace Console.Controller
             while (true)
             {
                 BoardView.Print();
+                int dice = InputController.ThrowDice();
                 Pion CurrentPion = InputController.GetPion();
+                InputController.Move(CurrentPion, dice);
 
                 Turn++;
             }

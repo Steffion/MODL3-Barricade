@@ -9,6 +9,8 @@ namespace Console.Controller
 {
     class InputController
     {
+        private List<Field> _previousSteps;
+
         public InputView InputView
         {
             get;
@@ -20,21 +22,103 @@ namespace Console.Controller
         public InputController(GameController gameController)
         {
             _gameController = gameController;
+            _previousSteps = new List<Field>();
 
             InputView = new InputView(this, gameController);
         }
 
-        internal Pion GetPion()
+        public void Move(Pion currentPion, int steps)
         {
-            InputView.Show();
+            _previousSteps = new List<Field>();
+
+            for (int i = steps; i > 0; i--)
+            {
+                while (true)
+                {
+                    _gameController.BoardView.Print();
+                    ConsoleKeyInfo key = InputView.GetMoveKey();
+
+                    if (key.Key == ConsoleKey.UpArrow)
+                    {
+                        Field nextField = currentPion.Field.Up;
+                        if (nextField == null || 
+                            _previousSteps.Contains(nextField)) continue;
+
+                        while (nextField is StartField)
+                        {
+                            nextField = nextField.Up;
+                        }
+
+                        currentPion.Field.SetPion(null);
+                        currentPion.SetField(nextField);
+                        _previousSteps.Add(nextField);
+                        break;
+                    }
+
+                    if (key.Key == ConsoleKey.RightArrow)
+                    {
+                        Field nextField = currentPion.Field.Right;
+                        if (nextField == null ||
+                            _previousSteps.Contains(nextField)) continue;
+
+                        currentPion.Field.SetPion(null);
+                        currentPion.SetField(nextField);
+                        _previousSteps.Add(nextField);
+                        break;
+                    }
+
+                    if (key.Key == ConsoleKey.DownArrow)
+                    {
+                        Field nextField = currentPion.Field.Down;
+                        if (nextField == null ||
+                            _previousSteps.Contains(nextField)) continue;
+
+                        if (nextField is StartField) continue;
+
+                        currentPion.Field.SetPion(null);
+                        currentPion.SetField(nextField);
+                        _previousSteps.Add(nextField);
+                        break;
+                    }
+
+                    if (key.Key == ConsoleKey.LeftArrow)
+                    {
+                        Field nextField = currentPion.Field.Left;
+                        if (nextField == null ||
+                            _previousSteps.Contains(nextField)) continue;
+
+                        currentPion.Field.SetPion(null);
+                        currentPion.SetField(nextField);
+                        _previousSteps.Add(nextField);
+                        break;
+                    }
+
+                    InputView.ShowWrongKey();
+                }
+            }
+        }
+
+        public int ThrowDice()
+        {
+            Random random = new Random();
+            int result = random.Next(1, 7);
+
+            InputView.ShowDice(result);
+
+            return result;
+        }
+
+        public Pion GetPion()
+        {
+            InputView.ShowPossiblePions();
 
             bool inputIsValid = false;
             int turn = _gameController.Turn % 4;
 
             while (!inputIsValid)
             {
-                ConsoleKeyInfo key = InputView.GetKey();
-                
+                ConsoleKeyInfo key = InputView.GetPionKey();
+
                 switch (turn)
                 {
                     case 0:
@@ -123,7 +207,7 @@ namespace Console.Controller
                         break;
                 }
 
-                InputView.WrongKey();
+                InputView.ShowWrongKey();
             }
 
             throw new Exception("Unreachable Code");

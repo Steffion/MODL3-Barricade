@@ -11,5 +11,18 @@ using System.Text;
 
 public abstract class Pion
 {
+    private Field _field;
+
+    public Field Field
+    {
+        get;
+        set;
+    }
+
+    public void SetField(Field field)
+    {
+        Field = field;
+        Field.Pion = this;
+    }
 }
 

@@ -4,6 +4,7 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using Console.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ using System.Text;
 
 public class Board
 {
-	public virtual IEnumerable<Field> Field
+	public virtual List<Field> Fields
 	{
 		get;
 		set;
@@ -67,31 +68,43 @@ public class Board
 
     public Board()
     {
+        Fields = new List<Field>();
+        #region Blue
         BluePion = new List<BluePion>();
         BluePion.Add(new BluePion());
         BluePion.Add(new BluePion());
         BluePion.Add(new BluePion());
         BluePion.Add(new BluePion());
-
+        #endregion
+        #region Yellow
         YellowPion = new List<YellowPion>();
         YellowPion.Add(new YellowPion());
         YellowPion.Add(new YellowPion());
         YellowPion.Add(new YellowPion());
         YellowPion.Add(new YellowPion());
-
+        #endregion
+        #region Red
         RedPion = new List<RedPion>();
         RedPion.Add(new RedPion());
         RedPion.Add(new RedPion());
         RedPion.Add(new RedPion());
         RedPion.Add(new RedPion());
-
+        #endregion
+        #region Green
         GreenPion = new List<GreenPion>();
         GreenPion.Add(new GreenPion());
         GreenPion.Add(new GreenPion());
         GreenPion.Add(new GreenPion());
         GreenPion.Add(new GreenPion());
-
+        #endregion
+        #region Origin
         Origin = new EndField();
+        for (int i = 0; i < 5; i++)
+        {
+            Fields.Add(new VoidField());
+        }
+        Fields.Add(Origin);
+        #endregion
         #region Row 1
         Field r1c1 = new RegularField();
         Field r1c2 = new RegularField();
@@ -114,7 +127,7 @@ public class Board
         Field r2c8 = new RegularField();
         Field r2c9 = new RegularField();
         #endregion
-        #region row 3
+        #region Row 3
         Field r3c1 = new RegularField();
         Field r3c2 = new RegularField();
         Field r3c3 = new RegularField(new Barricade());
@@ -123,7 +136,7 @@ public class Board
         Field r3c6 = new RegularField();
         Field r3c7 = new RegularField();
         #endregion
-        #region row 4
+        #region Row 4
         Field r4c1 = new RestField();
         Field r4c2 = new RegularField(new Barricade());
         Field r4c3 = new RegularField();
@@ -132,12 +145,13 @@ public class Board
         Field r4c6 = new RegularField(new Barricade());
         Field r4c7 = new RestField();
         #endregion
-        #region row 5
+        #region Row 5
         Field r5c1 = new RegularField();
         Field r5c2 = new RegularField();
         Field r5c3 = new RestField();
         Field r5c4 = new RegularField();
         Field r5c5 = new RegularField();
+        Field forest = new ForestField();
         #endregion
         #region Row 6
         Field r6c1 = new RestField();
@@ -166,25 +180,23 @@ public class Board
         Field r7c11 = new RegularField();
         #endregion
         #region Startfields
-        Field sf1 = new StartField();
-        Field sf2 = new StartField();
-        Field sf3 = new StartField();
-        Field sf4 = new StartField();
-        Field sf5 = new StartField();
-        Field sf6 = new StartField();
-        Field sf7 = new StartField();
-        Field sf8 = new StartField();
-        Field sf9 = new StartField();
-        Field sf10 = new StartField();
-        Field sf11 = new StartField();
-        Field sf12 = new StartField();
-        Field sf13 = new StartField();
-        Field sf14 = new StartField();
-        Field sf15 = new StartField();
-        Field sf16 = new StartField();
+        Field sf1 = new StartField(BluePion[0]);
+        Field sf2 = new StartField(BluePion[1]);
+        Field sf3 = new StartField(BluePion[2]);
+        Field sf4 = new StartField(BluePion[3]);
+        Field sf5 = new StartField(YellowPion[0]);
+        Field sf6 = new StartField(YellowPion[1]);
+        Field sf7 = new StartField(YellowPion[2]);
+        Field sf8 = new StartField(YellowPion[3]);
+        Field sf9 = new StartField(RedPion[0]);
+        Field sf10 = new StartField(RedPion[1]);
+        Field sf11 = new StartField(RedPion[2]);
+        Field sf12 = new StartField(RedPion[3]);
+        Field sf13 = new StartField(GreenPion[0]);
+        Field sf14 = new StartField(GreenPion[1]);
+        Field sf15 = new StartField(GreenPion[2]);
+        Field sf16 = new StartField(GreenPion[3]);
         #endregion
-
-        Origin.Down = r1c5;
         #region Row 1 
         // column 1
         r1c1.Right = r1c2;
@@ -196,6 +208,7 @@ public class Board
         // column 4
         r1c4.Right = r1c5;
         // column 5
+        Origin.Down = r1c5;
         r1c5.Right = r1c6;
         r1c5.Up = Origin;
         // column 6
@@ -226,7 +239,7 @@ public class Board
         r2c8.Right = r2c9;
         // column9
         #endregion
-        #region row 3
+        #region Row 3
         r3c1.Right = r3c2;
         r3c1.Down = r4c1;
         // column 2
@@ -263,6 +276,7 @@ public class Board
         r5c2.Right = r5c3;
         // Column 3
         r5c3.Right = r5c4;
+        r5c3.Down = forest;
         // column 4
         r5c4.Right = r5c5;
         r5c4.Down = r6c8;
@@ -274,6 +288,7 @@ public class Board
         r6c2.Right = r6c3;
         // Column 3
         r6c3.Right = r6c4;
+        r6c3.Down = r7c3;
         // column 4
         r6c4.Right = r6c5;
         // column 5
@@ -286,6 +301,7 @@ public class Board
         r6c8.Right = r6c9;
         // Column 9
         r6c9.Right = r6c10;
+        r6c9.Down = r7c9;
         // Column 10
         r6c10.Right = r6c11;
         // Column 11
@@ -328,6 +344,148 @@ public class Board
         sf14.Down = sf15;
         sf15.Down = sf16;
         // Column 11
+        #endregion
+        #region Town
+        Town = new Town();
+        Town.Field.Add(r1c1);
+        Town.Field.Add(r1c2);
+        Town.Field.Add(r1c3);
+        Town.Field.Add(r1c4);
+        Town.Field.Add(r1c5);
+        Town.Field.Add(r1c6);
+        Town.Field.Add(r1c7);
+        Town.Field.Add(r1c8);
+        Town.Field.Add(r1c9);
+        Town.Field.Add(r2c1);
+        Town.Field.Add(r2c2);
+        Town.Field.Add(r2c3);
+        Town.Field.Add(r2c4);
+        Town.Field.Add(r2c5);
+        Town.Field.Add(r2c6);
+        Town.Field.Add(r2c7);
+        Town.Field.Add(r2c8);
+        Town.Field.Add(r2c9);
+        Town.Field.Add(r3c1);
+        Town.Field.Add(r3c2);
+        Town.Field.Add(r3c3);
+        Town.Field.Add(r3c4);
+        Town.Field.Add(r3c5);
+        Town.Field.Add(r3c6);
+        Town.Field.Add(r3c7);
+        Fields.Add(new VoidField());
+        Fields.Add(r1c1);
+        Fields.Add(r1c2);
+        Fields.Add(r1c3);
+        Fields.Add(r1c4);
+        Fields.Add(r1c5);
+        Fields.Add(r1c6);
+        Fields.Add(r1c7);
+        Fields.Add(r1c8);
+        Fields.Add(r1c9);
+        Fields.Add(new VoidField());
+        Fields.Add(r2c1);
+        Fields.Add(r2c2);
+        Fields.Add(r2c3);
+        Fields.Add(r2c4);
+        Fields.Add(r2c5);
+        Fields.Add(r2c6);
+        Fields.Add(r2c7);
+        Fields.Add(r2c8);
+        Fields.Add(r2c9);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(r3c1);
+        Fields.Add(r3c2);
+        Fields.Add(r3c3);
+        Fields.Add(r3c4);
+        Fields.Add(r3c5);
+        Fields.Add(r3c6);
+        Fields.Add(r3c7);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(r4c1);
+        Fields.Add(r4c2);
+        Fields.Add(r4c3);
+        Fields.Add(r4c4);
+        Fields.Add(r4c5);
+        Fields.Add(r4c6);
+        Fields.Add(r4c7);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(r5c1);
+        Fields.Add(r5c2);
+        Fields.Add(r5c3);
+        Fields.Add(r5c4);
+        Fields.Add(r5c5);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(forest);
+        Fields.Add(r6c1);
+        Fields.Add(r6c2);
+        Fields.Add(r6c3);
+        Fields.Add(r6c4);
+        Fields.Add(r6c5);
+        Fields.Add(r6c6);
+        Fields.Add(r6c7);
+        Fields.Add(r6c8);
+        Fields.Add(r6c9);
+        Fields.Add(r6c10);
+        Fields.Add(r6c11);
+        Fields.Add(r7c1);
+        Fields.Add(r7c2);
+        Fields.Add(r7c3);
+        Fields.Add(r7c4);
+        Fields.Add(r7c5);
+        Fields.Add(r7c6);
+        Fields.Add(r7c7);
+        Fields.Add(r7c8);
+        Fields.Add(r7c9);
+        Fields.Add(r7c10);
+        Fields.Add(r7c11);
+        Fields.Add(new VoidField());
+        Fields.Add(sf1);
+        Fields.Add(new VoidField());
+        Fields.Add(sf5);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(sf9);
+        Fields.Add(new VoidField());
+        Fields.Add(sf13);
+        Fields.Add(new VoidField());
+        Fields.Add(sf2);
+        Fields.Add(new VoidField());
+        Fields.Add(sf6);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(sf10);
+        Fields.Add(new VoidField());
+        Fields.Add(sf14);
+        Fields.Add(new VoidField());
+        Fields.Add(sf3);
+        Fields.Add(new VoidField());
+        Fields.Add(sf7);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(sf11);
+        Fields.Add(new VoidField());
+        Fields.Add(sf15);
+        Fields.Add(new VoidField());
+        Fields.Add(sf4);
+        Fields.Add(new VoidField());
+        Fields.Add(sf8);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(sf12);
+        Fields.Add(new VoidField());
+        Fields.Add(sf16);
+
+
         #endregion
     }
 }
