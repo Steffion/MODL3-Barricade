@@ -11,5 +11,6 @@ using System.Text;
 
 public class RedPion : Pion
 {
+
 }
 

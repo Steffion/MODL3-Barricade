@@ -11,5 +11,13 @@ using System.Text;
 
 public class RegularField : Field
 {
+    public RegularField()
+    {
+
+    }
+    public RegularField(Barricade b )
+    {
+        Barricade = b;
+    }
 }
 

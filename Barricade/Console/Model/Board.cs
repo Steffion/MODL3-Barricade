@@ -92,27 +92,243 @@ public class Board
         GreenPion.Add(new GreenPion());
 
         Origin = new EndField();
-
+        #region Row 1
         Field r1c1 = new RegularField();
         Field r1c2 = new RegularField();
         Field r1c3 = new RegularField();
         Field r1c4 = new RegularField();
-        Field r1c5 = new RegularField();
+        Field r1c5 = new RegularField(new Barricade());
         Field r1c6 = new RegularField();
         Field r1c7 = new RegularField();
         Field r1c8 = new RegularField();
         Field r1c9 = new RegularField();
+        #endregion
+        #region Row 2
+        Field r2c1 = new RegularField();
+        Field r2c2 = new RegularField();
+        Field r2c3 = new RegularField();
+        Field r2c4 = new RestField();
+        Field r2c5 = new RegularField(new Barricade());
+        Field r2c6 = new RestField();
+        Field r2c7 = new RegularField();
+        Field r2c8 = new RegularField();
+        Field r2c9 = new RegularField();
+        #endregion
+        #region row 3
+        Field r3c1 = new RegularField();
+        Field r3c2 = new RegularField();
+        Field r3c3 = new RegularField(new Barricade());
+        Field r3c4 = new RegularField(); 
+        Field r3c5 = new RegularField(new Barricade());
+        Field r3c6 = new RegularField();
+        Field r3c7 = new RegularField();
+        #endregion
+        #region row 4
+        Field r4c1 = new RestField();
+        Field r4c2 = new RegularField(new Barricade());
+        Field r4c3 = new RegularField();
+        Field r4c4 = new RegularField();
+        Field r4c5 = new RegularField();
+        Field r4c6 = new RegularField(new Barricade());
+        Field r4c7 = new RestField();
+        #endregion
+        #region row 5
+        Field r5c1 = new RegularField();
+        Field r5c2 = new RegularField();
+        Field r5c3 = new RestField();
+        Field r5c4 = new RegularField();
+        Field r5c5 = new RegularField();
+        #endregion
+        #region Row 6
+        Field r6c1 = new RestField();
+        Field r6c2 = new RegularField();
+        Field r6c3 = new RestField();
+        Field r6c4 = new RegularField();
+        Field r6c5 = new RegularField();
+        Field r6c6 = new RestField();
+        Field r6c7 = new RegularField();
+        Field r6c8 = new RegularField();
+        Field r6c9 = new RestField();
+        Field r6c10 = new RegularField();
+        Field r6c11 = new RestField();
+        #endregion
+        #region Row 7
+        Field r7c1 = new RegularField();
+        Field r7c2 = new RegularField();
+        Field r7c3 = new RegularField();
+        Field r7c4 = new RegularField();
+        Field r7c5 = new RegularField();
+        Field r7c6 = new RegularField();
+        Field r7c7 = new RegularField();
+        Field r7c8 = new RegularField();
+        Field r7c9 = new RegularField();
+        Field r7c10 = new RegularField();
+        Field r7c11 = new RegularField();
+        #endregion
+        #region Startfields
+        Field sf1 = new StartField();
+        Field sf2 = new StartField();
+        Field sf3 = new StartField();
+        Field sf4 = new StartField();
+        Field sf5 = new StartField();
+        Field sf6 = new StartField();
+        Field sf7 = new StartField();
+        Field sf8 = new StartField();
+        Field sf9 = new StartField();
+        Field sf10 = new StartField();
+        Field sf11 = new StartField();
+        Field sf12 = new StartField();
+        Field sf13 = new StartField();
+        Field sf14 = new StartField();
+        Field sf15 = new StartField();
+        Field sf16 = new StartField();
+        #endregion
 
         Origin.Down = r1c5;
-
+        #region Row 1 
+        // column 1
         r1c1.Right = r1c2;
+        r1c1.Down = r2c1;
+        // column 2
         r1c2.Right = r1c3;
+        // Column 3
         r1c3.Right = r1c4;
+        // column 4
         r1c4.Right = r1c5;
+        // column 5
         r1c5.Right = r1c6;
+        r1c5.Up = Origin;
+        // column 6
         r1c6.Right = r1c7;
+        // Column 7
         r1c7.Right = r1c8;
+        // Column 8
         r1c8.Right = r1c9;
+        // Column 9
+        r1c9.Down = r2c9;
+        #endregion
+        #region  Row 2
+        r2c1.Right = r2c2;
+        // column 2
+        r2c2.Right = r2c3;
+        // Column 3
+        r2c3.Right = r2c4;
+        // column 4
+        r2c4.Right = r2c5;
+        // column 5
+        r2c5.Right = r2c6;
+        r2c5.Down = r3c4;
+        // column 6
+        r2c6.Right = r2c7;
+        // column 7
+        r2c7.Right = r2c8;
+        // column 8
+        r2c8.Right = r2c9;
+        // column9
+        #endregion
+        #region row 3
+        r3c1.Right = r3c2;
+        r3c1.Down = r4c1;
+        // column 2
+        r3c2.Right = r3c3;
+        // Column 3
+        r3c3.Right = r3c4;
+        // column 4
+        r3c4.Right = r3c5;
+        // column 5
+        r3c5.Right = r3c6;
+        // column 6
+        r3c6.Right = r3c7;
+        // column 7
+        r3c7.Down = r4c7;
+        #endregion
+        #region Row 4
+        r4c1.Right = r4c2;
+        // column 2
+        r4c2.Right = r4c3;
+        // Column 3
+        r4c3.Right = r4c4;
+        // column 4
+        r4c4.Right = r4c5;
+        r4c4.Down = r5c3;
+        // column 5
+        r4c5.Right = r4c6;
+        // column 6
+        r4c6.Right = r4c7;
+        #endregion
+        #region Row 5
+        r5c1.Right = r5c2;
+        r5c1.Down = r6c4;
+        // column 2
+        r5c2.Right = r5c3;
+        // Column 3
+        r5c3.Right = r5c4;
+        // column 4
+        r5c4.Right = r5c5;
+        r5c4.Down = r6c8;
+        #endregion
+        #region Row 6
+        r6c1.Down = r7c1;
+        r6c1.Right = r6c2;
+        // column 2
+        r6c2.Right = r6c3;
+        // Column 3
+        r6c3.Right = r6c4;
+        // column 4
+        r6c4.Right = r6c5;
+        // column 5
+        r6c5.Right = r6c6;
+        // column 6
+        r6c6.Right = r6c7;
+        // Column 7
+        r6c7.Right = r6c8;
+        // Column 8
+        r6c8.Right = r6c9;
+        // Column 9
+        r6c9.Right = r6c10;
+        // Column 10
+        r6c10.Right = r6c11;
+        // Column 11
+        r6c11.Down = r7c11;
+        #endregion
+        #region Row 7
+        r7c1.Right = r7c2;
+        // column 2
+        r7c2.Right = r7c3;
+        r7c2.Down = sf1;
+        sf1.Down = sf2;
+        sf2.Down = sf3;
+        sf3.Down = sf4; 
+        // Column 3
+        r7c3.Right = r7c4;
+        // column 4
+        r7c4.Right = r7c5;
+        r7c4.Down = sf5;
+        sf5.Down = sf6;
+        sf6.Down = sf7;
+        sf7.Down = sf8;
+        // column 5
+        r7c5.Right = r7c6;
+        // column 6
+        r7c6.Right = r7c7;
+        // Column 7
+        r7c7.Right = r7c8;
+        // Column 8
+        r7c8.Right = r7c9;
+        r7c8.Down = sf9;
+        sf9.Down = sf10;
+        sf10.Down = sf11;
+        sf11.Down = sf12;
+        // Column 9
+        r7c9.Right = r7c10;
+        // Column 10
+        r7c10.Right = r7c11;
+        r7c10.Down = sf13;
+        sf13.Down = sf14;
+        sf14.Down = sf15;
+        sf15.Down = sf16;
+        // Column 11
+        #endregion
     }
 }
 
