@@ -11,5 +11,10 @@ using System.Text;
 
 public class StartField : Field
 {
+
+    public StartField(Pion pion)
+    {
+        Pion = pion;
+    }
 }
 

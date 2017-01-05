@@ -67,31 +67,37 @@ public class Board
 
     public Board()
     {
+        #region Blue
         BluePion = new List<BluePion>();
         BluePion.Add(new BluePion());
         BluePion.Add(new BluePion());
         BluePion.Add(new BluePion());
         BluePion.Add(new BluePion());
-
+        #endregion
+        #region Yellow
         YellowPion = new List<YellowPion>();
         YellowPion.Add(new YellowPion());
         YellowPion.Add(new YellowPion());
         YellowPion.Add(new YellowPion());
         YellowPion.Add(new YellowPion());
-
+        #endregion
+        #region Red
         RedPion = new List<RedPion>();
         RedPion.Add(new RedPion());
         RedPion.Add(new RedPion());
         RedPion.Add(new RedPion());
         RedPion.Add(new RedPion());
-
+        #endregion
+        #region Green
         GreenPion = new List<GreenPion>();
         GreenPion.Add(new GreenPion());
         GreenPion.Add(new GreenPion());
         GreenPion.Add(new GreenPion());
         GreenPion.Add(new GreenPion());
-
+        #endregion
+        #region Origin
         Origin = new EndField();
+        #endregion
         #region Row 1
         Field r1c1 = new RegularField();
         Field r1c2 = new RegularField();
@@ -114,7 +120,7 @@ public class Board
         Field r2c8 = new RegularField();
         Field r2c9 = new RegularField();
         #endregion
-        #region row 3
+        #region Row 3
         Field r3c1 = new RegularField();
         Field r3c2 = new RegularField();
         Field r3c3 = new RegularField(new Barricade());
@@ -123,7 +129,7 @@ public class Board
         Field r3c6 = new RegularField();
         Field r3c7 = new RegularField();
         #endregion
-        #region row 4
+        #region Row 4
         Field r4c1 = new RestField();
         Field r4c2 = new RegularField(new Barricade());
         Field r4c3 = new RegularField();
@@ -132,7 +138,7 @@ public class Board
         Field r4c6 = new RegularField(new Barricade());
         Field r4c7 = new RestField();
         #endregion
-        #region row 5
+        #region Row 5
         Field r5c1 = new RegularField();
         Field r5c2 = new RegularField();
         Field r5c3 = new RestField();
@@ -166,25 +172,23 @@ public class Board
         Field r7c11 = new RegularField();
         #endregion
         #region Startfields
-        Field sf1 = new StartField();
-        Field sf2 = new StartField();
-        Field sf3 = new StartField();
-        Field sf4 = new StartField();
-        Field sf5 = new StartField();
-        Field sf6 = new StartField();
-        Field sf7 = new StartField();
-        Field sf8 = new StartField();
-        Field sf9 = new StartField();
-        Field sf10 = new StartField();
-        Field sf11 = new StartField();
-        Field sf12 = new StartField();
-        Field sf13 = new StartField();
-        Field sf14 = new StartField();
-        Field sf15 = new StartField();
-        Field sf16 = new StartField();
+        Field sf1 = new StartField(BluePion[0]);
+        Field sf2 = new StartField(BluePion[1]);
+        Field sf3 = new StartField(BluePion[2]);
+        Field sf4 = new StartField(BluePion[3]);
+        Field sf5 = new StartField(YellowPion[0]);
+        Field sf6 = new StartField(YellowPion[1]);
+        Field sf7 = new StartField(YellowPion[2]);
+        Field sf8 = new StartField(YellowPion[3]);
+        Field sf9 = new StartField(RedPion[0]);
+        Field sf10 = new StartField(RedPion[1]);
+        Field sf11 = new StartField(RedPion[2]);
+        Field sf12 = new StartField(RedPion[3]);
+        Field sf13 = new StartField(GreenPion[0]);
+        Field sf14 = new StartField(GreenPion[1]);
+        Field sf15 = new StartField(GreenPion[2]);
+        Field sf16 = new StartField(GreenPion[3]);
         #endregion
-
-        Origin.Down = r1c5;
         #region Row 1 
         // column 1
         r1c1.Right = r1c2;
@@ -196,6 +200,7 @@ public class Board
         // column 4
         r1c4.Right = r1c5;
         // column 5
+        Origin.Down = r1c5;
         r1c5.Right = r1c6;
         r1c5.Up = Origin;
         // column 6
@@ -226,7 +231,7 @@ public class Board
         r2c8.Right = r2c9;
         // column9
         #endregion
-        #region row 3
+        #region Row 3
         r3c1.Right = r3c2;
         r3c1.Down = r4c1;
         // column 2

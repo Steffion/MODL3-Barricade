@@ -17,15 +17,6 @@ public abstract class Field
     private Field _left;
     private Barricade _barricade;
 
-    public Field()
-    {
-
-    }
-
-    public Field(Barricade b)
-    {
-        _barricade = b;
-    }
 
     public virtual Pion Pion
 	{
