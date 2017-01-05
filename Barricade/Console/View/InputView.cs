@@ -84,6 +84,8 @@ namespace Console.View
 
         internal void ShowDice(int result)
         {
+            System.Console.WriteLine();
+            System.Console.WriteLine();
             System.Console.WriteLine("The dice threw: {0}", result);
         }
 

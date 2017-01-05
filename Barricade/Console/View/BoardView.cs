@@ -22,6 +22,8 @@ namespace Console.View
             System.Console.ForegroundColor = ConsoleColor.White;
             System.Console.BackgroundColor = ConsoleColor.Black;
 
+            if (field is StartField) return;
+
             if (field.Right == null)
             {
                 System.Console.WriteLine();
@@ -267,19 +269,6 @@ namespace Console.View
                 {
                     System.Console.Write("|   F   | \n");
                 }
-                if (temp[i] is StartField && temp[i].Pion == null)
-                {
-                    System.Console.Write("S");
-                }
-                if (temp[i] is StartField && temp[i].Pion != null)
-                {
-                    
-                }
-                if (i == 70)
-                {
-
-                }
-
             }
             //Field origin = _gameController.Board.Origin;
 
