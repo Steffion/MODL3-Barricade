@@ -59,6 +59,7 @@
     <Compile Include="Model\RestField.cs" />
     <Compile Include="Model\StartField.cs" />
     <Compile Include="Model\Town.cs" />
+    <Compile Include="Model\VoidField.cs" />
     <Compile Include="Model\YellowPion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

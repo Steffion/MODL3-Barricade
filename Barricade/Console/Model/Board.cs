@@ -4,6 +4,7 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using Console.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ using System.Text;
 
 public class Board
 {
-	public virtual IEnumerable<Field> Field
+	public virtual List<Field> Fields
 	{
 		get;
 		set;
@@ -67,7 +68,7 @@ public class Board
 
     public Board()
     {
-        
+        Fields = new List<Field>();
         #region Blue
         BluePion = new List<BluePion>();
         BluePion.Add(new BluePion());
@@ -98,6 +99,11 @@ public class Board
         #endregion
         #region Origin
         Origin = new EndField();
+        for (int i = 0; i < 5; i++)
+        {
+            Fields.Add(new VoidField());
+        }
+        Fields.Add(Origin);
         #endregion
         #region Row 1
         Field r1c1 = new RegularField();
@@ -362,6 +368,44 @@ public class Board
         Town.Field.Add(r3c5);
         Town.Field.Add(r3c6);
         Town.Field.Add(r3c7);
+        Fields.Add(new VoidField());
+        Fields.Add(r1c1);
+        Fields.Add(r1c2);
+        Fields.Add(r1c3);
+        Fields.Add(r1c4);
+        Fields.Add(r1c5);
+        Fields.Add(r1c6);
+        Fields.Add(r1c7);
+        Fields.Add(r1c8);
+        Fields.Add(r1c9);
+        Fields.Add(new VoidField());
+        Fields.Add(r2c1);
+        Fields.Add(r2c2);
+        Fields.Add(r2c3);
+        Fields.Add(r2c4);
+        Fields.Add(r2c5);
+        Fields.Add(r2c6);
+        Fields.Add(r2c7);
+        Fields.Add(r2c8);
+        Fields.Add(r2c9);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(r3c1);
+        Fields.Add(r3c2);
+        Fields.Add(r3c3);
+        Fields.Add(r3c4);
+        Fields.Add(r3c5);
+        Fields.Add(r3c6);
+        Fields.Add(r3c7);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(r4c1);
+        Fields.Add(r4c2);
+        Fields.Add(r4c3);
+        Fields.Add(r4c4);
+        Fields.Add(r4c5);
+        Fields.Add(r4c6);
+        Fields.Add(r4c7);
         #endregion
     }
 }
