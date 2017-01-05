@@ -9,6 +9,8 @@ namespace Console.Controller
 {
     class InputController
     {
+        private List<Field> _previousSteps;
+
         public InputView InputView
         {
             get;
@@ -20,46 +22,70 @@ namespace Console.Controller
         public InputController(GameController gameController)
         {
             _gameController = gameController;
+            _previousSteps = new List<Field>();
 
             InputView = new InputView(this, gameController);
         }
 
-        public void Move(Pion currentPion)
+        public void Move(Pion currentPion, int steps)
         {
-            bool inputIsValid = false;
+            _previousSteps = new List<Field>();
 
-            while (!inputIsValid)
+            for (int i = steps; i > 0; i--)
             {
-                ConsoleKeyInfo key = InputView.GetMoveKey();
-
-                if (key.Key == ConsoleKey.UpArrow)
+                while (true)
                 {
-                    System.Console.WriteLine("UP");
-                    return;
-                }
+                    ConsoleKeyInfo key = InputView.GetMoveKey(currentPion);
 
-                if (key.Key == ConsoleKey.RightArrow)
-                {
-                    System.Console.WriteLine("Right");
-                    return;
-                }
+                    if (key.Key == ConsoleKey.UpArrow)
+                    {
+                        Field nextField = currentPion.Field.Up;
+                        if (nextField == null || 
+                            _previousSteps.Contains(nextField)) continue;
 
-                if (key.Key == ConsoleKey.DownArrow)
-                {
-                    System.Console.WriteLine("Down");
-                    return;
-                }
+                        currentPion.SetField(nextField);
+                        _previousSteps.Add(nextField);
+                        break;
+                    }
 
-                if (key.Key == ConsoleKey.LeftArrow)
-                {
-                    System.Console.WriteLine("left");
-                    return;
-                }
+                    if (key.Key == ConsoleKey.RightArrow)
+                    {
+                        Field nextField = currentPion.Field.Right;
+                        if (nextField == null ||
+                            _previousSteps.Contains(nextField)) continue;
 
-                InputView.ShowWrongKey();
+                        currentPion.SetField(nextField);
+                        _previousSteps.Add(nextField);
+                        break;
+                    }
+
+                    if (key.Key == ConsoleKey.DownArrow)
+                    {
+                        Field nextField = currentPion.Field.Down;
+                        if (nextField == null ||
+                            _previousSteps.Contains(nextField)) continue;
+
+                        if (nextField is StartField) continue;
+
+                        currentPion.SetField(nextField);
+                        _previousSteps.Add(nextField);
+                        break;
+                    }
+
+                    if (key.Key == ConsoleKey.LeftArrow)
+                    {
+                        Field nextField = currentPion.Field.Left;
+                        if (nextField == null ||
+                            _previousSteps.Contains(nextField)) continue;
+
+                        currentPion.SetField(nextField);
+                        _previousSteps.Add(nextField);
+                        break;
+                    }
+
+                    InputView.ShowWrongKey();
+                }
             }
-
-            throw new Exception("Unreachable Code");
         }
 
         public int ThrowDice()
@@ -82,7 +108,7 @@ namespace Console.Controller
             while (!inputIsValid)
             {
                 ConsoleKeyInfo key = InputView.GetPionKey();
-                
+
                 switch (turn)
                 {
                     case 0:

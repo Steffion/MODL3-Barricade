@@ -11,6 +11,11 @@ using System.Text;
 
 public class Town
 {
+    public Town()
+    {
+        Field = new List<Field>();
+    }
+
 	public virtual List<Field> Field
 	{
 		get;

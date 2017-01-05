@@ -16,13 +16,19 @@ public abstract class Field
     private Field _down;
     private Field _left;
     private Barricade _barricade;
+    private Pion _pion;
 
+    public Pion Pion
+    {
+        get;
+        set;
+    }
 
-    public virtual Pion Pion
-	{
-		get;
-		set;
-	}
+    public void SetPion(Pion pion)
+    {
+        Pion = pion;
+        Pion.Field = this;
+    }
 
     public Field Up
     {
