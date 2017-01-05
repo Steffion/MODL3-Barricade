@@ -59,5 +59,36 @@ public class Board
 		set;
 	}
 
+    public Field Origin
+    {
+        get;
+        set;
+    }
+
+    public Board()
+    {
+        Origin = new EndField();
+
+        Field r1c1 = new RegularField();
+        Field r1c2 = new RegularField();
+        Field r1c3 = new RegularField();
+        Field r1c4 = new RegularField();
+        Field r1c5 = new RegularField();
+        Field r1c6 = new RegularField();
+        Field r1c7 = new RegularField();
+        Field r1c8 = new RegularField();
+        Field r1c9 = new RegularField();
+
+        Origin.Down = r1c5;
+
+        r1c1.Right = r1c2;
+        r1c2.Right = r1c3;
+        r1c3.Right = r1c4;
+        r1c4.Right = r1c5;
+        r1c5.Right = r1c6;
+        r1c6.Right = r1c7;
+        r1c7.Right = r1c8;
+        r1c8.Right = r1c9;
+    }
 }
 

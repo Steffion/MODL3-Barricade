@@ -11,11 +11,67 @@ using System.Text;
 
 public abstract class Field
 {
-	public virtual Pion Pion
+    private Field _up;
+    private Field _right;
+    private Field _down;
+    private Field _left;
+
+    public virtual Pion Pion
 	{
 		get;
 		set;
 	}
 
+    public Field Up
+    {
+        get
+        {
+            return _up;
+        }
+        set
+        {
+            value._down = this;
+            _up = value;
+        }
+    }
+
+    public Field Right
+    {
+        get
+        {
+            return _right;
+        }
+        set
+        {
+            value._left = this;
+            _right = value;
+        }
+    }
+
+    public Field Down
+    {
+        get
+        {
+            return _down;
+        }
+        set
+        {
+            value._up = this;
+            _down = value;
+        }
+    }
+
+    public Field Left
+    {
+        get
+        {
+            return _left;
+        }
+        set
+        {
+            value._right = this;
+            _left = value;
+        }
+    }
 }
 

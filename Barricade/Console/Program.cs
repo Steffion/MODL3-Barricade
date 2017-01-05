@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Console.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,8 @@ namespace Console
     {
         static void Main(string[] args)
         {
-
+            GameController game = new GameController();
+            game.Start();
         }
     }
 }
