@@ -177,7 +177,16 @@ namespace Console.View
                         {
                             System.Console.Write("U");
 
-                            DrawPathLine(temp[i]);
+                            if (pion.Field is StartField)
+                            {
+                                System.Console.ForegroundColor = ConsoleColor.White;
+                                System.Console.BackgroundColor = ConsoleColor.Black;
+                                System.Console.WriteLine();
+                            }
+                            else
+                            {
+                                DrawPathLine(temp[i]);
+                            }
 
                             i++;
                         }
@@ -186,7 +195,16 @@ namespace Console.View
                         {
                             System.Console.Write("I");
 
-                            DrawPathLine(temp[i]);
+                            if (pion.Field is StartField)
+                            {
+                                System.Console.ForegroundColor = ConsoleColor.White;
+                                System.Console.BackgroundColor = ConsoleColor.Black;
+                                System.Console.WriteLine();
+                            }
+                            else
+                            {
+                                DrawPathLine(temp[i]);
+                            }
 
                             i++;
                         }
@@ -195,7 +213,16 @@ namespace Console.View
                         {
                             System.Console.Write("J");
 
-                            DrawPathLine(temp[i]);
+                            if (pion.Field is StartField)
+                            {
+                                System.Console.ForegroundColor = ConsoleColor.White;
+                                System.Console.BackgroundColor = ConsoleColor.Black;
+                                System.Console.WriteLine();
+                            }
+                            else
+                            {
+                                DrawPathLine(temp[i]);
+                            }
 
                             i++;
                         }
@@ -204,7 +231,16 @@ namespace Console.View
                         {
                             System.Console.Write("K");
 
-                            DrawPathLine(temp[i]);
+                            if (pion.Field is StartField)
+                            {
+                                System.Console.ForegroundColor = ConsoleColor.White;
+                                System.Console.BackgroundColor = ConsoleColor.Black;
+                                System.Console.WriteLine();
+                            }
+                            else
+                            {
+                                DrawPathLine(temp[i]);
+                            }
 
                             i++;
                         }
