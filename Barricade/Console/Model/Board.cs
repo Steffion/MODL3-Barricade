@@ -381,13 +381,6 @@ public class Board
         Fields.Add(r1c8);
         Fields.Add(r1c9);
         Fields.Add(new VoidField());
-        Fields.Add(new PathField());
-        for (int i = 0; i < 8; i++)
-        {
-            Fields.Add(new HorizontalField());
-        }
-        Fields.Add(new PathField());
-        Fields.Add(new VoidField());
         Fields.Add(r2c1);
         Fields.Add(r2c2);
         Fields.Add(r2c3);

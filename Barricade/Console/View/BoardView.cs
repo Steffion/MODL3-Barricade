@@ -19,20 +19,20 @@ namespace Console.View
 
         public void Print()
         {
-            String printLine = "";
         var temp = _gameController.Board.Fields;
             for (int i = 0; i < temp.Count; i++)
             {
+                
                 if (temp[i] is VoidField)
                 {
-                    printLine += "  ";
+                    System.Console.Write("  ");
                 }
                 if(temp[i] is EndField)
                 {
-                    printLine += "F";
+                    System.Console.Write( "F");
                     if (temp[i].Right == null)
                     {
-                        printLine += "\n";
+                        System.Console.WriteLine("");
                     }
 
                 }
@@ -40,14 +40,15 @@ namespace Console.View
                 {
                     if (temp[i].Pion == null )
                     {
-                        printLine += "O";
+                        System.Console.Write( "O");
                         if (temp[i].Right == null)
                         {
-                            printLine += "\n";
+                            System.Console.WriteLine("");
                         }
+
                         else
                         {
-                            printLine += "-";
+                            System.Console.Write( "-");
                         }
                     }
                    
@@ -56,14 +57,14 @@ namespace Console.View
                 {
                     if (temp[i].Pion == null)
                     {
-                        printLine += "R";
+                        System.Console.Write( "R");
                         if (temp[i].Right == null)
                         {
-                            printLine += " \n";
+                            System.Console.WriteLine("");
                         }
                         else
                         {
-                            printLine += "-";
+                            System.Console.Write( "-");
                         }
                     }
 
@@ -72,20 +73,19 @@ namespace Console.View
                 {
                     if (temp[i].Pion == null)
                     {
-                        printLine += "X";
+                        System.Console.Write( "X");
                         if (temp[i].Right == null)
                         {
-                            printLine += " \n";
                         }
                         else
                         {
-                            printLine += "-";
+                            System.Console.Write( "-");
                         }
                     }
 
                 }
+                
             }
-            System.Console.WriteLine(printLine);
             //Field origin = _gameController.Board.Origin;
 
             //System.Console.ForegroundColor = ConsoleColor.White;
