@@ -20,14 +20,139 @@ namespace Console.View
         public void Print()
         {
             String printLine = "";
-        var temp = _gameController.Board.Fields;
+            var temp = _gameController.Board.Fields;
             for (int i = 0; i < temp.Count; i++)
             {
+                if (temp[i].Pion != null)
+                {
+                    Pion pion = temp[i].Pion;
+
+                    if (pion is BluePion)
+                    {
+                        System.Console.ForegroundColor = ConsoleColor.Blue;
+
+                        if (_gameController.Board.BluePion[0].Equals(pion))
+                        {
+                            System.Console.Write("Q");
+                            continue;
+                        }
+
+                        if (_gameController.Board.BluePion[1].Equals(pion))
+                        {
+                            System.Console.Write("W");
+                            continue;
+                        }
+
+                        if (_gameController.Board.BluePion[2].Equals(pion))
+                        {
+                            System.Console.Write("A");
+                            continue;
+                        }
+
+                        if (_gameController.Board.BluePion[3].Equals(pion))
+                        {
+                            System.Console.Write("S");
+                            continue;
+                        }
+                    }
+
+                    if (pion is YellowPion)
+                    {
+                        System.Console.ForegroundColor = ConsoleColor.Yellow;
+
+                        if (_gameController.Board.YellowPion[0].Equals(pion))
+                        {
+                            System.Console.Write("E");
+                            continue;
+                        }
+
+                        if (_gameController.Board.YellowPion[1].Equals(pion))
+                        {
+                            System.Console.Write("R");
+                            continue;
+                        }
+
+                        if (_gameController.Board.YellowPion[2].Equals(pion))
+                        {
+                            System.Console.Write("D");
+                            continue;
+                        }
+
+                        if (_gameController.Board.YellowPion[3].Equals(pion))
+                        {
+                            System.Console.Write("F");
+                            continue;
+                        }
+                    }
+
+                    if (pion is RedPion)
+                    {
+                        System.Console.ForegroundColor = ConsoleColor.Red;
+
+                        if (_gameController.Board.RedPion[0].Equals(pion))
+                        {
+                            System.Console.Write("T");
+                            continue;
+                        }
+
+                        if (_gameController.Board.RedPion[1].Equals(pion))
+                        {
+                            System.Console.Write("G");
+                            continue;
+                        }
+
+                        if (_gameController.Board.RedPion[2].Equals(pion))
+                        {
+                            System.Console.Write("Y");
+                            continue;
+                        }
+
+                        if (_gameController.Board.RedPion[3].Equals(pion))
+                        {
+                            System.Console.Write("H");
+                            continue;
+                        }
+                    }
+
+                    if (pion is GreenPion)
+                    {
+                        System.Console.ForegroundColor = ConsoleColor.Green;
+
+                        if (_gameController.Board.GreenPion[0].Equals(pion))
+                        {
+                            System.Console.Write("U");
+                            continue;
+                        }
+
+                        if (_gameController.Board.GreenPion[1].Equals(pion))
+                        {
+                            System.Console.Write("I");
+                            continue;
+                        }
+
+                        if (_gameController.Board.GreenPion[2].Equals(pion))
+                        {
+                            System.Console.Write("J");
+                            continue;
+                        }
+
+                        if (_gameController.Board.GreenPion[3].Equals(pion))
+                        {
+                            System.Console.Write("K");
+                            continue;
+                        }
+                    }
+
+                    continue;
+                }
+
+                System.Console.ForegroundColor = ConsoleColor.White;
+
                 if (temp[i] is VoidField)
                 {
                     printLine += "  ";
                 }
-                if(temp[i] is EndField)
+                if (temp[i] is EndField)
                 {
                     printLine += "F";
                     if (temp[i].Right == null)
@@ -38,7 +163,7 @@ namespace Console.View
                 }
                 if (temp[i] is RegularField && temp[i].Barricade == null)
                 {
-                    if (temp[i].Pion == null )
+                    if (temp[i].Pion == null)
                     {
                         printLine += "O";
                         if (temp[i].Right == null)
@@ -50,7 +175,7 @@ namespace Console.View
                             printLine += "-";
                         }
                     }
-                   
+
                 }
                 if (temp[i] is RestField)
                 {
