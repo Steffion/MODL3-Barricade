@@ -151,6 +151,7 @@ public class Board
         Field r5c3 = new RestField();
         Field r5c4 = new RegularField();
         Field r5c5 = new RegularField();
+        Field forest = new ForestField();
         #endregion
         #region Row 6
         Field r6c1 = new RestField();
@@ -275,6 +276,7 @@ public class Board
         r5c2.Right = r5c3;
         // Column 3
         r5c3.Right = r5c4;
+        r5c3.Down = forest;
         // column 4
         r5c4.Right = r5c5;
         r5c4.Down = r6c8;
@@ -408,6 +410,45 @@ public class Board
         Fields.Add(r4c5);
         Fields.Add(r4c6);
         Fields.Add(r4c7);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(r5c1);
+        Fields.Add(r5c2);
+        Fields.Add(r5c3);
+        Fields.Add(r5c4);
+        Fields.Add(r5c5);
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
+        Fields.Add(forest);
+        Fields.Add(r6c1);
+        Fields.Add(r6c2);
+        Fields.Add(r6c3);
+        Fields.Add(r6c4);
+        Fields.Add(r6c5);
+        Fields.Add(r6c6);
+        Fields.Add(r6c7);
+        Fields.Add(r6c8);
+        Fields.Add(r6c9);
+        Fields.Add(r6c10);
+        Fields.Add(r6c11);
+        Fields.Add(r7c1);
+        Fields.Add(r7c2);
+        Fields.Add(r7c3);
+        Fields.Add(r7c4);
+        Fields.Add(r7c5);
+        Fields.Add(r7c6);
+        Fields.Add(r7c7);
+        Fields.Add(r7c8);
+        Fields.Add(r7c9);
+        Fields.Add(r7c10);
+        Fields.Add(r7c11);
+        Fields.Add(new VoidField());
+        Fields.Add(sf1);
+
+
+
         #endregion
     }
 }

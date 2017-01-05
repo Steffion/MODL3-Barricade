@@ -208,6 +208,10 @@ namespace Console.View
                     }
 
                 }
+                if (temp[i] is ForestField)
+                {
+                    System.Console.Write("|   F   | \n");
+                }
                 
             }
             //Field origin = _gameController.Board.Origin;
