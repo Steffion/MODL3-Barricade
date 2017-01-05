@@ -11,7 +11,7 @@ using System.Text;
 
 public class Town
 {
-	public virtual IEnumerable<Field> Field
+	public virtual List<Field> Field
 	{
 		get;
 		set;

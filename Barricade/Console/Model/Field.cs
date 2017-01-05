@@ -15,6 +15,8 @@ public abstract class Field
     private Field _right;
     private Field _down;
     private Field _left;
+    private Barricade _barricade;
+
 
     public virtual Pion Pion
 	{
@@ -71,6 +73,17 @@ public abstract class Field
         {
             value._right = this;
             _left = value;
+        }
+    }
+    public Barricade Barricade
+    {
+        get
+        {
+            return _barricade;
+        }
+        set
+        {
+            _barricade = value;
         }
     }
 }
