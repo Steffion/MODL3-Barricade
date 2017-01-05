@@ -3,7 +3,7 @@
   <ownedCommentsInternal>
     <comment Id="90f50bd2-ad43-4c73-9067-38117d790535">
       <elementDefinition Id="c33c051b-2d40-4d98-b263-870891905843" />
-      <body>Version 1.0
+      <body>Version 1.1
 Barricade 2016
 Jonathan &amp; Stef</body>
     </comment>
@@ -44,8 +44,8 @@ Jonathan &amp; Stef</body>
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="674dfb72-a33a-4993-ba57-f7fbb7f7a094" />
           </association>
-          <association Id="9b75f4a0-6fbd-4c4a-bb25-1406c6009536" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="Dorp" isLeaf="false" isAbstract="false">
-            <classMoniker Id="18915349-bb22-408f-a677-acd44103ef0d" LastKnownName="Dorp" />
+          <association Id="9b75f4a0-6fbd-4c4a-bb25-1406c6009536" isDerived="false" sourceEndRoleName="Board" targetEndRoleName="Town" isLeaf="false" isAbstract="false">
+            <classMoniker Id="18915349-bb22-408f-a677-acd44103ef0d" LastKnownName="Town" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="cddbd52e-6ec5-454c-a990-2da2a8e4e260" name="Board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -53,7 +53,7 @@ Jonathan &amp; Stef</body>
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="0c673c03-54b4-41e7-b419-6a27099468bd" name="Dorp" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                <memberEnd Id="0c673c03-54b4-41e7-b419-6a27099468bd" name="Town" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
                   <elementDefinition Id="22a8c137-5760-4132-b1c3-8a334a34997f" />
                 </memberEnd>
               </associationHasOwnedEnds>
@@ -287,7 +287,7 @@ Jonathan &amp; Stef</body>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="18915349-bb22-408f-a677-acd44103ef0d" name="Dorp" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="18915349-bb22-408f-a677-acd44103ef0d" name="Town" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f4802702-9abb-4db9-8881-e2808d4ac086" />
         <targetEnds>
           <association Id="b752fc85-464d-46b9-a325-d5fdc437a3a0" isDerived="false" sourceEndRoleName="Dorp" targetEndRoleName="Field" isLeaf="false" isAbstract="false">

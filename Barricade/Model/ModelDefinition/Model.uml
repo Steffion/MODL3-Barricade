@@ -6,7 +6,7 @@
   <ownedCommentsInternal>
     <comment
       Id="c33c051b-2d40-4d98-b263-870891905843">
-      <body>Version 1.0
+      <body>Version 1.1
 Barricade 2016
 Jonathan &amp; Stef</body>
     </comment>
@@ -98,12 +98,12 @@ Jonathan &amp; Stef</body>
             Id="630470b9-8163-49d6-8991-e1aefea67851"
             isDerived="false"
             sourceEndRoleName="Board"
-            targetEndRoleName="Dorp"
+            targetEndRoleName="Town"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
               Id="f4802702-9abb-4db9-8881-e2808d4ac086"
-              LastKnownName="Dorp"
+              LastKnownName="Town"
               LastKnownLocation="Model.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -122,7 +122,7 @@ Jonathan &amp; Stef</body>
               <associationHasOwnedEnds>
                 <memberEnd
                   Id="22a8c137-5760-4132-b1c3-8a334a34997f"
-                  name="Dorp"
+                  name="Town"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -577,7 +577,7 @@ Jonathan &amp; Stef</body>
     <packageHasNamedElement>
       <class
         Id="f4802702-9abb-4db9-8881-e2808d4ac086"
-        name="Dorp"
+        name="Town"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
