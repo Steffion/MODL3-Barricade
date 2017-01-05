@@ -43,6 +43,7 @@ namespace Console.Controller
                         if (nextField == null || 
                             _previousSteps.Contains(nextField)) continue;
 
+                        currentPion.Field.SetPion(null);
                         currentPion.SetField(nextField);
                         _previousSteps.Add(nextField);
                         break;
@@ -54,6 +55,7 @@ namespace Console.Controller
                         if (nextField == null ||
                             _previousSteps.Contains(nextField)) continue;
 
+                        currentPion.Field.SetPion(null);
                         currentPion.SetField(nextField);
                         _previousSteps.Add(nextField);
                         break;
@@ -67,6 +69,7 @@ namespace Console.Controller
 
                         if (nextField is StartField) continue;
 
+                        currentPion.Field.SetPion(null);
                         currentPion.SetField(nextField);
                         _previousSteps.Add(nextField);
                         break;
@@ -78,6 +81,7 @@ namespace Console.Controller
                         if (nextField == null ||
                             _previousSteps.Contains(nextField)) continue;
 
+                        currentPion.Field.SetPion(null);
                         currentPion.SetField(nextField);
                         _previousSteps.Add(nextField);
                         break;
