@@ -27,6 +27,9 @@ public abstract class Field
     public void SetPion(Pion pion)
     {
         Pion = pion;
+
+        if (pion == null) return;
+
         Pion.Field = this;
     }
 
