@@ -35,7 +35,8 @@ namespace Console.Controller
             {
                 while (true)
                 {
-                    ConsoleKeyInfo key = InputView.GetMoveKey(currentPion);
+                    _gameController.BoardView.Print();
+                    ConsoleKeyInfo key = InputView.GetMoveKey();
 
                     if (key.Key == ConsoleKey.UpArrow)
                     {

@@ -37,6 +37,8 @@ namespace Console.View
         public void Print()
         {
             var temp = _gameController.Board.Fields;
+            System.Console.Clear();
+            
             for (int i = 0; i < temp.Count; i++)
             {
                 if (temp[i].Pion != null)
@@ -55,7 +57,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.BluePion[1].Equals(pion))
@@ -65,7 +66,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.BluePion[2].Equals(pion))
@@ -75,7 +75,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.BluePion[3].Equals(pion))
@@ -85,7 +84,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
                     }
 
@@ -100,7 +98,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.YellowPion[1].Equals(pion))
@@ -110,7 +107,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.YellowPion[2].Equals(pion))
@@ -120,7 +116,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.YellowPion[3].Equals(pion))
@@ -130,7 +125,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
                     }
 
@@ -145,7 +139,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.RedPion[1].Equals(pion))
@@ -155,7 +148,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.RedPion[2].Equals(pion))
@@ -165,7 +157,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.RedPion[3].Equals(pion))
@@ -175,7 +166,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
                     }
 
@@ -190,7 +180,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.GreenPion[1].Equals(pion))
@@ -200,7 +189,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.GreenPion[2].Equals(pion))
@@ -210,7 +198,6 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
 
                         if (_gameController.Board.GreenPion[3].Equals(pion))
@@ -220,12 +207,11 @@ namespace Console.View
                             DrawPathLine(temp[i]);
 
                             i++;
-                            continue;
                         }
                     }
-
-                    continue;
                 }
+
+                if (i >= temp.Count) continue;
 
                 System.Console.ForegroundColor = ConsoleColor.White;
 
@@ -268,6 +254,11 @@ namespace Console.View
                 if (temp[i] is ForestField)
                 {
                     System.Console.Write("|   F   | \n");
+                }
+
+                if (temp[i] is StartField)
+                {
+                    System.Console.Write("S");
                 }
             }
             //Field origin = _gameController.Board.Origin;

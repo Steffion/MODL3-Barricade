@@ -49,34 +49,11 @@ namespace Console.View
             System.Console.WriteLine(":");
         }
 
-        internal ConsoleKeyInfo GetMoveKey(Pion pion)
+        internal ConsoleKeyInfo GetMoveKey()
         {
             System.Console.ForegroundColor = ConsoleColor.White;
-
+            
             System.Console.WriteLine();
-
-            //DEBUG
-            if (pion.Field.Up != null)
-            {
-                System.Console.WriteLine("Up: {0}", pion.Field.Up.GetType());
-            }
-
-            if (pion.Field.Right != null)
-            {
-                System.Console.WriteLine("Right: {0}", pion.Field.Right.GetType());
-            }
-
-            if (pion.Field.Down != null)
-            {
-                System.Console.WriteLine("Down: {0}", pion.Field.Down.GetType());
-            }
-
-            if (pion.Field.Left != null)
-            {
-                System.Console.WriteLine("Left: {0}", pion.Field.Left.GetType());
-            }
-            //DEBUG END
-
             System.Console.Write("Please a direction using the arrow keys: ");
 
             return System.Console.ReadKey();
