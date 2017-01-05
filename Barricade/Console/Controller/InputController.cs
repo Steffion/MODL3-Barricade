@@ -44,6 +44,11 @@ namespace Console.Controller
                         if (nextField == null || 
                             _previousSteps.Contains(nextField)) continue;
 
+                        while (nextField is StartField)
+                        {
+                            nextField = nextField.Up;
+                        }
+
                         currentPion.Field.SetPion(null);
                         currentPion.SetField(nextField);
                         _previousSteps.Add(nextField);
