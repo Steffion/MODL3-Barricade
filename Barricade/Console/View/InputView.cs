@@ -18,7 +18,7 @@ namespace Console.View
             _gameController = gameController;
         }
 
-        public void Show()
+        public void ShowPossiblePions()
         {
             int turn = _gameController.Turn % 4;
 
@@ -49,7 +49,21 @@ namespace Console.View
             System.Console.WriteLine(":");
         }
 
-        public ConsoleKeyInfo GetKey()
+        internal ConsoleKeyInfo GetMoveKey()
+        {
+            System.Console.ForegroundColor = ConsoleColor.White;
+            System.Console.WriteLine();
+            System.Console.Write("Please a direction using the arrow keys: ");
+
+            return System.Console.ReadKey();
+        }
+
+        internal void ShowDice(int result)
+        {
+            System.Console.WriteLine("The dice threw: {0}", result);
+        }
+
+        public ConsoleKeyInfo GetPionKey()
         {
             System.Console.ForegroundColor = ConsoleColor.White;
             System.Console.Write("Please choose your pion (");
@@ -82,11 +96,11 @@ namespace Console.View
             return System.Console.ReadKey();
         }
 
-        public void WrongKey()
+        public void ShowWrongKey()
         {
             System.Console.ForegroundColor = ConsoleColor.DarkRed;
             System.Console.WriteLine();
-            System.Console.WriteLine("Wrong key!");
+            System.Console.WriteLine("Wrong key! Try again.");
         }
     }
 }

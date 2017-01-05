@@ -24,16 +24,64 @@ namespace Console.Controller
             InputView = new InputView(this, gameController);
         }
 
-        internal Pion GetPion()
+        public void Move(Pion currentPion)
         {
-            InputView.Show();
+            bool inputIsValid = false;
+
+            while (!inputIsValid)
+            {
+                ConsoleKeyInfo key = InputView.GetMoveKey();
+
+                if (key.Key == ConsoleKey.UpArrow)
+                {
+                    System.Console.WriteLine("UP");
+                    return;
+                }
+
+                if (key.Key == ConsoleKey.RightArrow)
+                {
+                    System.Console.WriteLine("Right");
+                    return;
+                }
+
+                if (key.Key == ConsoleKey.DownArrow)
+                {
+                    System.Console.WriteLine("Down");
+                    return;
+                }
+
+                if (key.Key == ConsoleKey.LeftArrow)
+                {
+                    System.Console.WriteLine("left");
+                    return;
+                }
+
+                InputView.ShowWrongKey();
+            }
+
+            throw new Exception("Unreachable Code");
+        }
+
+        public int ThrowDice()
+        {
+            Random random = new Random();
+            int result = random.Next(1, 7);
+
+            InputView.ShowDice(result);
+
+            return result;
+        }
+
+        public Pion GetPion()
+        {
+            InputView.ShowPossiblePions();
 
             bool inputIsValid = false;
             int turn = _gameController.Turn % 4;
 
             while (!inputIsValid)
             {
-                ConsoleKeyInfo key = InputView.GetKey();
+                ConsoleKeyInfo key = InputView.GetPionKey();
                 
                 switch (turn)
                 {
@@ -123,7 +171,7 @@ namespace Console.Controller
                         break;
                 }
 
-                InputView.WrongKey();
+                InputView.ShowWrongKey();
             }
 
             throw new Exception("Unreachable Code");
