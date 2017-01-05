@@ -6,7 +6,7 @@
   <ownedCommentsInternal>
     <comment
       Id="c33c051b-2d40-4d98-b263-870891905843">
-      <body>Version 1.2
+      <body>Version 1.3
 Barricade 2016
 Jonathan &amp; Stef</body>
     </comment>
@@ -740,6 +740,25 @@ Jonathan &amp; Stef</body>
             <classMoniker
               Id="bfb2eac9-f1d7-42a9-ae33-0109c2182243"
               LastKnownName="Pion"
+              LastKnownLocation="Model.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d6f0407d-a906-4263-bb7b-d4c8091f3104"
+        name="EndField"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="0fc06f25-8f0e-498b-b1f9-6d15f558d053"
+            isSubstitutable="false">
+            <classMoniker
+              Id="a06b497d-d712-44c8-9c4c-ed8f49ce771e"
+              LastKnownName="Field"
               LastKnownLocation="Model.uml" />
           </generalization>
         </generalsInternal>

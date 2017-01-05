@@ -3,7 +3,7 @@
   <ownedCommentsInternal>
     <comment Id="90f50bd2-ad43-4c73-9067-38117d790535">
       <elementDefinition Id="c33c051b-2d40-4d98-b263-870891905843" />
-      <body>Version 1.2
+      <body>Version 1.3
 Barricade 2016
 Jonathan &amp; Stef</body>
     </comment>
@@ -380,6 +380,17 @@ Jonathan &amp; Stef</body>
           <generalization Id="a803562f-2174-4cd1-84ac-bdddafd10f7b" isSubstitutable="false">
             <classMoniker Id="77480e85-b625-456b-b782-709abf4b4a63" LastKnownName="Pion" />
             <elementDefinition Id="5a603c70-ee3d-4175-890e-a47050afbb18" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f93e720b-5f44-4b34-a0e9-159a0d6bcf08" name="EndField" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d6f0407d-a906-4263-bb7b-d4c8091f3104" />
+        <generalsInternal>
+          <generalization Id="03a4e200-e215-4777-8a8d-143e6a2372dd" isSubstitutable="false">
+            <classMoniker Id="112acd37-b125-47da-b67d-1d1248dd8116" LastKnownName="Field" />
+            <elementDefinition Id="0fc06f25-8f0e-498b-b1f9-6d15f558d053" />
           </generalization>
         </generalsInternal>
       </class>
