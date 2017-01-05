@@ -17,7 +17,7 @@ namespace Console.View
             _gameController = gameController;
         }
 
-        private void DrawPathLine(Field field)
+        private void DrawPathLine(Field field, int i)
         {
             System.Console.ForegroundColor = ConsoleColor.White;
             System.Console.BackgroundColor = ConsoleColor.Black;
@@ -31,6 +31,38 @@ namespace Console.View
             else
             {
                 System.Console.Write("-");
+            }
+            if (i == 5)
+            {
+                System.Console.WriteLine("          |");
+            }
+            if (i == 15)
+            {
+                 System.Console.WriteLine("  |               |");
+            }
+            if (i == 25)
+            {
+                 System.Console.WriteLine("          |");
+            }
+            if (i == 34)
+            {
+                 System.Console.WriteLine("    |           |");
+            }
+            if (i == 43)
+            {
+                 System.Console.WriteLine("          |");
+            }
+            if (i == 51)
+            {
+                System.Console.WriteLine("      |   |   |");
+            }
+            if (i == 66)
+            {
+                System.Console.WriteLine("|   |     |     |   |");
+            }
+            if (i == 77)
+            {
+                 System.Console.WriteLine("  |   |       |   |");
             }
         }
 
@@ -54,7 +86,7 @@ namespace Console.View
                         {
                             System.Console.Write("Q");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -63,7 +95,7 @@ namespace Console.View
                         {
                             System.Console.Write("W");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -72,7 +104,7 @@ namespace Console.View
                         {
                             System.Console.Write("A");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -81,7 +113,7 @@ namespace Console.View
                         {
                             System.Console.Write("S");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -95,7 +127,7 @@ namespace Console.View
                         {
                             System.Console.Write("E");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -104,7 +136,7 @@ namespace Console.View
                         {
                             System.Console.Write("R");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -113,7 +145,7 @@ namespace Console.View
                         {
                             System.Console.Write("D");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -122,7 +154,7 @@ namespace Console.View
                         {
                             System.Console.Write("F");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -136,7 +168,7 @@ namespace Console.View
                         {
                             System.Console.Write("T");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -145,7 +177,7 @@ namespace Console.View
                         {
                             System.Console.Write("G");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -154,7 +186,7 @@ namespace Console.View
                         {
                             System.Console.Write("Y");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -163,7 +195,7 @@ namespace Console.View
                         {
                             System.Console.Write("H");
 
-                            DrawPathLine(temp[i]);
+                            DrawPathLine(temp[i], i);
 
                             i++;
                         }
@@ -185,7 +217,7 @@ namespace Console.View
                             }
                             else
                             {
-                                DrawPathLine(temp[i]);
+                                DrawPathLine(temp[i], i);
                             }
 
                             i++;
@@ -203,7 +235,7 @@ namespace Console.View
                             }
                             else
                             {
-                                DrawPathLine(temp[i]);
+                                DrawPathLine(temp[i], i);
                             }
 
                             i++;
@@ -221,7 +253,7 @@ namespace Console.View
                             }
                             else
                             {
-                                DrawPathLine(temp[i]);
+                                DrawPathLine(temp[i], i);
                             }
 
                             i++;
@@ -239,7 +271,7 @@ namespace Console.View
                             }
                             else
                             {
-                                DrawPathLine(temp[i]);
+                                DrawPathLine(temp[i], i);
                             }
 
                             i++;
@@ -258,14 +290,14 @@ namespace Console.View
                 if (temp[i] is EndField)
                 {
                     System.Console.Write("F");
-                    DrawPathLine(temp[i]);
+                    DrawPathLine(temp[i], i);
                 }
                 if (temp[i] is RegularField && temp[i].Barricade == null)
                 {
                     if (temp[i].Pion == null)
                     {
                         System.Console.Write("O");
-                        DrawPathLine(temp[i]);
+                        DrawPathLine(temp[i], i);
                     }
 
                 }
@@ -274,7 +306,7 @@ namespace Console.View
                     if (temp[i].Pion == null)
                     {
                         System.Console.Write("R");
-                        DrawPathLine(temp[i]);
+                        DrawPathLine(temp[i], i);
                     }
 
                 }
@@ -283,7 +315,7 @@ namespace Console.View
                     if (temp[i].Pion == null)
                     {
                         System.Console.Write("X");
-                        DrawPathLine(temp[i]);
+                        DrawPathLine(temp[i], i);
                     }
 
                 }
@@ -295,33 +327,13 @@ namespace Console.View
                 if (temp[i] is StartField)
                 {
                     System.Console.Write("S");
+                    if (i == 88 || i == 99 || i == 121 || i == 110)
+                    {
+                        System.Console.WriteLine();
+                    }
                 }
             }
-            //Field origin = _gameController.Board.Origin;
-
-            //System.Console.ForegroundColor = ConsoleColor.White;
-            //System.Console.WriteLine();
-            //System.Console.WriteLine();
-            //System.Console.WriteLine();
-            //System.Console.WriteLine("-------------------------");
-            //System.Console.WriteLine("|           F           |");
-            //System.Console.WriteLine("| 	    |	        |");
-            //System.Console.WriteLine("|   O-O-O-O-O-O-O-O-O   | (1) (9)");
-            //System.Console.WriteLine("|   |     	    |   |");
-            //System.Console.WriteLine("|   O-O-O-O-O-O-O-O-O   | (2) (9)");
-            //System.Console.WriteLine("|           |           |");
-            //System.Console.WriteLine("|     O-O-O-O-O-O-O     | (3) (7) ");
-            //System.Console.WriteLine("|     |           |     |");
-            //System.Console.WriteLine("|     O-O-O-O-O-O-O     | (4) (7)");
-            //System.Console.WriteLine("|           |           |");
-            //System.Console.WriteLine("|       O-O-O-O-O       | (5) (4)");
-            //System.Console.WriteLine("|       | F F F |       |");
-            //System.Console.WriteLine("| O-O-O-O-O-O-O-O-O-O-O | (6) (11)");
-            //System.Console.WriteLine("| |   |     |     |   | |");
-            //System.Console.WriteLine("| O-O-O-O-O-O-O-O-O-O-O |");
-            //System.Console.WriteLine("|   |   |       |   |   |");
-            //System.Console.WriteLine("|  B(4) Y(4)  R(4)  G(4)|");
-            //System.Console.WriteLine("-------------------------");
+            
         }
     }
 }

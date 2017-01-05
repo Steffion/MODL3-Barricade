@@ -295,6 +295,7 @@ public class Board
         r6c5.Right = r6c6;
         // column 6
         r6c6.Right = r6c7;
+        r6c6.Down = r7c6;
         // Column 7
         r6c7.Right = r6c8;
         // Column 8
@@ -451,6 +452,7 @@ public class Board
         Fields.Add(new VoidField());
         Fields.Add(new VoidField());
         Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
         Fields.Add(sf9);
         Fields.Add(new VoidField());
         Fields.Add(sf13);
@@ -458,6 +460,7 @@ public class Board
         Fields.Add(sf2);
         Fields.Add(new VoidField());
         Fields.Add(sf6);
+        Fields.Add(new VoidField());
         Fields.Add(new VoidField());
         Fields.Add(new VoidField());
         Fields.Add(new VoidField());
@@ -471,6 +474,7 @@ public class Board
         Fields.Add(new VoidField());
         Fields.Add(new VoidField());
         Fields.Add(new VoidField());
+        Fields.Add(new VoidField());
         Fields.Add(sf11);
         Fields.Add(new VoidField());
         Fields.Add(sf15);
@@ -478,6 +482,7 @@ public class Board
         Fields.Add(sf4);
         Fields.Add(new VoidField());
         Fields.Add(sf8);
+        Fields.Add(new VoidField());
         Fields.Add(new VoidField());
         Fields.Add(new VoidField());
         Fields.Add(new VoidField());
