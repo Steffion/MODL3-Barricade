@@ -30,20 +30,32 @@ namespace Console.Controller
         public void Move(Pion currentPion, int steps)
         {
             _previousSteps = new List<Field>();
-
+            Pion _tempPion;
             for (int i = steps; i > 0; i--)
             {
                 while (true)
                 {
-                    _gameController.BoardView.Print();
+                    _gameController.BoardView.Print(i);
                     ConsoleKeyInfo key = InputView.GetMoveKey();
 
                     if (key.Key == ConsoleKey.UpArrow)
                     {
                         Field nextField = currentPion.Field.Up;
-                        if (nextField == null || 
-                            _previousSteps.Contains(nextField)) continue;
+                            
+                        if (nextField == null ) continue;
+                        if (_previousSteps.Contains(nextField))
+                        {
+                            currentPion.Field.SetPion(null);
+                            currentPion.SetField(nextField);
+                            _previousSteps.RemoveAt(_previousSteps.Count - 1);
+                            i++;
+                            InputView.ShowDice(i);
+                            continue;
+                        }
+                        if (nextField.Barricade != null)
+                        {
 
+                        }
                         while (nextField is StartField)
                         {
                             nextField = nextField.Up;
@@ -58,9 +70,16 @@ namespace Console.Controller
                     if (key.Key == ConsoleKey.RightArrow)
                     {
                         Field nextField = currentPion.Field.Right;
-                        if (nextField == null ||
-                            _previousSteps.Contains(nextField)) continue;
-
+                        if (nextField == null ) continue;
+                        if (_previousSteps.Contains(nextField))
+                        {
+                            currentPion.Field.SetPion(null);
+                            currentPion.SetField(nextField);
+                            _previousSteps.RemoveAt(_previousSteps.Count - 1);
+                            i++;
+                            InputView.ShowDice(i);
+                            continue;
+                        }
                         currentPion.Field.SetPion(null);
                         currentPion.SetField(nextField);
                         _previousSteps.Add(nextField);
@@ -70,10 +89,18 @@ namespace Console.Controller
                     if (key.Key == ConsoleKey.DownArrow)
                     {
                         Field nextField = currentPion.Field.Down;
-                        if (nextField == null ||
-                            _previousSteps.Contains(nextField)) continue;
+                        
+                        if (nextField == null || nextField is StartField) continue;
 
-                        if (nextField is StartField) continue;
+                        if (_previousSteps.Contains(nextField))
+                        {
+                            currentPion.Field.SetPion(null);
+                            currentPion.SetField(nextField);
+                            _previousSteps.RemoveAt(_previousSteps.Count - 1);
+                            i++;
+                            InputView.ShowDice(i);
+                            continue;
+                        }
 
                         currentPion.Field.SetPion(null);
                         currentPion.SetField(nextField);
@@ -84,9 +111,17 @@ namespace Console.Controller
                     if (key.Key == ConsoleKey.LeftArrow)
                     {
                         Field nextField = currentPion.Field.Left;
-                        if (nextField == null ||
-                            _previousSteps.Contains(nextField)) continue;
+                        if (nextField == null ) continue;
 
+                        if (_previousSteps.Contains(nextField))
+                        {
+                            currentPion.Field.SetPion(null);
+                            currentPion.SetField(nextField);
+                            _previousSteps.RemoveAt(_previousSteps.Count - 1);
+                            i++;
+                            InputView.ShowDice(i);
+                            continue;
+                        }
                         currentPion.Field.SetPion(null);
                         currentPion.SetField(nextField);
                         _previousSteps.Add(nextField);

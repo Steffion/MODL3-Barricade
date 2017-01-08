@@ -66,7 +66,7 @@ namespace Console.View
             }
         }
 
-        public void Print()
+        public void Print(int dice)
         {
             var temp = _gameController.Board.Fields;
             System.Console.Clear();
@@ -333,7 +333,11 @@ namespace Console.View
                     }
                 }
             }
-            
+            if (dice > 0)
+            {
+                System.Console.Write("Zetten over: " + dice);
+
+            }
         }
     }
 }
