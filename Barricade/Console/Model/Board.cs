@@ -17,6 +17,16 @@ public class Board
 		get;
 		set;
 	}
+    public virtual List<Field> StartFields
+    {
+        get;
+        set;
+    }
+    public virtual List<Pion> Forest
+    {
+        get;
+        set;
+    }
 
 	public virtual Town Town
 	{
@@ -69,6 +79,7 @@ public class Board
     public Board()
     {
         Fields = new List<Field>();
+        Forest = new List<Pion>();
         #region Blue
         BluePion = new List<BluePion>();
         BluePion.Add(new BluePion());
@@ -279,7 +290,7 @@ public class Board
         r5c3.Down = forest;
         // column 4
         r5c4.Right = r5c5;
-        r5c4.Down = r6c8;
+        r5c5.Down = r6c8;
         #endregion
         #region Row 6
         r6c1.Down = r7c1;
