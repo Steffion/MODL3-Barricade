@@ -163,6 +163,7 @@ public class Board
         Field r5c4 = new RegularField();
         Field r5c5 = new RegularField();
         Field forest = new ForestField();
+        
         #endregion
         #region Row 6
         Field r6c1 = new RestField();
@@ -500,6 +501,7 @@ public class Board
         Fields.Add(sf12);
         Fields.Add(new VoidField());
         Fields.Add(sf16);
+        ForestField = (ForestField)forest;
 
 
         #endregion
