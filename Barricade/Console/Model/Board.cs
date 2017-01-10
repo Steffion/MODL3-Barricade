@@ -178,17 +178,17 @@ public class Board
         Field r6c11 = new RestField();
         #endregion
         #region Row 7
-        Field r7c1 = new RegularField();
-        Field r7c2 = new RegularField();
-        Field r7c3 = new RegularField();
-        Field r7c4 = new RegularField();
-        Field r7c5 = new RegularField();
-        Field r7c6 = new RegularField();
-        Field r7c7 = new RegularField();
-        Field r7c8 = new RegularField();
-        Field r7c9 = new RegularField();
-        Field r7c10 = new RegularField();
-        Field r7c11 = new RegularField();
+        Field r7c1 = new FirstRow();
+        Field r7c2 = new FirstRow();
+        Field r7c3 = new FirstRow();
+        Field r7c4 = new FirstRow();
+        Field r7c5 = new FirstRow();
+        Field r7c6 = new FirstRow();
+        Field r7c7 = new FirstRow();
+        Field r7c8 = new FirstRow();
+        Field r7c9 = new FirstRow();
+        Field r7c10 = new FirstRow();
+        Field r7c11 = new FirstRow();
         #endregion
         #region Startfields
         Field sf1 = new StartField(BluePion[0]);

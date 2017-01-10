@@ -88,7 +88,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
 
                         if (_gameController.Board.BluePion[1].Equals(pion))
@@ -97,7 +97,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
 
                         if (_gameController.Board.BluePion[2].Equals(pion))
@@ -106,7 +106,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
 
                         if (_gameController.Board.BluePion[3].Equals(pion))
@@ -115,7 +115,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
                     }
 
@@ -129,7 +129,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
 
                         if (_gameController.Board.YellowPion[1].Equals(pion))
@@ -138,7 +138,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
 
                         if (_gameController.Board.YellowPion[2].Equals(pion))
@@ -147,7 +147,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
 
                         if (_gameController.Board.YellowPion[3].Equals(pion))
@@ -156,7 +156,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
                     }
 
@@ -170,7 +170,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
 
                         if (_gameController.Board.RedPion[1].Equals(pion))
@@ -179,7 +179,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
 
                         if (_gameController.Board.RedPion[2].Equals(pion))
@@ -188,7 +188,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
 
                         if (_gameController.Board.RedPion[3].Equals(pion))
@@ -197,7 +197,7 @@ namespace Console.View
 
                             DrawPathLine(temp[i], i);
 
-                            i++;
+                            continue;
                         }
                     }
 
@@ -214,13 +214,15 @@ namespace Console.View
                                 System.Console.ForegroundColor = ConsoleColor.White;
                                 System.Console.BackgroundColor = ConsoleColor.Black;
                                 System.Console.WriteLine();
+                                i++;
                             }
                             else
                             {
                                 DrawPathLine(temp[i], i);
+                                continue;
                             }
 
-                            i++;
+                            
                         }
 
                         if (_gameController.Board.GreenPion[1].Equals(pion))
@@ -232,13 +234,13 @@ namespace Console.View
                                 System.Console.ForegroundColor = ConsoleColor.White;
                                 System.Console.BackgroundColor = ConsoleColor.Black;
                                 System.Console.WriteLine();
+                                i++;
                             }
                             else
                             {
                                 DrawPathLine(temp[i], i);
+                                continue;
                             }
-
-                            i++;
                         }
 
                         if (_gameController.Board.GreenPion[2].Equals(pion))
@@ -250,13 +252,13 @@ namespace Console.View
                                 System.Console.ForegroundColor = ConsoleColor.White;
                                 System.Console.BackgroundColor = ConsoleColor.Black;
                                 System.Console.WriteLine();
+                                i++;
                             }
                             else
                             {
                                 DrawPathLine(temp[i], i);
+                                continue;
                             }
-
-                            i++;
                         }
 
                         if (_gameController.Board.GreenPion[3].Equals(pion))
@@ -268,16 +270,17 @@ namespace Console.View
                                 System.Console.ForegroundColor = ConsoleColor.White;
                                 System.Console.BackgroundColor = ConsoleColor.Black;
                                 System.Console.WriteLine();
+                                i++;
                             }
                             else
                             {
                                 DrawPathLine(temp[i], i);
+                                continue;
                             }
-
-                            i++;
                         }
                     }
                 }
+                
 
                 if (i >= temp.Count) continue;
 
@@ -292,7 +295,7 @@ namespace Console.View
                     System.Console.Write("F");
                     DrawPathLine(temp[i], i);
                 }
-                if (temp[i] is RegularField && temp[i].Barricade == null)
+                if ((temp[i] is RegularField || temp[i] is FirstRow)&& temp[i].Barricade == null)
                 {
                     if (temp[i].Pion == null)
                     {

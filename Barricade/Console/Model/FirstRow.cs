@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Console.Model
 {
-    class FirstRow
+    class FirstRow : Field
     {
     }
 }

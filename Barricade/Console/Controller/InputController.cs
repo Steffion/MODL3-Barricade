@@ -47,7 +47,16 @@ namespace Console.Controller
                     {
                         nextField = _currentPion.Field.Up;
                             
-                        if (nextField == null || (i >= 1 && nextField.Barricade != null)) continue;
+                        if (nextField == null || (i > 1 && nextField.Barricade != null)) continue;
+                        if (nextField is EndField)
+                        {
+                            ShowWinner(currentPion);
+                        }
+                        if (nextField.Barricade != null)
+                        {
+                            MoveBarricade();
+                            break;
+                        }
                         while (nextField is StartField)
                         {
                             nextField = nextField.Up;
@@ -85,8 +94,12 @@ namespace Console.Controller
                     if (key.Key == ConsoleKey.RightArrow)
                     {
                         nextField = _currentPion.Field.Right;
-                        if (nextField == null || (i >= 1 && nextField.Barricade != null) ) continue;
-
+                        if (nextField == null || (i > 1 && nextField.Barricade != null) ) continue;
+                        if (nextField.Barricade != null)
+                        {
+                            MoveBarricade();
+                            break;
+                        }
                         if (_previousSteps.Contains(nextField))
                         {
                             SetStepBack();
@@ -129,7 +142,7 @@ namespace Console.Controller
                         if (nextField.Barricade != null)
                         {
                             MoveBarricade();
-                            
+                            break;
                         }
                         if (_previousSteps.Contains(nextField))
                         {
@@ -168,6 +181,7 @@ namespace Console.Controller
                         if (nextField.Barricade != null)
                         {
                             MoveBarricade();
+                            break;
                         }
                         if (_previousSteps.Contains(nextField))
                         {
@@ -179,14 +193,12 @@ namespace Console.Controller
                         if (nextField.Pion != null)
                         {
                             NextFieldIsPion(i);
-                           
                             break;
 
                         }
                         if (_tempPion != null)
                         {
                             TempPionIsNotNull();
-                            
                             break;
                         }
                         if (_tempPion == null)
@@ -202,14 +214,73 @@ namespace Console.Controller
             }
         }
 
+        private void ShowWinner(Pion currentPion)
+        {
+            if (currentPion is RedPion)
+            {
+                InputView.ShowWinner("Blauw");
+            }
+            if (currentPion is BluePion)
+            {
+                InputView.ShowWinner("Rood");
+            }
+            if (currentPion is YellowPion)
+            {
+                InputView.ShowWinner("Geel");
+            }
+            if (currentPion is GreenPion)
+            {
+                InputView.ShowWinner("Groen");
+            }
+
+        }
+
         private void MoveBarricade()
         {
-            nextField.Barricade = null;
-            //TODO something something dat de bariccarde verplaatst.
 
-
-            _currentPion.Field.SetPion(null);
+            Field _tempField = nextField;
+            Pion _tempPion = _currentPion;
+            _currentPion.Field.SetPion(nextField.Barricade);
             _currentPion.SetField(nextField);
+            while (true)
+            {
+                _gameController.BoardView.Print(0);
+                ConsoleKeyInfo key = InputView.GetMoveKey();
+                #region UpArrow
+                if (key.Key == ConsoleKey.UpArrow)
+                {
+                    nextField = _currentPion.Field.Up;
+                    if (nextField is EndField) continue;
+                }
+                if (key.Key == ConsoleKey.RightArrow)
+                {
+                    nextField = _currentPion.Field.Right;
+                    _currentPion.Field.SetPion(null);
+                    _currentPion.SetField(nextField);
+
+                }
+                if (key.Key == ConsoleKey.LeftArrow)
+                {
+                    nextField = _currentPion.Field.Left;
+                    _currentPion.Field.SetPion(null);
+                    _currentPion.SetField(nextField);
+                }
+                if (key.Key == ConsoleKey.DownArrow)
+                {
+                   nextField = _currentPion.Field.Down;
+                    if (nextField is Model.FirstRow || nextField is ForestField) continue;
+                    _currentPion.Field.SetPion(null);
+                    _currentPion.SetField(nextField);
+                }
+
+                if (key.Key == ConsoleKey.P)
+                {
+                    if (_currentPion.Field is RestField || _tempPion != null) continue;
+                    break;
+                }
+                InputView.ShowWrongKey();
+                #endregion
+            }
         }
 
         public int ThrowDice()
@@ -272,13 +343,17 @@ namespace Console.Controller
                 else
                 {
                     //TODO iets dat regelt dat de pion terug gaat naar Start 
-
+                    BackToSart(nextField.Pion);
                     _currentPion.Field.SetPion(null);
                     _currentPion.SetField(nextField);
                     _currentPion.SetField(nextField);
                 }
                
             }
+        }
+
+        private void BackToSart(Pion p)
+        {
         }
 
         private bool CheckIfIsInTown(Field field)

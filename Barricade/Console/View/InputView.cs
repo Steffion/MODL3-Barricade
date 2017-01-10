@@ -105,5 +105,12 @@ namespace Console.View
             System.Console.WriteLine();
             System.Console.WriteLine("Wrong key! Try again.");
         }
+
+        public void ShowWinner(string v)
+        {
+            System.Console.Clear();
+            System.Console.WriteLine("De winnaar is " + v + "!");
+
+        }
     }
 }
