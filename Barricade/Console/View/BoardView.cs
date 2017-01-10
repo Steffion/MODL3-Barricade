@@ -77,7 +77,13 @@ namespace Console.View
                 {
                     Pion pion = temp[i].Pion;
                     System.Console.BackgroundColor = ConsoleColor.DarkGray;
+                    if (pion is Barricade)
+                    {
+                        System.Console.Write("X");
+                        DrawPathLine(temp[i], i);
 
+                        continue;
+                    }
                     if (pion is BluePion)
                     {
                         System.Console.ForegroundColor = ConsoleColor.Blue;
@@ -295,7 +301,7 @@ namespace Console.View
                     System.Console.Write("F");
                     DrawPathLine(temp[i], i);
                 }
-                if ((temp[i] is RegularField || temp[i] is FirstRow)&& temp[i].Barricade == null)
+                if ((temp[i] is RegularField || temp[i] is FirstRow) && !(temp[i].Pion is Barricade))
                 {
                     if (temp[i].Pion == null)
                     {
@@ -304,7 +310,7 @@ namespace Console.View
                     }
 
                 }
-                if (temp[i] is RestField)
+                if (temp[i] is RestField && !(temp[i].Pion is Barricade))
                 {
                     if (temp[i].Pion == null)
                     {
@@ -313,15 +319,7 @@ namespace Console.View
                     }
 
                 }
-                if (temp[i] is RegularField && temp[i].Barricade != null)
-                {
-                    if (temp[i].Pion == null)
-                    {
-                        System.Console.Write("X");
-                        DrawPathLine(temp[i], i);
-                    }
-
-                }
+                
                 if (temp[i] is ForestField)
                 {
                     System.Console.Write("|   F   | \n");
