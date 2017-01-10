@@ -394,10 +394,7 @@ namespace Console.Controller
                 #endregion
             }
         }
-        private void UpArrow()
-        {
-
-        }
+        
         public int ThrowDice()
         {
             Random random = new Random();

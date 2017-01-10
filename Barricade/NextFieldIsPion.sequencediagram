@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" dslVersion="1.0.0.0" Id="61412a4a-6c6d-4d62-963d-ea3f17dc7e48" name="InputController_NextFieldIsPion" mode="DotNet" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="16dfd771-6cc0-44be-b038-91ea98b71d42" name="InputController_NextFieldIsPion" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification Id="2ccce9b8-832b-4c1f-b489-16c4364e5fdc" name="BehaviorExecutionSpecification">
+            <coveredLifelines>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="c66eeb6a-c503-4a06-94da-8b92a3b4935c" LastKnownName="ExecutionOccurrenceSpecification" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="ec24785c-a907-40fb-a299-fa4ce8622207" LastKnownName="ExecutionOccurrenceSpecification" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="97153e3d-fde3-431e-bdb3-52040edfd244" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="919205e0-28e2-48ea-8afb-55f8cbd182f4" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="a717a147-cc9a-4dde-ad9a-a09562ad7230" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="68e7acae-a3bc-443b-9404-3f888c1315aa" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="602455c9-2904-4425-8433-c00aad4cba8b" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="64cbfbdc-9d2b-4d45-922d-8c23cce39cfa" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="3647ddd3-0e51-407a-8d7e-a774018023d5" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="55650ab8-c754-4e05-9a0d-f5800c2c4ab3" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="dd196ccb-3b7f-45ed-8138-eb70318a97c9" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="0384d751-de47-4956-a102-6479ae44b68e" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="c89f5935-d945-4d0a-9f50-d0e0ab94520b" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="5ea08696-8c51-4c32-8628-7ff8577f243a" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="249be2b9-fa30-4d76-8dc4-7c000ab3f230" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="221f1cbf-fd76-4a61-9ede-2008ec9e15bf" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="6b247808-9f2e-4d75-aad5-a33707de4442" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="d1600856-231e-41dc-b58b-bce94daf84bc" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="5d6d563f-866f-4d24-828b-ed39f5640006" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="a3bb0d28-b2b1-4088-b177-81a7514b04f8" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="3038c80a-ecc6-4b8c-b0f6-cfd82db538ca" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="26a3a26c-6a4b-43db-b7e4-b78ebf7d4325" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="ef4b2a91-fff2-4cd1-badc-b1d6752ff22c" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="b0c9bbf0-a63a-42d8-96df-f89adbdcb1d9" LastKnownName="OperandOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="176d7c4e-8636-4888-b94b-d94e7c4b4e90" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="d7b3cfcf-8782-4f53-8dd6-a5d84347a675" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="b451ed49-1b9d-4969-822e-c32f22a634f6" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="f40c2af8-4927-4b21-b78a-dff03262203a" LastKnownName="MessageOccurrenceSpecification" />
+              <messageOccurrenceSpecificationMoniker Id="f98aca2f-74fa-427e-8394-8f78fe7e5e24" LastKnownName="MessageOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="73be2cfd-33e8-4a39-aa3c-eec7dc2e534a" LastKnownName="OperandOccurrenceSpecification" />
+              <operandOccurrenceSpecificationMoniker Id="37db1900-b1b5-4c71-8cec-4c6f1353006e" LastKnownName="OperandOccurrenceSpecification" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="ec24785c-a907-40fb-a299-fa4ce8622207" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="672d0e3b-8a8f-447f-b104-0dff99d159fc" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget Id="4982b677-101c-42dd-9293-0c0ea3d5ab1c" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="97153e3d-fde3-431e-bdb3-52040edfd244" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <combinedFragment Id="fd4582b5-743f-4ba2-908c-6d6ddc5001a8" name="CombinedFragment1" interactionOperator="Alt" customInteractionOperator="If">
+            <coveredLifelines>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </coveredLifelines>
+            <operands>
+              <interactionOperand Id="9e9f4e85-70ce-4673-8f58-c904a8c56ed4" name="InteractionOperand1">
+                <coveredLifelines>
+                  <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+                </coveredLifelines>
+                <guard>
+                  <interactionConstraint Id="ce20fea0-e9a9-40e4-b224-4dd67e50c7fb" guardText="if (i &gt; 1)" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="919205e0-28e2-48ea-8afb-55f8cbd182f4" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="55650ab8-c754-4e05-9a0d-f5800c2c4ab3" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+              <interactionOperand Id="064e2fba-60fb-4a85-812a-23d03e349a82" name="InteractionOperand2">
+                <coveredLifelines>
+                  <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+                </coveredLifelines>
+                <fragments>
+                  <combinedFragment Id="257d70fe-d69f-4bbf-81a2-8a427fdd42f6" name="CombinedFragment1" interactionOperator="Alt" customInteractionOperator="If">
+                    <coveredLifelines>
+                      <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+                    </coveredLifelines>
+                    <operands>
+                      <interactionOperand Id="20e28aff-71c9-4548-bc68-5cafc5dad7ee" name="InteractionOperand1">
+                        <coveredLifelines>
+                          <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint Id="81cc20e5-ae21-4361-9ba6-a859740ad9f5" guardText="if (CheckIfIsInTown(nextField))" />
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="c89f5935-d945-4d0a-9f50-d0e0ab94520b" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="ef4b2a91-fff2-4cd1-badc-b1d6752ff22c" LastKnownName="OperandOccurrenceSpecification" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                      <interactionOperand Id="c3b3c8f7-cfc5-43da-8544-9b89b3dee7d4" name="InteractionOperand2">
+                        <coveredLifelines>
+                          <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+                        </coveredLifelines>
+                        <guard>
+                          <interactionConstraint Id="220a18fa-f98c-4277-af33-f7c2ebf564b6" guardText="else" />
+                        </guard>
+                        <operandOccurrenceSpecifications>
+                          <operandOccurrenceSpecificationMoniker Id="b0c9bbf0-a63a-42d8-96df-f89adbdcb1d9" LastKnownName="OperandOccurrenceSpecification" />
+                          <operandOccurrenceSpecificationMoniker Id="73be2cfd-33e8-4a39-aa3c-eec7dc2e534a" LastKnownName="OperandOccurrenceSpecification" />
+                        </operandOccurrenceSpecifications>
+                      </interactionOperand>
+                    </operands>
+                  </combinedFragment>
+                </fragments>
+                <guard>
+                  <interactionConstraint Id="c2e33d5c-fc26-4015-9f0c-1ab390d5c684" guardText="else" />
+                </guard>
+                <operandOccurrenceSpecifications>
+                  <operandOccurrenceSpecificationMoniker Id="dd196ccb-3b7f-45ed-8138-eb70318a97c9" LastKnownName="OperandOccurrenceSpecification" />
+                  <operandOccurrenceSpecificationMoniker Id="37db1900-b1b5-4c71-8cec-4c6f1353006e" LastKnownName="OperandOccurrenceSpecification" />
+                </operandOccurrenceSpecifications>
+              </interactionOperand>
+            </operands>
+          </combinedFragment>
+          <operandOccurrenceSpecification Id="919205e0-28e2-48ea-8afb-55f8cbd182f4" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <lostFoundTarget Id="0bd4e33b-6f1a-45c2-ad8b-a6e5ef817782" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="a717a147-cc9a-4dde-ad9a-a09562ad7230" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="68e7acae-a3bc-443b-9404-3f888c1315aa" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="f3eafd1d-0e8a-4cb3-9f7a-313b30a8dd50" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="602455c9-2904-4425-8433-c00aad4cba8b" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="06c1c94d-97ac-46ce-9c79-88d423349822" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="64cbfbdc-9d2b-4d45-922d-8c23cce39cfa" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="188b052b-b73b-4681-af67-a2f50789982f" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="3647ddd3-0e51-407a-8d7e-a774018023d5" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="8c873243-c1de-4b2e-8b6b-2e4437ff5508" name="LostFoundTarget" />
+          <operandOccurrenceSpecification Id="55650ab8-c754-4e05-9a0d-f5800c2c4ab3" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="dd196ccb-3b7f-45ed-8138-eb70318a97c9" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0384d751-de47-4956-a102-6479ae44b68e" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="8866b9e1-07e2-4a47-b11c-c5c52156d5d1" name="LostFoundTarget" />
+          <operandOccurrenceSpecification Id="c89f5935-d945-4d0a-9f50-d0e0ab94520b" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <lostFoundTarget Id="d5e32109-036d-4137-8d9e-744603616b5d" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="5ea08696-8c51-4c32-8628-7ff8577f243a" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="3916f50d-64cd-42f9-8093-ef026034c08f" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="249be2b9-fa30-4d76-8dc4-7c000ab3f230" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="221f1cbf-fd76-4a61-9ede-2008ec9e15bf" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="c36a7811-8c36-4076-8883-68ae99d777eb" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="6b247808-9f2e-4d75-aad5-a33707de4442" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="41414104-4a60-4f6c-b192-d7f993382c2f" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="d1600856-231e-41dc-b58b-bce94daf84bc" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="bf29af67-29bc-428f-aa95-b73f8fe67bd0" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="5d6d563f-866f-4d24-828b-ed39f5640006" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="b6de522d-d88d-4027-bcba-8749549c3f40" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="a3bb0d28-b2b1-4088-b177-81a7514b04f8" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="5c03f525-ce64-4ccd-b42c-b5c2cef20746" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="3038c80a-ecc6-4b8c-b0f6-cfd82db538ca" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="88b4e30f-63e0-4122-a522-380334e6923e" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="26a3a26c-6a4b-43db-b7e4-b78ebf7d4325" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="5c8c2b6c-9321-4743-823c-aaa5f041aef5" name="LostFoundTarget" />
+          <operandOccurrenceSpecification Id="ef4b2a91-fff2-4cd1-badc-b1d6752ff22c" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="b0c9bbf0-a63a-42d8-96df-f89adbdcb1d9" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="176d7c4e-8636-4888-b94b-d94e7c4b4e90" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="96f3175e-c22c-4ffa-93d0-cf205cca6ae7" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="d7b3cfcf-8782-4f53-8dd6-a5d84347a675" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="312e49de-3a68-429d-a90e-4daa970b51bf" name="LostFoundTarget" />
+          <lostFoundTarget Id="6990f186-fa6f-4c71-a70f-ebc73229259f" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="b451ed49-1b9d-4969-822e-c32f22a634f6" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f40c2af8-4927-4b21-b78a-dff03262203a" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <lostFoundTarget Id="0c3cfe3b-cc75-4c86-9899-baf79b260941" name="LostFoundTarget" />
+          <lostFoundTarget Id="f24ec7fc-186e-4514-b070-a47daf80b3e6" name="LostFoundTarget" />
+          <messageOccurrenceSpecification Id="f98aca2f-74fa-427e-8394-8f78fe7e5e24" name="MessageOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="73be2cfd-33e8-4a39-aa3c-eec7dc2e534a" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <operandOccurrenceSpecification Id="37db1900-b1b5-4c71-8cec-4c6f1353006e" name="OperandOccurrenceSpecification">
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </operandOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="c66eeb6a-c503-4a06-94da-8b92a3b4935c" name="ExecutionOccurrenceSpecification">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="8f4e9ae1-3173-46a9-829d-8c0290a328d3" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5770ee73-b6b2-43da-a751-50fb063951cd" LastKnownName="this : InputController" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="5770ee73-b6b2-43da-a751-50fb063951cd" name="this : InputController" isActor="false" lifelineDisplayName="this : InputController" referencedInstance="(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController ObjectInstance=&quot;Object instance 2&quot;)" referencedType="Console‎.Controller‎.InputController">
+            <referencesInternal>
+              <reference Id="72bad068-8d89-4993-bd54-05731e0cab89" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=Console.Controller)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=InputController)&quot;)" tag="DGQL" />
+              <reference Id="fd217c91-36a3-45d4-a66b-a60b928e2dc1" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Namespace=Console.Controller Type=InputController)" tag="DGML" />
+            </referencesInternal>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="ec24785c-a907-40fb-a299-fa4ce8622207" LastKnownName="ExecutionOccurrenceSpecification" />
+              <executionOccurrenceSpecificationMoniker Id="c66eeb6a-c503-4a06-94da-8b92a3b4935c" LastKnownName="ExecutionOccurrenceSpecification" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="8a706281-3882-4d94-a15c-c41e93430c99" name="NextFieldIsPion" messageKind="Found" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="c173181e-0e28-46e3-98f9-1c40444e0691" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=Console.Controller)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=InputController)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=InputController Member=(Name=NextFieldIsPion OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&amp;quot; Namespace=System Type=Int32)]))&quot;)" tag="DGQL" />
+              <reference Id="3a6d6684-c96f-464f-ae46-b647f8980a01" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Namespace=Console.Controller Type=InputController Member=(Name=NextFieldIsPion OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&quot; Namespace=System Type=Int32)]))" tag="DGML" />
+            </referencesInternal>
+            <sendEvent>
+              <lostFoundTargetMoniker Id="4982b677-101c-42dd-9293-0c0ea3d5ab1c" LastKnownName="LostFoundTarget" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="97153e3d-fde3-431e-bdb3-52040edfd244" LastKnownName="MessageOccurrenceSpecification" />
+            </receiveEvent>
+          </message>
+          <message Id="060e29d5-7ec8-4f24-8e41-1f46e77746ac" name="Get Pion" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="b83a549f-d469-4758-a2fd-8fa0ddca988f" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field Member=Pion)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field Member=get_Pion)&quot;)" tag="DGQL" />
+              <reference Id="be3bdc6c-e2bc-4c9e-b141-4c690114f515" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Field Member=get_Pion)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2VW0/CQBCFz08hPOmD7IM+GTDRGiKGSyL4bMpFwJSWtCURf73fTosgYOKjJmTT7szsmdvJbLauviZKNVeoiP8H2liBaZGanIRaYLtRXQPNQGR6UsLKVVELbENVnekWewZuoSF+a6yvYCMs13K2ApOeDZXyd3okyowVg3fqqKd7tXWpC92RNbWqRkhjPNxRW0CEmFiJZXLknqM74kyQV5oeYGp873wVdcvOMi2RRkiNA2yh52RNjA9feQUe1vh4fIvTJXnyH5CdkhGvNTj3uXNYnSNF9HAOd9t4XXx9X/+Z1S03P3XpZytnn+KbYtt0G5Td96lkZj2HesEasXsWfIw28tCieo+8nMfaEWarNp0ZDMZW6Zp4CbVn5tm0+facVW2yW9ZLjjW2SThN9mmy//Jk98C+oY842Z/dTdarsjafb2kVhVbV90y7N6G4MQ/IIR67OTxygPfq68Zs3oAML2cWd1BJYd1/NQrrb1+dT/245M2gBgAA
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=nextField ObjectInstance="Object instance 4")
+this.nextField : Field
+nextField.Pion</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="a717a147-cc9a-4dde-ad9a-a09562ad7230" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="0bd4e33b-6f1a-45c2-ad8b-a6e5ef817782" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="7099822e-8dda-4e54-952e-1e288bdbe66e" name="Get Field" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="2e648821-2a37-482a-94c8-1028a2d00490" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion Member=Field)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion Member=get_Field)&quot;)" tag="DGQL" />
+              <reference Id="a313c54a-636b-4ab7-bc34-b104e935b21d" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Pion Member=get_Field)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2VS0/CQBSFz08hrHQhs3BhYsBEa4gYHkZwbSogYEpL2pKIv95vbosgSOKWhEza3jlz7uvkNlNXX2OlmilUxPuL3UiB7SI1OQk1B7tRXQNNYWR6VsLKVVELbkNVnekWPIM31xt+K9B3uBHItZytwKwXY6W8nR6JMmXF8J066ulebV3qQndkTa2qIdYID/cnFhAhJlZimRy5Z+wdccbYS032ODWeT56KumVnmRZYQ6zGHrfY52RNTA9feQUdVvh4fovTBXnyA8xOqYjfNfRKlqX1MDbuE9V6r3MU3ETtgvnujlnbjUJ/9+jnK+c74SwFW/calL33qWNqHYeoFhA9NA18jDa2VzQyj7ycydpBdas2pxkqxrZfETWBmZl/0ybd61a1GW9ZPzlobDNxmvHTjB/HjPfw+AAfgu9O8Tr3VVmhz7qwukKr7Xe+7X+i+HcesEM8tnN45gDv5c+/s74XMrycIW6vkgLdvUkK9L830TfdzaZGtAYAAA==
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=_currentPion ObjectInstance="Object instance 7")
+this._currentPion : Pion
+_currentPion.Field</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="68e7acae-a3bc-443b-9404-3f888c1315aa" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="f3eafd1d-0e8a-4cb3-9f7a-313b30a8dd50" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="22b024b5-c7aa-4dcd-b2ae-373e42fad46f" name="SetPion" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="87d0e3ff-178c-43e8-bb6b-169301222666" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field Member=(Name=SetPion OverloadingParameters=[(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion)]))&quot;)" tag="DGQL" />
+              <reference Id="de30dcb5-f018-4d3e-81e9-e61613ea48dd" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Field Member=(Name=SetPion OverloadingParameters=[(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Pion)]))" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2Y2W7TUBCG51GsXCCQoBZhUYEaCQKIlC5RU64QQo6zgrMQu6Xm6flmbCdOnaJclKJElnWSOXNm/edkPMqBtKUncxmJLyGfv9l1pWG7UD5w4ssY3ms5kHMZIhHJmUx5YnGkiawnNbkvb+BHyI2lg14Ct49sCOeluPY0jPpsUnM+XTnEypBngrwrx3Iq7+RInsgjeYvXuUUVQHXRcNfyGliYYGtqnlx8j9i72OlBX8igJLPHumI5cpJlFskMKoDySrLpPsbr1PDQyB1wSNBR+SanM/zEN0geZ4jozgOl3KcHpXHEIDyCCsmnid8WO7XjgMWlaYXsNVvNa8C5v6hInOHoyZe1+N+Tn0SmdXp1Qy1aFu0gs+hYLKEh4mDxSvbluTxA7gxe37z1iCIw9Fb9jUxLa6jVUauKYR/fbuEO/YI3lx/w9sj/PTiuO7uUp5w/Y9XZjbEU2Jl66cDtGr7F7NbXsg0KkaE0LtUs5pbVye0ry0EyRiuV7NmpYvpYHtqqF77rplEr2DshBr2L2/xLWGKzvI2rWTYyfAZWiWSRbSPLvk0kQ8vZl29wQ74VBbVxBN0xq6qx9FCz/hGB18TiStCeEmmUyWkHUoRq1nuaFrnWKb+B24x41Xuq3lP1nv/be045+c4+wPr17pL72M8iUesz8+9bDKt2z+FdWKdKO9pHaB/5oodVOe1o+RSlN941jluKI+Ven7uK2s6C+oR8slP34G89rG1d6DZ71vYglGed95Bylk3zp91kZHml+M0WerUtf39Wt+Wub8tuvnNaa3O8vTdOjmE161azbjXrbj7rprzdnnfvsvdsMuu+2GjWLfaqfzPtFqdcd+N/J/8Amasl2cgUAAA=
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=(Name=NextFieldIsPion OverloadingParameters=[(Assembly="$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll" Namespace=System Type=Int32)]) Statement=[1,1,2,1,2,2] ObjectInstance="Object instance 8")
+Field : Field
+_currentPion.Field.SetPion(null)</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="602455c9-2904-4425-8433-c00aad4cba8b" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="06c1c94d-97ac-46ce-9c79-88d423349822" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="3189c6eb-1713-4dbf-aeab-d7d59650d7cb" name="SetField" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="1d1a1524-f13f-4cd1-afdc-00faaa29afd7" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion Member=(Name=SetField OverloadingParameters=[(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field)]))&quot;)" tag="DGQL" />
+              <reference Id="f99533e8-61b4-4417-90f0-f70376d42ac7" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Pion Member=(Name=SetField OverloadingParameters=[(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Field)]))" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO1abW/aMBC+nxLxYeqklaisXautTNqyodG1pRrdp2maUt63JDBiurJfv+cuhiQEOlqlSAQLBezzvT4+21enp9SkDo1pQC55+P6LXpsc6XlUw4hLPmhv6ZSuqQ+OkL7QEB9FFtXBW6US7dE70EPw+XQDuSmoXfB6oLwmWz6OtL4K1xjfNp1BSx+fAPw2XVCDPtA5vaR9eg+rY/GqhVYbEvZSmgMNAXQNxZIN2wP0bejpoD2hXoanjOcOj0WXOrKQRmi10KpmeKO+gtWh4MGeW8BhChnmr2N0BDtqBeeFRoR7VfoBKxOJoSO8V/CWpZ4DwVjrJWgc3TZjGyO0PEbOL4XfHsbGoM1idXTsTfjRl4hdoOZAuysYsI5ztBlRTySUzsnySnRLkqchUAykP4XWIThDka9JpjNuJcnxusSjQA0kJ0yOmxzfjhxvQOIn6C3QF7N4ZvtYe8hWR+KXK76l7SXXRLR2PqHtQiJpgzmvIT2Zr53ZuRCmeta89Rmc0wLN92Lu10BnDNs6E4qV3f+Ltphre1WU+a3u2II5qTZ5Uu3NbVbRYj9UYi54HuLMb9CtSHnoc7QcVw/j7rw+VhrHKn1biv8z+g3PeBd8s2IursTbntZoiS+eIGJB4x2d0CvkoI3dtAMNHX0GRDOftjcQKZ5Dnh3Wyhh2YdtOVPR/JHN/gVZG/B+B47KxWzrE+BGeCno+NLVkjK3cgNoWfJPRLZ/LJlAIBSU/M2cKWVZBbN/xWOBUem35+pRjTA/ohTyVxG9FJMzek9fes04FcbJWBRHXBY+rHyzgwxQ740dEnXGme+G9Mot/ve5mjZLc9Zqyb8U5kMc+tz0IJVdXtPNk46yLRd6DBhJZhGF3p+o8kzH5Z4w5rx53XsU4mlp5k7VyQIv1scnjfG50ssiuW4kdmrucXOd6MefTt3pFy+z7oy3mun7qe1rzxsHc45h7nIfd4xzswD3OJt8PKV0PPPTN0NGGqomnuNlJy6z7/wz/AHPgVEr6IAAA
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=_currentPion ObjectInstance="Object instance 7")
+this._currentPion : Pion
+_currentPion.SetField(nextField)</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="64cbfbdc-9d2b-4d45-922d-8c23cce39cfa" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="188b052b-b73b-4681-af67-a2f50789982f" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="f472f21a-0dcb-43aa-afc4-674bd969c7f9" name="Add" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="b861000d-7040-4d47-be90-4ac601b31491" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=System.Collections.Generic)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&amp;quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1))&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&amp;quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1) Member=(Name=Add OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&amp;quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1) ParameterIdentifier=0)]))&quot;)" tag="DGQL" />
+              <reference Id="6c4615c4-5b8a-4960-b2ae-fcc937c87724" handle="(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1) Member=(Name=Add OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1) ParameterIdentifier=0)]))" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO1ZbW8SQRCen3LpBwOJshZbY7RngqcotaVE6qemMQcccAoHclcUf73PzO3R6x1UJEigbsiV2dl522dm53bpCTXJown55NIAf39h1CFHRgOqYsalIXiv6YQuqQ+JkD7RCJ+ILKpB1qYDKlAF/BByQ2pBbwZuF7IDcF6Sko8j1GeRmuCvolNY6eMTQF7ROV3QWzqjZ/SE3sDrRKJqg+pAQy3kObAQwNZIPCn49jFWsOOBvqFeTqaE5ycei+p6ZSGNQbVB2TnZeBzB60jw4Mgt4DCDDsvXMDuGn2iJ5LlGhEc2fYHsBPQUUY6gFQL7COMxqCJQvLVcxzyv8D58H9F32OA8vFqCdUOi6ekcWshmLBWCLgCFF/QcfhXy6cGCJ7EFgoSV8eeLFueI0WerjFEXvlWqRn6AN6Fv4JWwgndYzaK5KR1h/hhPGaMhLLVljr20wO0IfunVLc5VEyiEgt9QZyrGvQ2er/NYoveyJk/XTTp3hblVG1Xniy0rI9+QmoulIuE6kjnOtE2HOfkKvnuYHwo3gk2brvZyd9ziVJXsD2CzSNd47lYqdwpGpic5nM0r1tEV3EQ8fVm5i/p3YMcVLNjGGeiW2GaNSHeX0r375EC6TghEA4l8BsuxDNuoSt9iDA+kY9VkbRG4SV2bjmU6lulYpmNtt2NdQOurznS2JyX+D1FdcZzseyzRuRLhXa/pHhf3wg+gXWikvbDkJbRv5r0wObXxXlLCUblYYm72nJfWtubUR8jPzF7f4b1ezPXztNUK1tKR2pzK7AC6vA95x/UW2F7eGUyudyPXeZmadLRA4ugKdlwFT3VfXF3D16sr6p5j3vG7XAv/4zt+O51un/FZb6//zfl+P9H5N2fDBEVzX93mfTUQ39HS/JoqXveGk0d21XvN0ZZuNevcUvYx19mab+hzxZ/PZg9vtQ9zXy9e4+Z2dWLfvJu2+W5Kn0jruW7KeUjyYu7km72HZXMWocrK83NxU2o6lvT0HeoKt6jH8pT1d0xfm76zod9LI30eSPeiVU4TxzvyG2n6t1GVOYWsprPq/91/A6RhnVaiHwAA
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=_previousSteps ObjectInstance="Object instance 12")
+this._previousSteps : List‎&lt;Field‎&gt;
+_previousSteps.Add(nextField)</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="3647ddd3-0e51-407a-8d7e-a774018023d5" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="8c873243-c1de-4b2e-8b6b-2e4437ff5508" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="0d10168e-07b7-4877-88c3-27850c53f742" name="CheckIfIsInTown" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="68e4b4ad-7eca-4eda-80b2-e1c625514be4" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=Console.Controller)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=InputController)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=InputController Member=(Name=CheckIfIsInTown OverloadingParameters=[(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field)]))&quot;)" tag="DGQL" />
+              <reference Id="20575118-d842-4399-bfe6-a12e337c68fa" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Namespace=Console.Controller Type=InputController Member=(Name=CheckIfIsInTown OverloadingParameters=[(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Field)]))" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2ZW2/TQBCFz0+x8tQ+UKuUJ9RUKkEVgdIiGp5QhdykuYCbRLELhF/PN2MnaRq3ilCEmmpl2Z6dncvO2bPejXKoC11rooESpTz/0Oqo4a1UJ/QkukF3pEO11Mci02eNuHJFamJbV007OkafYXejK/ymaLvYpmheK/ar4dIXt5rwjPWeKH2uIfaxPupcb3WqA73QG7JOfFRtpA4ecaWuQYQhsUaeKSb3gHZMnGvkW/VWbPa4f3NHOisryzRGaiPVV2yLdk7WkeNhI4/AYYqP2TfpHZMnr7TcBZmF9Rk9NuqA2fqYGQ9z3j0sJuhm2DVKLC8YQ98RTPQNbcrbMLUYp8hX9KXukZfcrTlrM7AfevYpviNGk7nVifPe0K4545teWY526NUGxgfGbyPjz9F/p6eN9j6nZxleluOw2GPPnvgIlqPeXSHFSnqHnOBxN4dZtvC+na+k2Z6RLbWiufQBy2lgyYMsiaipQMRadfotd858DHxuOiWPwlrbBIrP6Qu2wOahKjf/zdmrQDbsvIHZz5fZ6+yw+3r1n/bYCNRME6+MpdDOLJdb2aM+93/9hX18E+t0Z57TMvV9bn8Qo+vzbrFaeP/ibRz76V4pGqvW6urpk2NQxMhLHOv6upX4V6/oS+6oos6mZzSEB15ZgWg3nIgCH58wH8MO/G878ALHcJIMJ8nt5fFTP0kuzo7Lp8R1/yf4CwV1RqlSGAAA
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController ObjectInstance="Object instance 2")
+this : InputController
+CheckIfIsInTown(nextField)</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="0384d751-de47-4956-a102-6479ae44b68e" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="8866b9e1-07e2-4a47-b11c-c5c52156d5d1" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="f8fb5d1d-3d48-49fb-b912-7a892487bef9" name="Get Board" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="b6d5032e-ef9f-4241-9c3c-3053e700da68" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=Console.Controller)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=GameController)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=GameController Member=Board)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=GameController Member=get_Board)&quot;)" tag="DGQL" />
+              <reference Id="9b9cecd4-40ad-47e9-b34b-05ff117282be" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Namespace=Console.Controller Type=GameController Member=get_Board)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2VW0/CQBCFz08hPOmDbIyJDwZMtAbFcEkEn00FBExpCS2J+Ov9dloUASPvkE3bmdkzlz3TyVbV1VBzTRQq4v2JNlBgWqQ6O6Gm2K5VVU9jEKmelLAyldQAW1NZJ7rBnoKb6hW/JdY3sBGWKzlbgUnPhprzdnokypgVg3dqqaM7NXWhM92SdW5V9ZEGeLidtoAIMbESy+TIPUF3xBkiLzTawlR4PnhKahcnSzVD6iPVtrC5npE1MT585SV4WOLj8Q12Z+TJ/kC2Cka8VtML9eQ5d6FP4fEndpsdf8ZDZ/h+b8b8P5vxHYGYY1sxFxRMdqlgbPyFdCIgRmiM+hhNZN+lyDyy4j+v/NOxsk1ASmdi212CTOAktSh1myHfi7JNT8POnWGNjYvj9Byn59Cnp4PfO1qfvc35WFVwrsuiUp99ZvWFVuPvvOvzls/lA3KIx3oWj+zhvfiey9VtluLlzOK2asmtm/dfbt33/vwCexFZG2oHAAA=
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=_gameController ObjectInstance="Object instance 16")
+this._gameController : GameController
+_gameController.Board</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="5ea08696-8c51-4c32-8628-7ff8577f243a" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="d5e32109-036d-4137-8d9e-744603616b5d" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="0805ade7-2e74-4f37-a74e-a3228ec19bed" name="Get Forest" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="da77f80b-f8c8-4366-9f53-0fc3e3d88bfd" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Board)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Board Member=Forest)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Board Member=get_Forest)&quot;)" tag="DGQL" />
+              <reference Id="6496f0f1-6116-478c-bfbb-eb9c8485d806" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Board Member=get_Forest)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2W2W7TUBCG/0excoFAglpN2QQ1EjVUBHVTU64QQs4ecBZstzQ8Pd9M7DapU4lLKkXWSWZf/jkeeV9t9ZVprEQpv3/geoqdS3WIJtEE2Tvt60IjLHKda8ZTKFAL20gNPdZ75Dl2E3XwWyAdYJsieaPQn9ipL26V8RvqM1FGPFPsQx3rVB90pD090wFZM6+qC9XDI9woi4kwJdbMM4XkHsOHxOlDX2pYs9nhXHMCnZSd5ZpDdaGimu2SL8g6czys8gAcFviYfQvtnDzFPZbHJSLGRaBU5YygrI4ChMdQKf20yHsGZ3ECsLhyrxTeurW+huiTm4kUJY6Rvm7E/5F+UZnN6e09szjzaodlxMBrSR2RgIjXeq2XeoLdObKBZ+tTRdfRW883di+boU3HohqGA3KHK3foN7JMP5Ht0P9HcNyku9Jz9C84TbgJkbqusywdpD3Hd7W7zbNsg0LuKE1qMyu4ZU16+8YJsCzwWlr2XWuY7uqpn73yvzrNGm1RGis5TqjL7udDfjtu8TrwG5gRc73LuMRs6NNZ3HQbl923qWTkPSf6jjTl31CwGEfQHb/35nGboeE7JQevqde1wHtGpbnbHfpWMoQavo9aXrnNrrqVDxnx7T7a7qPtPvr/9tEpmh/oukS/u3GqHLt6VdZi8edeQeJVrEe+QHbp+2u55z5BJ9iv5li3sz1XfW/ZexC6JKxVspTe/UJbSv/1C+8vDfoYRwwKAAA=
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=(Name=NextFieldIsPion OverloadingParameters=[(Assembly="$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll" Namespace=System Type=Int32)]) Statement=[1,1,3,1,1,1,2,1,1,2,1] ObjectInstance="Object instance 17")
+Board : Board
+_gameController.Board.Forest</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="249be2b9-fa30-4d76-8dc4-7c000ab3f230" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="3916f50d-64cd-42f9-8093-ef026034c08f" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="dc190ae1-00c5-43ac-9bb4-f9a0bd3a7530" name="Get Pion" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="cd399a43-cb9e-4c6b-b680-87a23beba5f9" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field Member=Pion)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field Member=get_Pion)&quot;)" tag="DGQL" />
+              <reference Id="44a20156-f1dc-415b-bb1a-e6d934f166da" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Field Member=get_Pion)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2V20sCQRTGvz9FfKqHHKKeQoMyJMMLpD3HekmNdVd2V8j++n5zdk3zAj0WyLA755z5zu3jDFNVT2MlmilQyP8TbaS6aaEanASaY7tVVX1NQaR6VszKVFITbE1lnekOewpurgF+K6xvYEMsN3K26ia9GCrh7/RElCkrAu/UVlcPaulKF7ona2JVDZFGeLiDtjoRImLFlsmRe4buiDNGXmqyh6nwffCV1Ck6S7VAGiLV9rC5npE1Nj585SV4WOHj8U1OF+TJjiDbBSNeq3Huc2ewOkMK6eEc7jbxOvj6vv4zqxtujnXpZytjn+CbYFt3Wy+671HJ1HoO9Io1ZPcs+Bgt5IFF9R5ZMY+VA8yWbTpTGIys0hXxYmpPzbNh8+05K9tkN62XDGtkk3Ca7NNk/+XJ7oJ9Rx9ysju766yXui6q8xkXVlNgdf3MtX0X8jvziBzgsZ3FI/t4L7/vzPoVSPFyZnF7teTW3Xcjt/723fkCnuqxRaIGAAA=
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=nextField ObjectInstance="Object instance 14")
+this.nextField : Field
+nextField.Pion</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="221f1cbf-fd76-4a61-9ede-2008ec9e15bf" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="c36a7811-8c36-4076-8883-68ae99d777eb" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="7df15fc6-2e29-4c5e-83d4-c56c81ec02e3" name="Add" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="9a714fd7-2381-4ba4-bd0e-4585451acb69" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=System.Collections.Generic)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&amp;quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1))&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&amp;quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1) Member=(Name=Add OverloadingParameters=[(Assembly=&amp;quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&amp;quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1) ParameterIdentifier=0)]))&quot;)" tag="DGQL" />
+              <reference Id="578dae53-8e5d-4edc-b0d6-cb6be988f5f5" handle="(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1) Member=(Name=Add OverloadingParameters=[(Assembly=&quot;$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll&quot; Namespace=System.Collections.Generic Type=(Name=List GenericParameterCount=1) ParameterIdentifier=0)]))" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO1ZbY/SQBB+fkrDByOJUuHU+HKYIHqKci85zk/GmAIFquXlaDkPf73PTLdce4ULXoLCXUOW7s7Ozsw+M7PDln204GIKDw58fv/mqIu6jnwccMbBkLQ32McZBuQIcIoxPyEsNMhbRQEPUSM9IN8Qba6bk9ojr0/KK9j6qWvvi3JN+W3jE6UM+BmR38YhjvEOTezhMd5S61St6rDX5Qp7Ka1OCSPKGqsmm7o9jm3KcdmfoZ/hKbFdslk4MjsLMGGvw141wxuNQ2odKx5iuUUc5lwj/A3OTqgnXMF5aBCRUZUoxTqr7IkdIRH22PO5nwb1nnAkcixicaGrfI5lt7KvPuedhUdCg2MVX5fi/wDntEz89HqFL07U2r6RaKktviJiUeIlXuA5iuQ7Ja2n2lxa0VH00vo8XSU+FO+IVMGwR912IoZ+kTbFT9JK3P974rhs7gJPOf+MrcLRkJI6Oida2qR2Fd/k7pb7skUUAkVpmPFZyCircG/f2CxyhlwVcbo6K5iW8UjbnnnGrZLqi4RCQv4RbZLYvCkzcs9ceSbKsShjOqR5JgNL+KB7ck3GJz2YzKOmnkhyFqX5s5kiembGu+UMf43PPufjCFidV9t+rl3hFJ8mUZyn47RuIr6vHpwv4rVu4rdFawa6bwffSfX5FCRERpP9tp5asuJAJbjqhYLWhICojVTznOsF9cBwSlURnApaTxpqv+ReHLt5PcnryS6cWnk92VbP5PXkrtWTY879MN68XjFiLWVGcGSNaJioBEftSMs+I22m9SeqUx/Zd8if1JHmkzoV33ckW2yl2BlLIur1G1JytbXofSb/PM/mLc7m4o21tsa9dPOaeod8neVp6Kk1Ujt6ip1EwZNFjV93hWd2VzRnTl7FtzkW7l8V/zfn3O6ic7s8/5tf77uIzWZ++cUY5m8R8rcI96HKbeotQtRu8yZh27Pj/5xF691AX651A02eXpu5gybvnvba/+79AX8QlMAIHAAA
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=(Name=NextFieldIsPion OverloadingParameters=[(Assembly="$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll" Namespace=System Type=Int32)]) Statement=[1,1,3,1,1,1,2,1,1,2] ObjectInstance="Object instance 18")
+Forest : List‎&lt;Pion‎&gt;
+_gameController.Board.Forest.Add(nextField.Pion)</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="6b247808-9f2e-4d75-aad5-a33707de4442" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="41414104-4a60-4f6c-b192-d7f993382c2f" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="36039c74-e51d-4980-a259-5d84b6a9e41d" name="Get Field" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="dd742624-9953-4242-aedb-b0b60b2f2624" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion Member=Field)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion Member=get_Field)&quot;)" tag="DGQL" />
+              <reference Id="e4761f7c-55ef-4591-9329-f907f9ade195" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Pion Member=get_Field)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2VS0/CQBSFz08hrHQhE3VnwERriBgeRnBtKiBgSkvakoi/3m8uRZBH4paETNreOXPu6+Q2U1VXQ6WaKFTE+5vdQIHtItU5CTUFu1VVPY1hZHpRwspVUgNuTWWd6Q48gzfVO34L0A+4EciNnK3ArFdjpbydnogyZsXwnVrq6EFNXetC92RNrao+1gAPtxcLiBATK7FMjtwT9o44Q+y5RjucCs8XT0ntorNMM6w+Vm2Hu9znZE1MD195CR0W+Hh+g9MZefIDzFahiN/V9EaWufUwNO4z1XqvcxRcR22D+e6OWdu1Qvt79POV8x1xloKteg2K3rvUMbaOQ1QLiB6aBj5GE9srGplHXsxk5aC6ZZvTDBVj2y+ImsDMzL9uk+51K9uMN6yfHDS2mTjN+GnGj2PGO3h8gvfBt6d4lftKl0WNPu/MKgutur8ZN/+K5d/ziB3isZnFM3t4z3//ntXNkOHlDHE7tSzR7btkif73LvoBvJ/RK7YGAAA=
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=_currentPion ObjectInstance="Object instance 21")
+this._currentPion : Pion
+_currentPion.Field</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="d1600856-231e-41dc-b58b-bce94daf84bc" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="bf29af67-29bc-428f-aa95-b73f8fe67bd0" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="6c7b3981-a4fa-4a74-a59c-da44cf89a532" name="SetPion" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="f147e626-776e-4f02-bef2-42547ce94d84" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field Member=(Name=SetPion OverloadingParameters=[(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion)]))&quot;)" tag="DGQL" />
+              <reference Id="a344d890-e98c-4b84-8f8c-3c785735a924" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Field Member=(Name=SetPion OverloadingParameters=[(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Pion)]))" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2Y227TQBCG51GsXCCQaC0SQBXUSGBAhJ6iplwhhJxzwDkQu6Xh6flmbCdO46IIlYpE1mrj2dk5/rsej3IoTenKTIYSSMjvL1Yd8W0Vynt2AhnBeyWHciEDJCI5lwkjFkfqyHpSkYfyGn6E3Eha6M3h9pAN4bwQ14Zv1CeTmvHrykesDBhj5F05kTN5K8dSkz15g9eZRdWG6qDhFvJ8LIyxNTFPLr6HrF3sdKEvpb8ms8+8ZjpymmYWyRSqDeWtySbrGK8Tw0Mjd8Bhjo7K19md4ie+RfIkRURXHihlPj0ojSMG4SFUSD51/DZYqR0HLK5MK2St2WpeffaDxYnEKY6efC7E/4H8IDI9p5e3nEXDou2nFh2LJTREHCxey4E8l0fIncPrmbcuUbQNvVV/Q9PSM9TTUauKYQ/fbu4O/YQ3k+/w9sn/HTgW7V3JU/afMausRlhq2556acHtGL757IrPsgkKkaE0WjuzmFtWJbcvTAfJGK1Esmu7iukTeWyzlj6zWc09q2ahkrN/Skx6N7f5zVhitbydq1n6KV59O5n5Ils/zb5JJAPLOZCvcEOeioLaOIZumVXVWHqoWD2JwGtscc3RnhBplMppRVKEKlaL6ha5nlt2I7cZ8bIWlbWorEX/Vy06Y+cb6zbWb1abzEeVkcSi9qcWQWBRrFq+gHdptSupcR+gA+TzPlbltMZlfZa+A65x3LVIEu7Nziyv7SyoI+TnO3UT/lTVmlaX7rKKbQ9CWdZZVVnPsm7+tL4MLa8Ev+lCr7LlX9Tyttz3bdnNr06jMMe7++ZkGJbdb9n9lt3v33e/CW+3O+D7rEWbdb+1jbrffPX6N/1vvu91N/5H8zd62wO2/BQAAA==
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=(Name=NextFieldIsPion OverloadingParameters=[(Assembly="$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll" Namespace=System Type=Int32)]) Statement=[1,1,3,1,1,1,2,1,2,2] ObjectInstance="Object instance 22")
+Field : Field
+_currentPion.Field.SetPion(null)</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="5d6d563f-866f-4d24-828b-ed39f5640006" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="b6de522d-d88d-4027-bcba-8749549c3f40" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="ae2c61b8-59b9-41bd-b82f-cc2ca173390e" name="Get Board" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="e3ee8d24-d7e5-440a-ae22-faf9a405f649" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=Console.Controller)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=GameController)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=GameController Member=Board)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=GameController Member=get_Board)&quot;)" tag="DGQL" />
+              <reference Id="9700bcd4-40ba-47dd-b4ec-aa1f424e9d0e" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Namespace=Console.Controller Type=GameController Member=get_Board)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO1ZbW/aQAz2T4n4MLXSRgTdS7U1k9psbGz0RaX7NFVTSiBkS4CRa1f26/fYuUBCYGOIVmo5RUfufD7b9/jsc8QBtalLYwrJowi/vzHyyZVRRA3MeBSD9pYO6IL64EjonIZ4FFnUBK9DFdqhQ9AT8MV0hXUTUHvgjUB5TbY8rvS+CNcYvzZ9gpQ+ngH4bTqmU3pHLdqjZ3QErWOxqoOejxX2QpoLCQPIGoomG7pDjG3I6aJ/TUGJp4p2i2bRid5ZQiP0Oug5Jd50rKB1KHiw5RZwmGAN8zcxO4IetYTzWCPCI4e+wZ5U5yLuXeA4k32CGd7jtiP8YWXE+MwqvANwjEHLkHM1km1Y0Bf8PHjChQxPEGUZLfTZS5GsUPqcV//hsYpEQALPDGR2As4hMElESkNiiH1Rkehpyr4VqAPBwkSPiZ5tj55TrPuOUQdz8/GRWVCjl9pS1j4S+zyxsag3H29pXH5E38OKvBbmvMDq62lcZrdZUhhZ095ncE7MKVrixfkoPcIc78DX58tE4PrYPaZsNkNk2S43l4FmGswNfZ839M5Up4Me26GAcSh+8cUPZxixHM78N7IqEl/5sq8A8970i0NpHB36uhD/J/QTlnGGfrPEF2dibaAlWmJLJIhYkHhL+7hZdsF3DlpPtHWnni/qC2UV+5C9w1IZwx5027lvpF9ycn+AVsX+3wPHRXM39BzzL9DqGMWQ1JE51nIFqi/45ne32JdtoJAISnHJZwqnrI69XaJZ4FQ6tmLZoRJMa/RU2p5+Z61e6l+afLTBfLRazfNqpZpnVsmYiudvnp3PVA1BtCvYP/w6Zb0d/080m1w7y7XprZnegRxfofZKFbUe76mrPZv3S/5mbMnXEcdbkb9897lSq6T5ulbiP8Q7wHyW05fflA/n/Gb1QXpz3VU+zseCqRBNhbgNWevuKsR1qkPjGXOfPN77ZLUKf/9eKnwLODHFLlmSUjPO4ijZ+Jr5/w5T6qr/Pf4BlH6cDKYcAAA=
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=_gameController ObjectInstance="Object instance 16")
+this._gameController : GameController
+_gameController.Board</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="a3bb0d28-b2b1-4088-b177-81a7514b04f8" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="5c03f525-ce64-4ccd-b42c-b5c2cef20746" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="1452045f-ceff-4306-85da-521fa3fb0cac" name="Get ForestField" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="2e4010ca-8f1c-4f64-b43a-b958d7a17640" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Board)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Board Member=ForestField)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Board Member=get_ForestField)&quot;)" tag="DGQL" />
+              <reference Id="8f215df1-7cf8-4b6c-8724-855853051ba2" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Board Member=get_ForestField)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO1YbY/SQBB+fkrDB+MlSgPny0UPk7sqinIvOc5PxpgCpVTLi7R3Hv56n5luoaWgp8kZwaZZOjs7Oy/P7M4uPUQHHmYI4CLk73f2+nC0F6LJERcj8l7gEJcYUiLCBSZ8YlhoUbaBCu7jiPyIciN0OW9O7oCyITnPYOvjKPVepWb8tfGWWoZ8xpS3cYIzvEQb+3iIY1qdqVc9Un3OsNfyHGoYU9dELdm0HbBvU49H+gp+QabKdsNm4dREFmFKqkeqUZBN+jGtThQP8dwiDnPOEfkWR6e0E2+QPDGISK9BlFKbDVLiR0yEA1Ih42nR7jl7osciFtc6K2RfopW4fI67i4zEBscGPqzF/x6+0jPJ0/MNuThXb32j0VJfQkXEosYbHOAJ9ih3Qd5ArXn0oqfo5e0FOktyKNkRrYLhgLbtzBr6Rt4MX8irMv5XxHHd2DUecfwxW529ETX1dEysdMntK77Z6NbnskMUIkVpVMhZzFVWZ2wf2SxKxpyVSHo6KpjW8EDbvnmnrV6gRUslY+OUfsn63ObdscTrWFfgjDrzUToGM1+zM19E65joO/RkqDG7+ERuyLegIDrapLu67mXG0kJFa0pEvMbq15yzJ/Q0UrmmViVBqKL1qKWeS+7SVbnNiJf1qKxHZT369+rRGUc+c6xH7asVJ7VRw1Pji+ifqgeuepHXfEneldavpM69Ie1SPmsjLyd1Lr1vRbmetaDeUXK+U5ldrVRNRdRT7PcMeru1ln8d8e/s5rLWLmttcmomZ6Dsr8BkpYrXGpNnMpvNS/ZkbOt/Htlvefni2efoXSWp17WC/BHfPsfTmr75pNye9ZveD5KT667qcXYvlDfE8ob4P1Stu7sh/sntsMxMeZ7s7nlyuxv+wV+54VvESTh2wZOEm0rme9FP56x+t024t/3u+wMM+jOCIhYAAA==
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=(Name=NextFieldIsPion OverloadingParameters=[(Assembly="$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll" Namespace=System Type=Int32)]) Statement=[1,1,3,1,1,1,2,1,1,2,1] ObjectInstance="Object instance 17")
+Board : Board
+_gameController.Board.ForestField</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="3038c80a-ecc6-4b8c-b0f6-cfd82db538ca" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="88b4e30f-63e0-4122-a522-380334e6923e" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="a0d862e0-5510-432b-8caf-ba1d84c2ec58" name="SetField" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="0dda46f4-ce22-44ec-94fe-38b621cf823b" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion Member=(Name=SetField OverloadingParameters=[(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field)]))&quot;)" tag="DGQL" />
+              <reference Id="272f15ed-91dd-4f44-9b92-794ae7dc995c" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Pion Member=(Name=SetField OverloadingParameters=[(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Field)]))" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO1Za4/SQBQ9P6Xhg1kTpdmua4wuJlol4j7YyPrJGNOF8tDykJZ18dd77u1AWyiKhJDANs3QmTv3eebOzAXO0ICPMXrwEPDzN0ctuDoKUOWMhz5pr3GGG3TJEeIThnwiWKiRt4ISjvCG9JB8fdxSbkpqm7wBKS9h6+Nq77Nyjflp4yO1dPkMyG/jEnW8wwVO8BRvaXWsXjXZa1HCzqW51DCgrqFasmm7x7FNPT77E3SWeMps92wWrkxkIUbsNdmrLPHG44hWh4qHeG4RhyllhL/G2RHtRCs4Lw0iMqrgG61MNAZfea/prUg9JoKJ1ivSJLp9xjZBKD9Gya+I7w7nxqTNYnVN7A360dWIPaLmUrunGIiOC/YF0UAlIpOT5ZXoljRPQ6I40PGUWofkDFW+qpkuuJU0x2saT0TqQHOiyPEix/cjx+uU+E56k/TFLJ7ZdnBsfBS7I/XMU++yFtO7It49H9j3KJG2Ipw3lJ7Md8/sZggzI2veOyfn9IBWfDH7q6QLhi2TC4eV3/+K9jB396oot7e/EwvFXbXLu+pobrPCnvgRpdZC1iHJ/DruVCrgWKKVuDqc9+YVcmRwrOBLLv6P8JOeySn4asVaXKu3HaPRUl8CRcSixnu8wHPmoM3T1KcG39wC8cpn7fVUStZQVke0CoZt2rZTNf0vzdwfpJUZ/3vimDd3h2ecP2VzOOpTU1PnxMotqS3FNx1d/lo2iEKoKPWX1ixiljmM7SubRc7I7K2+uecE02M80XZi3rPmpN6OaijOom2dRevVFM5aNUVSKWxWUVhESCj2kicxdcaZHYV/lVn8Rvswq5b0OdjQkyzJgm2cfPuDUHp/xWfRcpw1tSinUk8jizFsP6jKr8iY7WdMcWNtdmMlOBbVc1E9F9XzZtVzQj/0CnqoKx9msnU3Z9N61fTpjn6h+796et1/if4APr8FUVAaAAA=
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=_currentPion ObjectInstance="Object instance 21")
+this._currentPion : Pion
+_currentPion.SetField(_gameController.Board.ForestField)</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="26a3a26c-6a4b-43db-b7e4-b78ebf7d4325" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="5c8c2b6c-9321-4743-823c-aaa5f041aef5" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="db2b6067-520f-47f0-aebc-b62b7112f3ab" name="Get Pion" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="3afc7f8d-c4e3-4471-952b-36d3f5676c61" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field Member=Pion)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field Member=get_Pion)&quot;)" tag="DGQL" />
+              <reference Id="64bcc60b-b395-4da9-863c-695619a15306" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Field Member=get_Pion)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2V20sCQRTGvz9FfKqHHKKeQoMyJMMLpD3HekmNdVd2V8j++n5zdk3zAj0WyLA755z5zu3jDFNVT2MlmilQyP8TbaS6aaEanASaY7tVVX1NQaR6VszKVFITbE1lnekOewpurgF+K6xvYEMsN3K26ia9GCrh7/RElCkrAu/UVlcPaulKF7ona2JVDZFGeLiDtjoRImLFlsmRe4buiDNGXmqyh6nwffCV1Ck6S7VAGiLV9rC5npE1Nj585SV4WOHj8U1OF+TJjiDbBSNeq3Huc2ewOkMK6eEc7jbxOvj6vv4zqxtujnXpZytjn+CbYFt3Wy+671HJ1HoO9Io1ZPcs+Bgt5IFF9R5ZMY+VA8yWbTpTGIys0hXxYmpPzbNh8+05K9tkN62XDGtkk3Ca7NNk/+XJ7oJ9Rx9ysju766yXui6q8xkXVlNgdf3MtX0X8jvziBzgsZ3FI/t4L7/vzPoVSPFyZnF7teTW3Xcjt/723fkCnuqxRaIGAAA=
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=nextField ObjectInstance="Object instance 14")
+this.nextField : Field
+nextField.Pion</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="176d7c4e-8636-4888-b94b-d94e7c4b4e90" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="96f3175e-c22c-4ffa-93d0-cf205cca6ae7" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="841d461b-a89f-44fe-98f9-5d87871b37f1" name="BackToSart" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="64d0864c-95c7-4094-a52d-98abe5f9d722" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=Console.Controller)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=InputController)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Namespace=Console.Controller Type=InputController Member=(Name=BackToSart OverloadingParameters=[(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion)]))&quot;)" tag="DGQL" />
+              <reference Id="f6b0dd99-f02c-4ead-90d3-a2acc1eea9a4" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Namespace=Console.Controller Type=InputController Member=(Name=BackToSart OverloadingParameters=[(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Pion)]))" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2aaW/TQBCG56dY/YCKBLGacgkaJBqoSCltRconVCHnaBLqHMRuafj1PDN2bkdKIWpItLI23p2dneOd2dmt1QMpS1360pJAQn5/M6pJ0UahHDETSBvaWzmQC2nCEckX6fLE4kkJ3oLsyK68gx7B15YK6wZQr+ANobwW356i9b4aV59fX46R0uTpwO/LZzmT93Ii+/JUDtHaN6uq9Gqs8DNpRSR0kNU1TT66W4x95NTp30hjjidHu6N5cpp6FkmPXpVeYY43Gcdo7RoearkHDgPWKH+J2R564kzOxyAz5j5lRq12mC2PmeZhzLsBRx/aELtiimUZG5qGYCDfoYa8FVOVcUK/wlxoK+I0d3csayOw75j2AWu7WBMZ15HlvaK9YxlfMs9iqB3z1mW8y/hNzPgz6D+YqUKdzemhhnxqh8rumfbALJiWOrlDkp30kX7AikkdynnB6pvRThqeGdHUyBv1PsE5cFmyMEs8fEoQ0VGBedUdE4+WxaaW5pHba6tAcZsq2BibRV6uvubkMpB1J6/L7O3N7GVO2D155s7YlUZ7NuvPmdHVm38W3t/b7dzZ2T6ubl8P5bvT6SFPp92RzgK92XqqcRjGRSvrra0KGau36leD+WD0bSpOcSzIt0z8H8lPLNMK+GZBLM7N2kYq0TNbQkPEQ+KdvJIXZKBPJa0jQbXVR5Gf1teyVRpDjY5KVQyv0O1PfE37ZXl7DS2H/x/AMWvulvMiJ89peUZtJFVtTrVUoNYM30nvsmNZBoXIUGrPxSwmy/L4dknz4IzTndU2D2PDdE+eWNtP34vGSbt09egf6lHvHn+vv3yg24QHMkrx52xJqEPO6VG08jWz35+38Zaz3lp8aDqvkdUlZ9WzeCUV+H9HPWt/JxVx3suS6VNUW+ZXgmJvC+6cLvc2O/fcifv3J667+7u7v7v7u7v/+ivRuu/+49v+9B192f8T+QPopj3KUiIAAA==
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController ObjectInstance="Object instance 2")
+this : InputController
+BackToSart(nextField.Pion)</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="d7b3cfcf-8782-4f53-8dd6-a5d84347a675" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="312e49de-3a68-429d-a90e-4daa970b51bf" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="5dd76c7a-8351-4dc4-ab43-6bfc7b495aa5" name="Get Field" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="f1c6fe9e-139f-4a1a-8b90-0cdf8d206d51" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion Member=Field)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion Member=get_Field)&quot;)" tag="DGQL" />
+              <reference Id="f4610005-bd8f-491e-82dd-16e9a8ca267f" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Pion Member=get_Field)" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO2VS0/CQBSFz08hrHQhk+hKAyZaQ8TwMIJrUwEBU1rSlkT89X5zKYI8ErckZNL2zplzXye3maq6GirVRKEi3t/sBgpsF6nOSagp2K2q6mkMI9OLElaukhpwayrrTHfgGbyp3vFbgH7AjUBu5GwFZr0aK+Xt9ESUMSuG79RSRw9q6koXuidralX1sQZ4uL1YQISYWIllcuSesHfEGWLPNdrhVHi+eEpqF51lmmH1sWo73OU+J2tievjKS+iwwMfzG5zOyJMfYLYKRfyupjeyzK2HoXGfqdZ7naPgOmobzHd3zNquFdrfo5+vnO+IsxRs1WtQ9N6ljrF1HKJaQPTQNPAxmthe0cg88mImKwfVLducZqgY235B1ARmZv51m3SvW9lmvGH95KCxzcRpxk8zfhwz3sHjE7wPvj3Fq9yXui5q9HlnVllo1f3NuPlXLP+eR+wQj80sntnDe/7796xuhgwvZ4jbqWWJbt8lS/S/d9EP6vzIgLYGAAA=
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=_currentPion ObjectInstance="Object instance 29")
+this._currentPion : Pion
+_currentPion.Field</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="b451ed49-1b9d-4969-822e-c32f22a634f6" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="6990f186-fa6f-4c71-a70f-ebc73229259f" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="9a9a14f8-e5c6-4dd2-bcf4-de4f83be65a4" name="SetPion" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="e1223909-30dc-4ab0-a298-35a5ed86e0ce" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field Member=(Name=SetPion OverloadingParameters=[(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion)]))&quot;)" tag="DGQL" />
+              <reference Id="5b66faa2-f612-4151-a029-8b2fbebef785" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Field Member=(Name=SetPion OverloadingParameters=[(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Pion)]))" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO1Y227TQBA9n2L5AYEEXZoAQlAjgQHh0kvUlCeEkOPcDM6F2C01X8+ZsZ04tYsiUSoSWdYmM7NzPbsZj3KALgZYIISPiJ+/yPXhKhfhPXd8TCh7hQOcY0yNGGeY8UlgwaOuAxv38ZrymHoT9GiXUjqkbkTJCxh9XKU+qdaCnwaH9DLmM6W+wTFO8RZHaOMR3jDqQrMKSPVpYWplLj1M6WumkQxjh+QN/QxIX2BU0dnjuuKycJJXFmNOKiDlVHQzPmHUmeIhmVvEIaWN6HvcnTNOcoPmcY6IcA5RKmI6pCSPhAiHpCLW4zFuh5z4sYjFpVpF5KVaqWvEfX95IkmOo4PPtfjfww9mJuf08oaz6Gi2o9yjpblEiohFj1d4jmd4QL0zyoYabcAsAkVvPV6oVnKGcjriVTAcMrYp3aGflC3wnbI91v+OONbtXeIJ959ytchN6CnQPYnSo7Sv+Jarqz/LLlGIFaVJ5cwS3rIWa/vCZVEzoVWmOdBdwXQfD3W18+86vqVLvNilGCfMS+7nNv86Vnitbuh6lW6O2UhPJ11W6+bVd5nJWGv28ZXSiN+Cgvg4It1Tr2KximBrT4mJ11TzSmk9Y6ZxriddSRCytR95mrmcXXErtxnxph81/ajpR/9fPzrlzjfyAb1f7zhFjDYe57mI/7lm4GsW657PKbvQ/pX1uQ+kfeqXY6zrSZ8r5i35HRiVmEommfT6hFa2tpbUR+qnO3UT/tTZutqbbrOTbQ9CRdVFZ6lW6Wk86TGh1pXhN1/a2Vv+Vm1uy13flt1863Rqa7y9d06BYTMBNxNwMwH/3QSc0bs9Bd9lP9psAt7faAIud7B/MwOXZ1+z8b+bvwGZ/tg3CBUAAA==
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=(Name=NextFieldIsPion OverloadingParameters=[(Assembly="$(FxReferenceAssembliesUri)/.NETFramework/v4.5.2/mscorlib.dll" Namespace=System Type=Int32)]) Statement=[1,1,3,1,1,1,3,1,1,2,2] ObjectInstance="Object instance 30")
+Field : Field
+_currentPion.Field.SetPion(null)</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="f40c2af8-4927-4b21-b78a-dff03262203a" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="0c3cfe3b-cc75-4c86-9899-baf79b260941" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+          <message Id="7d526cab-0def-4bf5-a1f3-3e0986285845" name="SetField" messageKind="Lost" messageSort="AsynchCall" createSelfMessage="false">
+            <referencesInternal>
+              <reference Id="6fc7f26c-488c-4736-be72-1db0f982d0bc" handle="+ Id.Equals(&quot;Microsoft.Solution.ClassView&quot;) /&#xD;&#xA;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Namespace=::)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion)&quot;)/&#xD;&#xA;&quot;Microsoft.Contains&quot;/&#xD;&#xA;+ Id.EqualsIgnoreCase(&quot;(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Pion Member=(Name=SetField OverloadingParameters=[(Assembly=&amp;quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&amp;quot; Type=Field)]))&quot;)" tag="DGQL" />
+              <reference Id="352710e3-6a4c-4087-acce-8fd0326f0d28" handle="(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Pion Member=(Name=SetField OverloadingParameters=[(Assembly=&quot;$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri)&quot; Type=Field)]))" tag="DGML" />
+            </referencesInternal>
+            <generationState>H4sIAAAAAAAEAO1abXPSQBDen5Lhg1NnlFjw3eKMRhnRtnSkfnI6TgrhRcOL5KjFX++zm4MkJFSsgRnSm0zgbm9fn9u72x49ohZ5NKUBueTj8zd6HXKk51MdIy4NQXtNR3ROfXAE9JnGeBRZ1ABvjUp0QG9AD8A3pEvIzUHtgtcH5SXZ8jjS+iJcU3za9BFa+nhG4LfphJr0jo6pSg/pLaxOxas2Wh1I2Jk0BxpG0DUWSzZsD9C3ocdDe0a9FE8Z7zVei051ZAFN0GqjVUvxhn0Fq2PBgz23gMMcMszfwOgEdtQazhONCPdq9A1WZhKDJ7xn8Jal7gPBSOspaBzdPmMbIZQdI+eXwncPY1PQFrE6OvYW/OhLxC5Qc6DdFQxYxzHajKgvEkrnZHktuiXJ0wAojqQ/h9YxOAORr0umM24lyfGGxKNAHUlOmBw3Ob4fOd6ExHfQ26CvZvHCdoVeaB/Z7kQ8c8W7pMX4qghXzwe0XUjErTDnOaRny9WzOBmCRM9atj6Bc16gGV/N/jrojGFH50Kx8vtv0RZzda+LMr/1HVkwZ9Uuz6qDpc0aWuyHis0Fz0OU+U26EikffY6W4+ph3F1WyErjWKOvmfjfo5/wjHfBV2vm4ky87WmNlvjiCyIWNF7Tc3qKHLSxm3rQ4OlTIJz5pL2BSPEc8uywVsawC9t2rKb/JZn7A7Qy4n8PHLPGrugxxp/graA3hKa2jLGVS1A7gm88uuy5bAGFQFAapuZMIcsqiO0CrwVOpdfWUJ9zjOkhPZC3qr+z+hV5L8x+lON+tEldUaVHG9UVUbVwu6rCAkJMsVOehNQFZ7IX3Ciz+lft3axc4nthS3azKAvy2P32B6H4+gr3o3ScDbHIO9NAIgsx7N6p6s9kTP4ZY06s251YEY6mgt5lBT2i1arZ5HE+Nz1pZDetxQ5Rr5s7njxnezXrk/d9Rcvtm6Mt5sre9g2u+S3C3O+Y+53/v9+J3mLf8Wx7P5r8wy9Gz3ZUTWzjbicps+l/OvwBX03xAxQhAAA=
+(Assembly=$(d8e090b9-910a-4e0b-ab55-1e10a96b48eb.OutputPathUri) Namespace=Console.Controller Type=InputController Member=_currentPion ObjectInstance="Object instance 29")
+this._currentPion : Pion
+_currentPion.SetField(nextField)</generationState>
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="f98aca2f-74fa-427e-8394-8f78fe7e5e24" LastKnownName="MessageOccurrenceSpecification" />
+            </sendEvent>
+            <receiveEvent>
+              <lostFoundTargetMoniker Id="f24ec7fc-186e-4514-b070-a47daf80b3e6" LastKnownName="LostFoundTarget" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="672d0e3b-8a8f-447f-b104-0dff99d159fc" name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="8f4e9ae1-3173-46a9-829d-8c0290a328d3" name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+</SequenceDesignerModel>
