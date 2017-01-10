@@ -23,12 +23,26 @@
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
     <Folder Include="ModelDefinition\" />
+    <Content Include="BoardView_Print.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BoardView_Print.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>BoardView_Print.sequencediagram</DependentUpon>
+    </Content>
     <Content Include="ClassDiagram.classdiagram">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ClassDiagram.classdiagram.layout">
       <SubType>Content</SubType>
       <DependentUpon>ClassDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="InputController_Move.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="InputController_Move.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>InputController_Move.sequencediagram</DependentUpon>
     </Content>
     <Content Include="ModelDefinition\Model.uml">
       <SubType>Content</SubType>
