@@ -299,7 +299,7 @@ namespace Console.Controller
         public int ThrowDice()
         {
             Random random = new Random();
-            int result = random.Next(2, 3);
+            int result = random.Next(1, 7);
 
             InputView.ShowDice(result);
 
