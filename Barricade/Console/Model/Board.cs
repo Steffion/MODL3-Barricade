@@ -82,34 +82,34 @@ public class Board
         Forest = new List<Pion>();
         #region Blue
         BluePion = new List<BluePion>();
-        BluePion.Add(new BluePion());
-        BluePion.Add(new BluePion());
-        BluePion.Add(new BluePion());
-        BluePion.Add(new BluePion());
+        BluePion.Add(new BluePion('Q'));
+        BluePion.Add(new BluePion('W'));
+        BluePion.Add(new BluePion('A'));
+        BluePion.Add(new BluePion('S'));
         #endregion
         #region Yellow
         YellowPion = new List<YellowPion>();
-        YellowPion.Add(new YellowPion());
-        YellowPion.Add(new YellowPion());
-        YellowPion.Add(new YellowPion());
-        YellowPion.Add(new YellowPion());
+        YellowPion.Add(new YellowPion('E'));
+        YellowPion.Add(new YellowPion('R'));
+        YellowPion.Add(new YellowPion('D'));
+        YellowPion.Add(new YellowPion('F'));
         #endregion
         #region Red
         RedPion = new List<RedPion>();
-        RedPion.Add(new RedPion());
-        RedPion.Add(new RedPion());
-        RedPion.Add(new RedPion());
-        RedPion.Add(new RedPion());
+        RedPion.Add(new RedPion('T'));
+        RedPion.Add(new RedPion('G'));
+        RedPion.Add(new RedPion('Y'));
+        RedPion.Add(new RedPion('H'));
         #endregion
         #region Green
         GreenPion = new List<GreenPion>();
-        GreenPion.Add(new GreenPion());
-        GreenPion.Add(new GreenPion());
-        GreenPion.Add(new GreenPion());
-        GreenPion.Add(new GreenPion());
+        GreenPion.Add(new GreenPion('U'));
+        GreenPion.Add(new GreenPion('I'));
+        GreenPion.Add(new GreenPion('K'));
+        GreenPion.Add(new GreenPion('L'));
         #endregion
         #region Origin
-        Origin = new EndField();
+        Origin = new EndField("F");
         for (int i = 0; i < 5; i++)
         {
             Fields.Add(new VoidField());
@@ -162,7 +162,7 @@ public class Board
         Field r5c3 = new RestField();
         Field r5c4 = new RegularField();
         Field r5c5 = new RegularField();
-        Field forest = new ForestField();
+        Field forest = new ForestField("F");
         #endregion
         #region Row 6
         Field r6c1 = new RestField();

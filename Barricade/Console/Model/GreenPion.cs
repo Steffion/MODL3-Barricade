@@ -14,6 +14,7 @@ public class GreenPion : Pion
     public GreenPion(char letter)
     {
         Letter = letter;
+        CColor = ConsoleColor.Green;
     }
 }
 
