@@ -15,9 +15,11 @@ public class RegularField : Field
     {
         Letter = "o";
     }
-    public RegularField(Barricade b )
+
+    public RegularField(Pion pion)
     {
-        Barricade = b;
+        Pion = pion;
+        SetPion(pion);
     }
 }
 

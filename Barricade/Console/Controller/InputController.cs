@@ -10,7 +10,6 @@ namespace Console.Controller
     class InputController
     {
         private List<Field> _previousSteps;
-        private List<Field> _forestField;
         private Field nextField;
         private Pion _tempPion;
         private Pion _currentPion;
@@ -47,7 +46,16 @@ namespace Console.Controller
                     {
                         nextField = _currentPion.Field.Up;
                             
-                        if (nextField == null || (i >= 1 && nextField.Barricade != null)) continue;
+                        if (nextField == null || (i > 1 && nextField.Pion is Barricade)) continue;
+                        if (nextField is EndField)
+                        {
+                            ShowWinner(currentPion);
+                        }
+                        if (nextField.Pion is Barricade)
+                        {
+                            MoveBarricade(nextField.Pion);
+                            break;
+                        }
                         while (nextField is StartField)
                         {
                             nextField = nextField.Up;
@@ -85,8 +93,12 @@ namespace Console.Controller
                     if (key.Key == ConsoleKey.RightArrow)
                     {
                         nextField = _currentPion.Field.Right;
-                        if (nextField == null || (i >= 1 && nextField.Barricade != null) ) continue;
-
+                        if (nextField == null || (i > 1 && nextField.Pion is Barricade) ) continue;
+                        if (nextField.Pion is Barricade)
+                        {
+                            MoveBarricade(nextField.Pion);
+                            break;
+                        }
                         if (_previousSteps.Contains(nextField))
                         {
                             SetStepBack();
@@ -125,11 +137,11 @@ namespace Console.Controller
                     {
                         nextField = _currentPion.Field.Down;
                         
-                        if (nextField == null || nextField is StartField || (i > 1 && nextField.Barricade != null || nextField is ForestField)) continue;
-                        if (nextField.Barricade != null)
+                        if (nextField == null || nextField is StartField || (i > 1 && nextField.Pion is Barricade || nextField is ForestField)) continue;
+                        if (nextField.Pion is Barricade)
                         {
-                            MoveBarricade();
-                            
+                            MoveBarricade(nextField.Pion);
+                            break;
                         }
                         if (_previousSteps.Contains(nextField))
                         {
@@ -163,11 +175,12 @@ namespace Console.Controller
                     if (key.Key == ConsoleKey.LeftArrow)
                     {
                         nextField = _currentPion.Field.Left;
-                        if (nextField == null || (i > 1 && nextField.Barricade != null) ) continue;
+                        if (nextField == null || (i > 1 && nextField.Pion is Barricade) ) continue;
 
-                        if (nextField.Barricade != null)
+                        if (nextField.Pion is Barricade)
                         {
-                            MoveBarricade();
+                            MoveBarricade(nextField.Pion);
+                            break;
                         }
                         if (_previousSteps.Contains(nextField))
                         {
@@ -179,14 +192,12 @@ namespace Console.Controller
                         if (nextField.Pion != null)
                         {
                             NextFieldIsPion(i);
-                           
                             break;
 
                         }
                         if (_tempPion != null)
                         {
                             TempPionIsNotNull();
-                            
                             break;
                         }
                         if (_tempPion == null)
@@ -202,16 +213,188 @@ namespace Console.Controller
             }
         }
 
-        private void MoveBarricade()
+        private void ShowWinner(Pion currentPion)
         {
-            nextField.Barricade = null;
-            //TODO something something dat de bariccarde verplaatst.
+            if (currentPion is RedPion)
+            {
+                InputView.ShowWinner("Blauw");
+            }
+            if (currentPion is BluePion)
+            {
+                InputView.ShowWinner("Rood");
+            }
+            if (currentPion is YellowPion)
+            {
+                InputView.ShowWinner("Geel");
+            }
+            if (currentPion is GreenPion)
+            {
+                InputView.ShowWinner("Groen");
+            }
 
-
-            _currentPion.Field.SetPion(null);
-            _currentPion.SetField(nextField);
         }
 
+        private void MoveBarricade(Pion pion)
+        {
+
+            Field _tempField = nextField;
+            Pion _tempPion = _currentPion;
+            Pion __tempPion = null;
+            _currentPion = pion;
+            _currentPion.SetField(nextField);
+            bool _bool = false;
+            while (!_bool)
+            {
+                _gameController.BoardView.Print(0);
+                while (true)
+                {
+                    _gameController.BoardView.Print(0);
+                    ConsoleKeyInfo key = InputView.GetMoveKey();
+                #region UpArrow
+                if (key.Key == ConsoleKey.UpArrow)
+                {
+                   nextField = _currentPion.Field.Up;
+                   if (nextField == null || nextField is EndField) continue;
+                        if (__tempPion != null)
+                        {
+                            _currentPion.Field.SetPion(__tempPion);
+                            __tempPion = null;
+                            _currentPion.SetField(nextField);
+                            break;
+                        }
+                        if (nextField.Pion != null)
+                        {
+                            __tempPion = nextField.Pion;
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+                        if (nextField.Pion == null)
+                        {
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+                        if (__tempPion == null)
+                        {
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+                        if (__tempPion != null)
+                        {
+                            _currentPion.Field.SetPion(__tempPion);
+                            __tempPion = null;
+                            _currentPion.SetField(nextField);
+                            break;
+                        }
+                    }
+                if (key.Key == ConsoleKey.RightArrow)
+                {
+                    nextField = _currentPion.Field.Right;
+                        if (nextField == null) continue;
+                        if (__tempPion != null)
+                        {
+                            _currentPion.Field.SetPion(__tempPion);
+                            __tempPion = null;
+                            _currentPion.SetField(nextField);
+                            break;
+                        }
+                        if (nextField.Pion != null)
+                        {
+                            __tempPion = nextField.Pion;
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+                        if (nextField.Pion == null)
+                        {
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+                        if (__tempPion == null)
+                        {
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+                        
+                    }
+                if (key.Key == ConsoleKey.LeftArrow)
+                {
+                    nextField = _currentPion.Field.Left;
+                    if (nextField == null) continue;
+                        if (__tempPion != null)
+                        {
+                            _currentPion.Field.SetPion(__tempPion);
+                            __tempPion = null;
+                            _currentPion.SetField(nextField);
+                            break;
+                        }
+                        if (nextField.Pion != null)
+                        {
+                            __tempPion = nextField.Pion;
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+                        if (nextField.Pion == null)
+                        {
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+                        if (__tempPion == null)
+                        {
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+                        if (__tempPion != null)
+                        {
+                            _currentPion.Field.SetPion(__tempPion);
+                            _tempPion = null;
+                            _currentPion.SetField(nextField);
+                            break;
+                        }
+
+                        break;
+                }
+                if (key.Key == ConsoleKey.DownArrow)
+                {
+                    nextField = _currentPion.Field.Down;
+                    if (nextField == null || nextField is Model.FirstRow || nextField is ForestField) continue;
+                        if (__tempPion != null)
+                        {
+                            _currentPion.Field.SetPion(__tempPion);
+                            __tempPion = null;
+                            _currentPion.SetField(nextField);
+                            break;
+                        }
+                        if (nextField.Pion != null)
+                        {
+                            __tempPion = nextField.Pion;
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+
+                        if (nextField.Pion == null)
+                        {
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+                        if (__tempPion == null)
+                        {
+                            _currentPion.Field.SetPion(null);
+                            _currentPion.SetField(nextField);
+                        }
+                        
+                    }
+
+                if (key.Key == ConsoleKey.P)
+                {
+                    if (_currentPion.Field is RestField || _tempPion != null) continue;
+                    _bool = true;
+                    break;
+                }
+                InputView.ShowWrongKey();
+                }
+                #endregion
+            }
+        }
+        
         public int ThrowDice()
         {
             Random random = new Random();
@@ -221,6 +404,7 @@ namespace Console.Controller
 
             return result;
         }
+
         private void SetStepBack()
         {
             if (_tempPion != null)
@@ -271,13 +455,48 @@ namespace Console.Controller
                 }
                 else
                 {
-                    //TODO iets dat regelt dat de pion terug gaat naar Start 
-
+                    BackToSart(nextField.Pion);
                     _currentPion.Field.SetPion(null);
-                    _currentPion.SetField(nextField);
                     _currentPion.SetField(nextField);
                 }
                
+            }
+        }
+
+        private void BackToSart(Pion p)
+        {
+            var fields = _gameController.Board.Fields;
+            int tempInt = 0;
+            for (int i = 0; i < fields.Count; i++)
+            {
+                if (fields[i] is StartField)
+                {
+                    if ((tempInt == 0  || tempInt ==  4 || tempInt == 8 || tempInt == 12) && p is BluePion && fields[i].Pion == null)
+                    {
+                        fields[i].Pion = p;
+                        p.Field = fields[i];
+                        break;
+                    }
+                    if ((tempInt == 1 || tempInt == 5 || tempInt == 9 || tempInt == 13) && p is YellowPion && fields[i].Pion == null)
+                    {
+                        fields[i].Pion = p;
+                        p.Field = fields[i];
+                        break;
+                    }
+                    if ((tempInt == 2|| tempInt == 6 || tempInt == 10 || tempInt == 14) && p is GreenPion && fields[i].Pion == null)
+                    {
+                        fields[i].Pion = p;
+                        p.Field = fields[i];
+                        break;
+                    }
+                    if ((tempInt == 3 || tempInt == 7 || tempInt == 11 || tempInt == 15) && p is RedPion && fields[i].Pion == null)
+                    {
+                        fields[i].Pion = p;
+                        p.Field = fields[i];
+                        break;
+                    }
+                    tempInt++;
+                }
             }
         }
 
