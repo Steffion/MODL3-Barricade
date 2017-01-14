@@ -12,11 +12,36 @@ using System.Text;
 public abstract class Pion
 {
     private Field _field;
+    private char _letter;
+    private ConsoleColor _cColor;
+    private ConsoleColor _fColor;
 
     public Field Field
     {
         get;
         set;
+    }
+    public Char Letter
+    {
+        get
+        {
+            return _letter;
+        }
+        set
+        {
+            _letter = value;
+        }
+    }
+    public ConsoleColor CColor
+    {
+        get
+        {
+            return _cColor;
+        }
+        set
+        {
+            _cColor = value;
+        }
     }
 
     public void SetField(Field field)

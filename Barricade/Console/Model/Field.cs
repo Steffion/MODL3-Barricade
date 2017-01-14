@@ -17,6 +17,13 @@ public abstract class Field
     private Field _left;
     private Barricade _barricade;
     private Pion _pion;
+    private string _letter;
+
+   public String Letter
+    {
+        get { return _letter; }
+        set { _letter = value; }
+    }
 
     public Pion Pion
     {

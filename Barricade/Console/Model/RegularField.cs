@@ -13,7 +13,7 @@ public class RegularField : Field
 {
     public RegularField()
     {
-
+        Letter = "o";
     }
     public RegularField(Barricade b )
     {

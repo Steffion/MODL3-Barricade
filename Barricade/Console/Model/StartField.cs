@@ -14,6 +14,7 @@ public class StartField : Field
 
     public StartField(Pion pion)
     {
+        Letter = "S";
         Pion = pion;
         SetPion(pion);
     }

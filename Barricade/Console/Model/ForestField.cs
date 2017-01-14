@@ -11,5 +11,9 @@ using System.Text;
 
 public class ForestField : Field
 {
+    public ForestField(string letter)
+    {
+        Letter = letter;
+    }
 }
 

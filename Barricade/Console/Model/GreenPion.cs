@@ -11,5 +11,9 @@ using System.Text;
 
 public class GreenPion : Pion
 {
+    public GreenPion(char letter)
+    {
+        Letter = letter;
+    }
 }
 
