@@ -77,132 +77,7 @@ namespace Console.View
                 {
                     Pion pion = temp[i].Pion;
                     System.Console.BackgroundColor = ConsoleColor.DarkGray;
-                    if (pion is Barricade)
-                    {
-                        System.Console.Write("X");
-                        DrawPathLine(temp[i], i);
-
-                        continue;
-                    }
-                    if (pion is BluePion)
-                    {
-                        System.Console.ForegroundColor = pion.CColor;
-                        System.Console.Write(pion.Letter);
-                        DrawPathLine(temp[i], i);
-                        i++;
-
-
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-
-                        if (_gameController.Board.BluePion[1].Equals(pion))
-                        {
-                            System.Console.Write("W");
-
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-
-                        if (_gameController.Board.BluePion[2].Equals(pion))
-                        {
-                            System.Console.Write("A");
-
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-
-                        if (_gameController.Board.BluePion[3].Equals(pion))
-                        {
-                            System.Console.Write("S");
-
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-                    }
-
-                    if (pion is YellowPion)
-                    {
-                        System.Console.ForegroundColor = pion.CColor;
-                        System.Console.Write(pion.Letter);
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-
-                        if (_gameController.Board.YellowPion[1].Equals(pion))
-                        {
-                            System.Console.Write("R");
-
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-
-                        if (_gameController.Board.YellowPion[2].Equals(pion))
-                        {
-                            System.Console.Write("D");
-
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-
-                        if (_gameController.Board.YellowPion[3].Equals(pion))
-                        {
-                            System.Console.Write("F");
-
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-                    }
-
-                    if (pion is RedPion)
-                    {
-                        System.Console.ForegroundColor = ConsoleColor.Red;
-
-                        if (_gameController.Board.RedPion[0].Equals(pion))
-                        {
-                            System.Console.Write("T");
-
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-
-                        if (_gameController.Board.RedPion[1].Equals(pion))
-                        {
-                            System.Console.Write("G");
-
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-
-                        if (_gameController.Board.RedPion[2].Equals(pion))
-                        {
-                            System.Console.Write("Y");
-
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-
-                        if (_gameController.Board.RedPion[3].Equals(pion))
-                        {
-                            System.Console.Write("H");
-
-                            DrawPathLine(temp[i], i);
-
-                            continue;
-                        }
-                    }
-
+                   
                     if (pion is GreenPion)
                     {
                         System.Console.ForegroundColor = ConsoleColor.Green;
@@ -281,6 +156,14 @@ namespace Console.View
                             }
                         }
                     }
+                    else
+                    {
+                        System.Console.ForegroundColor = pion.CColor;
+                        System.Console.Write(pion.Letter);
+                        DrawPathLine(temp[i], i);
+                        continue;
+                    }
+
                 }
                 
 
@@ -291,30 +174,18 @@ namespace Console.View
                 if (temp[i] is VoidField)
                 {
                     System.Console.Write(temp[i].Letter);
+                    continue;
                 }
-                if (temp[i] is EndField)
-                {
-                    System.Console.Write("F");
-                    DrawPathLine(temp[i], i);
-                }
-                if ((temp[i] is RegularField || temp[i] is FirstRow) && !(temp[i].Pion is Barricade))
+                if ((temp[i] is RegularField || temp[i] is FirstRow))
                 {
                         System.Console.Write("O");
                         DrawPathLine(temp[i], i);
+                    continue;
                 }
-                if (temp[i] is RestField && !(temp[i].Pion is Barricade))
-                {
-                    if (temp[i].Pion == null)
-                    {
-                        System.Console.Write("R");
-                        DrawPathLine(temp[i], i);
-                    }
-
-                }
-                
                 if (temp[i] is ForestField)
                 {
                     System.Console.Write("|   F   | \n");
+                    continue;
                 }
 
                 if (temp[i] is StartField)
@@ -323,7 +194,14 @@ namespace Console.View
                     if (i == 88 || i == 99 || i == 121 || i == 110)
                     {
                         System.Console.WriteLine();
+                        continue;
                     }
+                }
+                else
+                {
+                    System.Console.Write(temp[i].Letter);
+                    DrawPathLine(temp[i], i);
+                    continue;
                 }
             }
             if (dice > 0)

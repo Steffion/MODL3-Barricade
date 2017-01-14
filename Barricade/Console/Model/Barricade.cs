@@ -15,7 +15,7 @@ public class Barricade : Pion
     public Barricade()
     {
         Letter = 'X';
-        //CColor = 
+        CColor = ConsoleColor.White; 
     }
 }
 
