@@ -54,13 +54,13 @@
     <Compile Include="Model\ForestField.cs" />
     <Compile Include="Model\GreenPion.cs" />
     <Compile Include="Model\HorizontalField.cs" />
-    <Compile Include="Model\PathField.cs" />
     <Compile Include="Model\Pion.cs" />
     <Compile Include="Model\RedPion.cs" />
     <Compile Include="Model\RegularField.cs" />
     <Compile Include="Model\RestField.cs" />
     <Compile Include="Model\StartField.cs" />
     <Compile Include="Model\Town.cs" />
+    <Compile Include="Model\VerticalField.cs" />
     <Compile Include="Model\VoidField.cs" />
     <Compile Include="Model\YellowPion.cs" />
     <Compile Include="Program.cs" />

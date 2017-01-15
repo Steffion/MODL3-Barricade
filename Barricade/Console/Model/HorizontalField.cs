@@ -8,5 +8,9 @@ namespace Console.Model
 {
     class HorizontalField : Field
     {
+        public HorizontalField()
+        {
+            Letter = "-";
+        }
     }
 }

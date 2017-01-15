@@ -8,5 +8,9 @@ namespace Console.Model
 {
     public class VoidField : Field
     {
+        public VoidField()
+        {
+            Letter = " ";
+        }
     }
 }

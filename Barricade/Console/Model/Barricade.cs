@@ -11,5 +11,11 @@ using System.Text;
 
 public class Barricade : Pion
 {
+
+    public Barricade()
+    {
+        Letter = 'X';
+        CColor = ConsoleColor.White; 
+    }
 }
 

@@ -17,24 +17,17 @@ namespace Console.View
             _gameController = gameController;
         }
 
-        private void DrawPathLine(Field field)
+        private void EndOfRow(Field field)
         {
             System.Console.ForegroundColor = ConsoleColor.White;
             System.Console.BackgroundColor = ConsoleColor.Black;
-
-            if (field is StartField) return;
-
             if (field.Right == null)
             {
                 System.Console.WriteLine();
             }
-            else
-            {
-                System.Console.Write("-");
-            }
         }
 
-        public void Print()
+        public void Print(int dice)
         {
             var temp = _gameController.Board.Fields;
             System.Console.Clear();
@@ -45,283 +38,52 @@ namespace Console.View
                 {
                     Pion pion = temp[i].Pion;
                     System.Console.BackgroundColor = ConsoleColor.DarkGray;
-
-                    if (pion is BluePion)
-                    {
-                        System.Console.ForegroundColor = ConsoleColor.Blue;
-
-                        if (_gameController.Board.BluePion[0].Equals(pion))
-                        {
-                            System.Console.Write("Q");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.BluePion[1].Equals(pion))
-                        {
-                            System.Console.Write("W");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.BluePion[2].Equals(pion))
-                        {
-                            System.Console.Write("A");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.BluePion[3].Equals(pion))
-                        {
-                            System.Console.Write("S");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-                    }
-
-                    if (pion is YellowPion)
-                    {
-                        System.Console.ForegroundColor = ConsoleColor.Yellow;
-
-                        if (_gameController.Board.YellowPion[0].Equals(pion))
-                        {
-                            System.Console.Write("E");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.YellowPion[1].Equals(pion))
-                        {
-                            System.Console.Write("R");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.YellowPion[2].Equals(pion))
-                        {
-                            System.Console.Write("D");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.YellowPion[3].Equals(pion))
-                        {
-                            System.Console.Write("F");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-                    }
-
-                    if (pion is RedPion)
-                    {
-                        System.Console.ForegroundColor = ConsoleColor.Red;
-
-                        if (_gameController.Board.RedPion[0].Equals(pion))
-                        {
-                            System.Console.Write("T");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.RedPion[1].Equals(pion))
-                        {
-                            System.Console.Write("G");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.RedPion[2].Equals(pion))
-                        {
-                            System.Console.Write("Y");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.RedPion[3].Equals(pion))
-                        {
-                            System.Console.Write("H");
-
-                            DrawPathLine(temp[i]);
-
-                            i++;
-                        }
-                    }
-
-                    if (pion is GreenPion)
-                    {
-                        System.Console.ForegroundColor = ConsoleColor.Green;
-
-                        if (_gameController.Board.GreenPion[0].Equals(pion))
-                        {
-                            System.Console.Write("U");
-
-                            if (pion.Field is StartField)
-                            {
-                                System.Console.ForegroundColor = ConsoleColor.White;
-                                System.Console.BackgroundColor = ConsoleColor.Black;
-                                System.Console.WriteLine();
-                            }
-                            else
-                            {
-                                DrawPathLine(temp[i]);
-                            }
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.GreenPion[1].Equals(pion))
-                        {
-                            System.Console.Write("I");
-
-                            if (pion.Field is StartField)
-                            {
-                                System.Console.ForegroundColor = ConsoleColor.White;
-                                System.Console.BackgroundColor = ConsoleColor.Black;
-                                System.Console.WriteLine();
-                            }
-                            else
-                            {
-                                DrawPathLine(temp[i]);
-                            }
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.GreenPion[2].Equals(pion))
-                        {
-                            System.Console.Write("J");
-
-                            if (pion.Field is StartField)
-                            {
-                                System.Console.ForegroundColor = ConsoleColor.White;
-                                System.Console.BackgroundColor = ConsoleColor.Black;
-                                System.Console.WriteLine();
-                            }
-                            else
-                            {
-                                DrawPathLine(temp[i]);
-                            }
-
-                            i++;
-                        }
-
-                        if (_gameController.Board.GreenPion[3].Equals(pion))
-                        {
-                            System.Console.Write("K");
-
-                            if (pion.Field is StartField)
-                            {
-                                System.Console.ForegroundColor = ConsoleColor.White;
-                                System.Console.BackgroundColor = ConsoleColor.Black;
-                                System.Console.WriteLine();
-                            }
-                            else
-                            {
-                                DrawPathLine(temp[i]);
-                            }
-
-                            i++;
-                        }
-                    }
+                    System.Console.ForegroundColor = pion.CColor;
+                    System.Console.Write(pion.Letter);
+                    EndOfRow(temp[i]);
+                    continue;
                 }
-
-                if (i >= temp.Count) continue;
-
                 System.Console.ForegroundColor = ConsoleColor.White;
 
-                if (temp[i] is VoidField)
+                if (temp[i] is VoidField || temp[i] is HorizontalField)
                 {
-                    System.Console.Write("  ");
+                    System.Console.Write(temp[i].Letter);
+                    continue;
                 }
-                if (temp[i] is EndField)
+                else
                 {
-                    System.Console.Write("F");
-                    DrawPathLine(temp[i]);
-                }
-                if (temp[i] is RegularField && temp[i].Barricade == null)
-                {
-                    if (temp[i].Pion == null)
-                    {
-                        System.Console.Write("O");
-                        DrawPathLine(temp[i]);
-                    }
-
-                }
-                if (temp[i] is RestField)
-                {
-                    if (temp[i].Pion == null)
-                    {
-                        System.Console.Write("R");
-                        DrawPathLine(temp[i]);
-                    }
-
-                }
-                if (temp[i] is RegularField && temp[i].Barricade != null)
-                {
-                    if (temp[i].Pion == null)
-                    {
-                        System.Console.Write("X");
-                        DrawPathLine(temp[i]);
-                    }
-
-                }
-                if (temp[i] is ForestField)
-                {
-                    System.Console.Write("|   F   | \n");
-                }
-
-                if (temp[i] is StartField)
-                {
-                    System.Console.Write("S");
+                    System.Console.Write(temp[i].Letter);
+                    EndOfRow(temp[i]);
+                    continue;
                 }
             }
-            //Field origin = _gameController.Board.Origin;
+            if (dice > 0)
+            {
+                System.Console.Write("Zetten over: " + dice);
 
-            //System.Console.ForegroundColor = ConsoleColor.White;
-            //System.Console.WriteLine();
-            //System.Console.WriteLine();
-            //System.Console.WriteLine();
-            //System.Console.WriteLine("-------------------------");
-            //System.Console.WriteLine("|           F           |");
-            //System.Console.WriteLine("| 	    |	        |");
-            //System.Console.WriteLine("|   O-O-O-O-O-O-O-O-O   | (1) (9)");
-            //System.Console.WriteLine("|   |     	    |   |");
-            //System.Console.WriteLine("|   O-O-O-O-O-O-O-O-O   | (2) (9)");
-            //System.Console.WriteLine("|           |           |");
-            //System.Console.WriteLine("|     O-O-O-O-O-O-O     | (3) (7) ");
-            //System.Console.WriteLine("|     |           |     |");
-            //System.Console.WriteLine("|     O-O-O-O-O-O-O     | (4) (7)");
-            //System.Console.WriteLine("|           |           |");
-            //System.Console.WriteLine("|       O-O-O-O-O       | (5) (4)");
-            //System.Console.WriteLine("|       | F F F |       |");
-            //System.Console.WriteLine("| O-O-O-O-O-O-O-O-O-O-O | (6) (11)");
-            //System.Console.WriteLine("| |   |     |     |   | |");
-            //System.Console.WriteLine("| O-O-O-O-O-O-O-O-O-O-O |");
-            //System.Console.WriteLine("|   |   |       |   |   |");
-            //System.Console.WriteLine("|  B(4) Y(4)  R(4)  G(4)|");
-            //System.Console.WriteLine("-------------------------");
+            }
+           
+        }
+
+        public void ShowWinner(Pion currentPion)
+        {
+            if (currentPion is RedPion)
+            {
+                System.Console.WriteLine("De winnaar is  Rood!");
+            }
+            if (currentPion is BluePion)
+            {
+                System.Console.WriteLine("De winnaar is  Blauw!");
+            }
+            if (currentPion is YellowPion)
+            {
+                System.Console.WriteLine("De winnaar is  Geel!");
+            }
+            if (currentPion is GreenPion)
+            {
+                System.Console.WriteLine("De winnaar is  Groen!");
+            }
+
         }
     }
 }

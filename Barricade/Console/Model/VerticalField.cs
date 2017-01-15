@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Console.Model
 {
-    public class PathField : Field
+    class VerticalField : Field
     {
+        public VerticalField()
+        {
+            Letter = "|";
+        }
     }
 }

@@ -15,8 +15,21 @@ public abstract class Field
     private Field _right;
     private Field _down;
     private Field _left;
-    private Barricade _barricade;
     private Pion _pion;
+    private string _letter;
+    private bool _isInTown;
+
+    public Boolean IsInTown
+    {
+        get { return _isInTown; }
+        set { _isInTown = value; }
+    }
+
+   public String Letter
+    {
+        get { return _letter; }
+        set { _letter = value; }
+    }
 
     public Pion Pion
     {
@@ -84,16 +97,6 @@ public abstract class Field
             _left = value;
         }
     }
-    public Barricade Barricade
-    {
-        get
-        {
-            return _barricade;
-        }
-        set
-        {
-            _barricade = value;
-        }
-    }
+    
 }
 

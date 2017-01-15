@@ -11,6 +11,11 @@ using System.Text;
 
 public class RedPion : Pion
 {
-
+    public RedPion(char letter, ConsoleKey key)
+    {
+        Letter = letter;
+        CColor = ConsoleColor.Red;
+        CKey = key;
+    }
 }
 

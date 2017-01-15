@@ -11,7 +11,10 @@ using System.Text;
 
 public class EndField : Field
 {
-
+    public EndField(string letter)
+    {
+        Letter = letter;
+    }
 
 
 }
