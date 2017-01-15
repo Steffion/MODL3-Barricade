@@ -10,7 +10,7 @@ namespace Console.Model
     {
         public VoidField()
         {
-            Letter = "  ";
+            Letter = " ";
         }
     }
 }

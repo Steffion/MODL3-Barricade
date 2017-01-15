@@ -13,12 +13,24 @@ public class RegularField : Field
 {
     public RegularField()
     {
-        Letter = "o";
+        Letter = "O";
     }
 
     public RegularField(Pion pion)
     {
         Pion = pion;
+        SetPion(pion);
+    }
+    public RegularField(Boolean b)
+    {
+        IsInTown = b;
+        Letter = "O";
+    }
+
+    public RegularField(Pion pion, Boolean b)
+    {
+        Pion = pion;
+        IsInTown = b;
         SetPion(pion);
     }
 }

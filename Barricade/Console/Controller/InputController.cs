@@ -447,7 +447,7 @@ namespace Console.Controller
             }
             else
             {
-                if (CheckIfIsInTown(nextField))
+                if (_currentPion.Field.IsInTown)
                 {
                     _gameController.Board.Forest.Add(nextField.Pion);
                     _currentPion.Field.SetPion(null);
@@ -500,18 +500,6 @@ namespace Console.Controller
             }
         }
 
-        private bool CheckIfIsInTown(Field field)
-        {
-            for (int y = 0; y < _gameController.Board.Town.Field.Count; y++)
-            {
-                if (field.Equals(_gameController.Board.Town.Field[y]))
-                {
-                    _gameController.Board.Forest.Add(nextField.Pion);
-                    return true;
-                }
-            }
-            return false;
-        }
         public Pion GetPion()
         {
             InputView.ShowPossiblePions();

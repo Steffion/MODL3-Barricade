@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Console.Model
 {
-    class FirstRow : Field
+    class VerticalField : Field
     {
-        public FirstRow()
+        public VerticalField()
         {
-            Letter = "O";
+            Letter = "|";
         }
     }
 }

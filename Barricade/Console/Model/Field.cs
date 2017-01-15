@@ -17,6 +17,13 @@ public abstract class Field
     private Field _left;
     private Pion _pion;
     private string _letter;
+    private bool _isInTown;
+
+    public Boolean IsInTown
+    {
+        get { return _isInTown; }
+        set { _isInTown = value; }
+    }
 
    public String Letter
     {
