@@ -11,10 +11,11 @@ using System.Text;
 
 public class GreenPion : Pion
 {
-    public GreenPion(char letter)
+    public GreenPion(char letter, ConsoleKey key)
     {
         Letter = letter;
         CColor = ConsoleColor.Green;
+        CKey = key;
     }
 }
 

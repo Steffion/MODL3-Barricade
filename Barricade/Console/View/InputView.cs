@@ -54,7 +54,7 @@ namespace Console.View
             System.Console.ForegroundColor = ConsoleColor.White;
             
             System.Console.WriteLine();
-            System.Console.Write("Please a direction using the arrow keys: ");
+            System.Console.Write("Please a direction using the arrow keys or p to place a barricade: ");
 
             return System.Console.ReadKey();
         }
@@ -109,7 +109,7 @@ namespace Console.View
         public void ShowWinner(string v)
         {
             System.Console.Clear();
-            System.Console.WriteLine("De winnaar is " + v + "!");
+            
 
         }
     }

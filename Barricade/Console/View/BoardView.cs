@@ -17,7 +17,7 @@ namespace Console.View
             _gameController = gameController;
         }
 
-        private void DrawPathLine(Field field, int i)
+        private void EndOfRow(Field field)
         {
             System.Console.ForegroundColor = ConsoleColor.White;
             System.Console.BackgroundColor = ConsoleColor.Black;
@@ -40,7 +40,7 @@ namespace Console.View
                     System.Console.BackgroundColor = ConsoleColor.DarkGray;
                     System.Console.ForegroundColor = pion.CColor;
                     System.Console.Write(pion.Letter);
-                    DrawPathLine(temp[i], i);
+                    EndOfRow(temp[i]);
                     continue;
                 }
                 System.Console.ForegroundColor = ConsoleColor.White;
@@ -53,7 +53,7 @@ namespace Console.View
                 else
                 {
                     System.Console.Write(temp[i].Letter);
-                    DrawPathLine(temp[i], i);
+                    EndOfRow(temp[i]);
                     continue;
                 }
             }
@@ -62,6 +62,28 @@ namespace Console.View
                 System.Console.Write("Zetten over: " + dice);
 
             }
+           
+        }
+
+        public void ShowWinner(Pion currentPion)
+        {
+            if (currentPion is RedPion)
+            {
+                System.Console.WriteLine("De winnaar is  Rood!");
+            }
+            if (currentPion is BluePion)
+            {
+                System.Console.WriteLine("De winnaar is  Blauw!");
+            }
+            if (currentPion is YellowPion)
+            {
+                System.Console.WriteLine("De winnaar is  Geel!");
+            }
+            if (currentPion is GreenPion)
+            {
+                System.Console.WriteLine("De winnaar is  Groen!");
+            }
+
         }
     }
 }

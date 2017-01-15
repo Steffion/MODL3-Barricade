@@ -15,6 +15,7 @@ public abstract class Pion
     private char _letter;
     private ConsoleColor _cColor;
     private ConsoleColor _fColor;
+    private ConsoleKey _cKey;
 
     public Field Field
     {
@@ -43,11 +44,33 @@ public abstract class Pion
             _cColor = value;
         }
     }
+    public ConsoleKey CKey
+    {
+        get
+        {
+            return _cKey;
+        }
+        set
+        {
+            _cKey = value;
+        }
+    }
 
     public void SetField(Field field)
     {
         Field = field;
         Field.Pion = this;
+    }
+    public void Move(Field nextField)
+    {
+        Field.SetPion(null);
+        SetField(nextField);
+    }
+
+    public void MoveOverPion(Pion pion, Field nextField)
+    {
+        Field.SetPion(pion);
+        SetField(nextField);
     }
 }
 

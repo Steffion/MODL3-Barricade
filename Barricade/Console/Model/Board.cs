@@ -75,38 +75,40 @@ public class Board
         get;
         set;
     }
+    public virtual List<Pion> Pions
+    {
+        get;
+        set;
+    }
 
     public Board()
     {
         Fields = new List<Field>();
         Forest = new List<Pion>();
+        Pions = new List<Pion>();
         #region Blue
-        BluePion = new List<BluePion>();
-        BluePion.Add(new BluePion('Q'));
-        BluePion.Add(new BluePion('W'));
-        BluePion.Add(new BluePion('A'));
-        BluePion.Add(new BluePion('S'));
+        Pions.Add(new BluePion('Q', ConsoleKey.Q));
+        Pions.Add(new BluePion('W', ConsoleKey.W));
+        Pions.Add(new BluePion('A', ConsoleKey.A));
+        Pions.Add(new BluePion('S', ConsoleKey.S));
         #endregion
         #region Yellow
-        YellowPion = new List<YellowPion>();
-        YellowPion.Add(new YellowPion('E'));
-        YellowPion.Add(new YellowPion('R'));
-        YellowPion.Add(new YellowPion('D'));
-        YellowPion.Add(new YellowPion('F'));
+        Pions.Add(new YellowPion('E', ConsoleKey.E));
+        Pions.Add(new YellowPion('R' , ConsoleKey.R));
+        Pions.Add(new YellowPion('D', ConsoleKey.D));
+        Pions.Add(new YellowPion('F', ConsoleKey.F));
         #endregion
         #region Red
-        RedPion = new List<RedPion>();
-        RedPion.Add(new RedPion('T'));
-        RedPion.Add(new RedPion('G'));
-        RedPion.Add(new RedPion('Y'));
-        RedPion.Add(new RedPion('H'));
+        Pions.Add(new RedPion('T', ConsoleKey.T));
+        Pions.Add(new RedPion('G', ConsoleKey.G));
+        Pions.Add(new RedPion('Y', ConsoleKey.Y));
+        Pions.Add(new RedPion('H', ConsoleKey.H));
         #endregion
         #region Green
-        GreenPion = new List<GreenPion>();
-        GreenPion.Add(new GreenPion('U'));
-        GreenPion.Add(new GreenPion('I'));
-        GreenPion.Add(new GreenPion('K'));
-        GreenPion.Add(new GreenPion('L'));
+        Pions.Add(new GreenPion('U', ConsoleKey.U));
+        Pions.Add(new GreenPion('I', ConsoleKey.I));
+        Pions.Add(new GreenPion('K', ConsoleKey.K));
+        Pions.Add(new GreenPion('L', ConsoleKey.L));
         #endregion
         #region Origin
         Origin = new EndField("F");
@@ -196,22 +198,22 @@ public class Board
         Field r7c11 = new FirstRow();
         #endregion
         #region Startfields
-        Field sf1 = new StartField(BluePion[0]) { Right = new VoidField() } ;
-        Field sf2 = new StartField(BluePion[1]) { Right = new VoidField() };
-        Field sf3 = new StartField(BluePion[2]) { Right = new VoidField() };
-        Field sf4 = new StartField(BluePion[3]) { Right = new VoidField() };
-        Field sf5 = new StartField(YellowPion[0]) { Right = new VoidField() };
-        Field sf6 = new StartField(YellowPion[1]) { Right = new VoidField() };
-        Field sf7 = new StartField(YellowPion[2]) { Right = new VoidField() };
-        Field sf8 = new StartField(YellowPion[3]) { Right = new VoidField() };
-        Field sf9 = new StartField(RedPion[0]) { Right = new VoidField() };
-        Field sf10 = new StartField(RedPion[1]) { Right = new VoidField() };
-        Field sf11 = new StartField(RedPion[2]) { Right = new VoidField() };
-        Field sf12 = new StartField(RedPion[3]) { Right = new VoidField() };
-        Field sf13 = new StartField(GreenPion[0]);
-        Field sf14 = new StartField(GreenPion[1]);
-        Field sf15 = new StartField(GreenPion[2]);
-        Field sf16 = new StartField(GreenPion[3]);
+        Field sf1 = new StartField(Pions[0]) { Right = new VoidField() } ;
+        Field sf2 = new StartField(Pions[1]) { Right = new VoidField() };
+        Field sf3 = new StartField(Pions[2]) { Right = new VoidField() };
+        Field sf4 = new StartField(Pions[3]) { Right = new VoidField() };
+        Field sf5 = new StartField(Pions[4]) { Right = new VoidField() };
+        Field sf6 = new StartField(Pions[5]) { Right = new VoidField() };
+        Field sf7 = new StartField(Pions[6]) { Right = new VoidField() };
+        Field sf8 = new StartField(Pions[7]) { Right = new VoidField() };
+        Field sf9 = new StartField(Pions[8]) { Right = new VoidField() };
+        Field sf10 = new StartField(Pions[9]) { Right = new VoidField() };
+        Field sf11 = new StartField(Pions[10]) { Right = new VoidField() };
+        Field sf12 = new StartField(Pions[11]) { Right = new VoidField() };
+        Field sf13 = new StartField(Pions[12]);
+        Field sf14 = new StartField(Pions[13]);
+        Field sf15 = new StartField(Pions[14]);
+        Field sf16 = new StartField(Pions[15]);
         #endregion
         #region Row 1 
         r1c1.Right = r1c2;
